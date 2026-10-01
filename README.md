@@ -130,4 +130,4 @@ python ml\yield_prediction\train.py
 Computer Science Graduate | Data & Machine Learning
 
 - GitHub: https://github.com/riteshgirhe
-- LinkedIn: https://www.linkedin.com/in/riteshgirhe/
+- LinkedIn: https://www.linkedin.com/in/ritesh-girhe-b598222a3/
