@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1350" />
+    <title>AgriSense AI — Smart Agriculture Decision Platform</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --deep: #193f43;
+        --teal: #2a5958;
+        --leaf: #a8d879;
+        --paper: #f3f5f2;
+        --orange: #e3a36f;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        width: 1080px;
+        height: 1350px;
+        margin: 0;
+        overflow: hidden;
+        background: var(--deep);
+        color: var(--paper);
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1350px;
+        overflow: hidden;
+        background: var(--deep);
+      }
+      .clip { position: absolute; inset: 0; width: 100%; height: 100%; }
+      .title-scene, .stack-scene, .end-scene {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 110px 92px;
+        text-align: left;
+        background: var(--deep);
+        opacity: 0;
+      }
+      .brand-lockup {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        color: #fff;
+        font-weight: 750;
+        font-size: 31px;
+        letter-spacing: -1.2px;
+      }
+      .brand-mark {
+        display: grid;
+        width: 58px;
+        height: 58px;
+        place-items: center;
+        color: var(--deep);
+        background: #e8ead6;
+        border-radius: 16px;
+      }
+      .brand-mark svg { width: 32px; height: 32px; }
+      .brand-lockup b { color: var(--orange); }
+      .title-rule {
+        width: 100%;
+        height: 2px;
+        margin: 48px 0 36px;
+        background: linear-gradient(90deg, var(--leaf) 0%, #557e61 68%, transparent 100%);
+        transform: scaleX(0);
+        transform-origin: left center;
+      }
+      .title-scene h1, .end-scene h1 {
+        width: 100%;
+        margin: 0;
+        color: #fff;
+        font-size: 75px;
+        line-height: 1.02;
+        letter-spacing: -4.1px;
+        font-weight: 720;
+      }
+      .title-scene p, .end-scene p {
+        width: 100%;
+        margin: 23px 0 0;
+        color: #c3d4ce;
+        font-size: 29px;
+        line-height: 1.3;
+        letter-spacing: -0.7px;
+      }
+      .title-foot {
+        width: 100%;
+        margin-top: 94px;
+        color: #a9c0bb;
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+      }
+      .screen-scene { padding: 24px; opacity: 0; }
+      .screen-frame {
+        position: absolute;
+        inset: 24px;
+        overflow: hidden;
+        background: var(--paper);
+        border: 1px solid #ffffff50;
+        border-radius: 24px;
+        box-shadow: 0 28px 80px #061b1b70;
+      }
+      .screen-frame img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+      .stack-scene { align-items: flex-start; justify-content: center; padding-left: 100px; padding-right: 100px; }
+      .eyebrow {
+        margin: 0 0 22px;
+        color: var(--leaf);
+        font-size: 15px;
+        letter-spacing: 3px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .stack-scene h2 {
+        margin: 0 0 54px;
+        color: #fff;
+        font-size: 62px;
+        line-height: 1.04;
+        letter-spacing: -3px;
+      }
+      .stack-list { width: 100%; display: grid; gap: 17px; }
+      .stack-item {
+        display: flex;
+        align-items: center;
+        min-height: 105px;
+        padding: 0 24px;
+        border: 1px solid #ffffff2c;
+        border-radius: 18px;
+        background: #214b4c;
+        color: #f7faf5;
+        font-size: 33px;
+        font-weight: 650;
+        letter-spacing: -1px;
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      .stack-dot {
+        width: 12px;
+        height: 12px;
+        margin-right: 20px;
+        border-radius: 50%;
+        background: var(--leaf);
+      }
+      .stack-item:nth-child(even) .stack-dot { background: var(--orange); }
+      .end-scene { align-items: flex-start; justify-content: center; }
+      .end-scene .brand-lockup { margin-bottom: 58px; }
+      .end-scene .title-rule { margin: 0 0 36px; }
+      .end-scene h1 { font-size: 82px; }
+      .end-scene p { max-width: 760px; font-size: 31px; }
+      .end-mark { margin-top: 94px; width: 74px; height: 4px; border-radius: 3px; background: var(--leaf); }
+    </style>
+  </head>
+  <body>
+    <main id="root" data-composition-id="main" data-start="0" data-duration="35" data-width="1080" data-height="1350">
+      <section class="clip title-scene" id="intro" data-start="0" data-duration="3.4" data-track-index="0">
+        <div class="brand-lockup"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4C10 4 4 8 4 15c0 3 2 5 5 5 7 0 11-6 11-16Z"/><path d="M4 20c3-5 7-8 12-10"/></svg></span><span>AgriSense <b>AI</b></span></div>
+        <div class="title-rule" id="intro-rule"></div>
+        <h1>AgriSense AI</h1>
+        <p>Smart Agriculture<br />Decision Platform</p>
+        <div class="title-foot">Agriculture intelligence · model workflows</div>
+      </section>
+
+      <section class="clip screen-scene" id="dashboard" data-start="3" data-duration="4.2" data-track-index="1"><div class="screen-frame"><img src="assets/real-ui/01-dashboard.png" alt="Actual AgriSense AI dashboard" /></div></section>
+      <section class="clip screen-scene" id="weather" data-start="6.8" data-duration="3.6" data-track-index="2"><div class="screen-frame"><img src="assets/real-ui/02-weather.png" alt="Actual AgriSense AI weather page, showing the provider configuration state" /></div></section>
+      <section class="clip screen-scene" id="crop" data-start="10" data-duration="3.6" data-track-index="3"><div class="screen-frame"><img src="assets/real-ui/03-crop.png" alt="Actual crop recommendation result from the running application" /></div></section>
+      <section class="clip screen-scene" id="fertilizer" data-start="13.1" data-duration="3.6" data-track-index="4"><div class="screen-frame"><img src="assets/real-ui/04-fertilizer.png" alt="Actual fertilizer recommendation result from the running application" /></div></section>
+      <section class="clip screen-scene" id="irrigation" data-start="16.2" data-duration="3.6" data-track-index="5"><div class="screen-frame"><img src="assets/real-ui/05-irrigation.png" alt="Actual irrigation prediction result from the running application" /></div></section>
+      <section class="clip screen-scene" id="price" data-start="19.3" data-duration="3.6" data-track-index="6"><div class="screen-frame"><img src="assets/real-ui/06-price.png" alt="Actual price prediction result from the running application" /></div></section>
+      <section class="clip screen-scene" id="yield" data-start="22.4" data-duration="3.6" data-track-index="7"><div class="screen-frame"><img src="assets/real-ui/07-yield.png" alt="Actual yield prediction result from the running application" /></div></section>
+
+      <section class="clip stack-scene" id="stack" data-start="25.5" data-duration="4.5" data-track-index="8">
+        <p class="eyebrow">Technology stack</p>
+        <h2>Built with</h2>
+        <div class="stack-list">
+          <div class="stack-item"><i class="stack-dot"></i>React</div>
+          <div class="stack-item"><i class="stack-dot"></i>FastAPI</div>
+          <div class="stack-item"><i class="stack-dot"></i>Python</div>
+          <div class="stack-item"><i class="stack-dot"></i>Machine Learning</div>
+        </div>
+      </section>
+
+      <section class="clip end-scene" id="outro" data-start="30.2" data-duration="4.8" data-track-index="9">
+        <div class="brand-lockup"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4C10 4 4 8 4 15c0 3 2 5 5 5 7 0 11-6 11-16Z"/><path d="M4 20c3-5 7-8 12-10"/></svg></span><span>AgriSense <b>AI</b></span></div>
+        <div class="title-rule" id="outro-rule"></div>
+        <h1>AgriSense AI</h1>
+        <p>Smart Agriculture<br />Decision Platform</p>
+        <div class="end-mark"></div>
+      </section>
+
+      <audio id="background-music" class="clip" src="assets/music/happy-beats-business-moves-vol-1-by-ende-dot-app.mp3" data-start="0" data-duration="35" data-volume="0.22" data-fade-in="1.2" data-fade-out="2.4"></audio>
+    </main>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const show = (selector, start, end, drift = 0) => {
+        const scene = document.querySelector(selector);
+        tl.fromTo(scene, { opacity: 0, y: drift }, { opacity: 1, y: 0, duration: 0.55, ease: "power2.out" }, start);
+        tl.to(scene, { opacity: 0, duration: 0.45, ease: "power1.in" }, end - 0.45);
+      };
+      show("#intro", 0, 3.4, 16);
+      tl.to("#intro-rule", { scaleX: 1, duration: 0.75, ease: "power2.out" }, 0.45);
+      show("#dashboard", 3, 7.2);
+      show("#weather", 6.8, 10.4);
+      show("#crop", 10, 13.6);
+      show("#fertilizer", 13.1, 16.7);
+      show("#irrigation", 16.2, 19.8);
+      show("#price", 19.3, 22.9);
+      show("#yield", 22.4, 26);
+      show("#stack", 25.5, 30, 12);
+      tl.fromTo(".stack-item", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.38, stagger: 0.42, ease: "power2.out" }, 26.55);
+      show("#outro", 30.2, 35, 12);
+      tl.to("#outro-rule", { scaleX: 1, duration: 0.7, ease: "power2.out" }, 31.0);
+      window.__timelines.main = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1241 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/AgriSenseApp.jsx");import.meta.env = {"BASE_URL": "/", "DEV": true, "MODE": "development", "PROD": false, "SSR": false};import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=ba7974d2"; const Fragment = __vite__cjsImport0_react_jsxDevRuntime["Fragment"]; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+var _s = $RefreshSig$(), _s2 = $RefreshSig$();
+import __vite__cjsImport3_react from "/node_modules/.vite/deps/react.js?v=ba7974d2"; const useEffect = __vite__cjsImport3_react["useEffect"]; const useState = __vite__cjsImport3_react["useState"];
+import "/src/styles.css";
+import "/src/workbench.css";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "";
+const numberField = (key, label, value, min = 0, max = 1e4, step = "any") => ({ key, label, type: "number", value: String(value), min, max, step });
+const selectField = (key, label, value, options) => ({ key, label, type: "select", value, options });
+const dateField = (key, label, value) => ({ key, label, type: "date", value });
+const services = [
+  {
+    id: "crop",
+    title: "Crop recommendation",
+    icon: "sprout",
+    color: "mint",
+    description: "Match soil nutrients and climate to a crop from the model's supported classes.",
+    endpoint: "/api/crop/recommend",
+    output: "Recommended crop",
+    guidance: "Compare this shortlist with local growing conditions and recent field history.",
+    fields: [
+      numberField("N", "Nitrogen (N)", 90, 0, 200),
+      numberField("P", "Phosphorus (P)", 42, 0, 200),
+      numberField("K", "Potassium (K)", 43, 0, 200),
+      numberField("temperature", "Temperature (°C)", 20.88, -20, 60),
+      numberField("humidity", "Humidity (%)", 82, 0, 100),
+      numberField("ph", "Soil pH", 6.5, 0, 14),
+      numberField("rainfall", "Rainfall (mm)", 202.9, 0, 1e4)
+    ]
+  },
+  {
+    id: "fertilizer",
+    title: "Fertilizer recommendation",
+    icon: "leaf",
+    color: "violet",
+    description: "Use measured soil, crop, season and previous-harvest features.",
+    endpoint: "/api/fertilizer/predict",
+    output: "Recommended fertilizer",
+    guidance: "Check the result against a current soil test and local application guidance.",
+    fields: [
+      selectField("Soil_Type", "Soil type", "Clay", ["Clay", "Loamy", "Sandy", "Silt"]),
+      numberField("Soil_pH", "Soil pH", 6.07, 0, 14),
+      numberField("Soil_Moisture", "Soil moisture (%)", 34.98, 0, 100),
+      numberField("Organic_Carbon", "Organic carbon", 0.32, 0, 10),
+      numberField("Electrical_Conductivity", "Electrical conductivity", 1.87, 0, 100),
+      numberField("Nitrogen_Level", "Nitrogen level", 61),
+      numberField("Phosphorus_Level", "Phosphorus level", 44),
+      numberField("Potassium_Level", "Potassium level", 84),
+      numberField("Temperature", "Temperature (°C)", 19.84, -20, 60),
+      numberField("Humidity", "Humidity (%)", 83.31, 0, 100),
+      numberField("Rainfall", "Rainfall (mm)", 1693.22),
+      selectField("Crop_Type", "Crop", "Cotton", ["Cotton", "Maize", "Potato", "Rice", "Sugarcane", "Tomato", "Wheat"]),
+      selectField("Crop_Growth_Stage", "Growth stage", "Harvest", ["Flowering", "Harvest", "Sowing", "Vegetative"]),
+      selectField("Season", "Season", "Kharif", ["Kharif", "Rabi", "Zaid"]),
+      selectField("Irrigation_Type", "Irrigation type", "Canal", ["Canal", "Drip", "Rainfed", "Sprinkler"]),
+      selectField("Previous_Crop", "Previous crop", "Wheat", ["Cotton", "Maize", "Potato", "Rice", "Sugarcane", "Tomato", "Wheat"]),
+      selectField("Region", "Region", "South", ["Central", "East", "North", "South", "West"]),
+      numberField("Fertilizer_Used_Last_Season", "Fertilizer used last season", 297.15),
+      numberField("Yield_Last_Season", "Yield last season (t/ha)", 1.19, 0, 100)
+    ]
+  },
+  {
+    id: "irrigation",
+    title: "Irrigation prediction",
+    icon: "droplet",
+    color: "blue",
+    description: "Estimate irrigation need from soil, weather, crop and field conditions.",
+    endpoint: "/api/irrigation/predict",
+    output: "Irrigation need",
+    guidance: "Check measured field moisture and near-term rain before scheduling irrigation.",
+    fields: [
+      selectField("Soil_Type", "Soil type", "Clay", ["Clay", "Loamy", "Sandy", "Silt"]),
+      numberField("Soil_pH", "Soil pH", 6.14, 0, 14),
+      numberField("Soil_Moisture", "Soil moisture (%)", 36.48, 0, 100),
+      numberField("Organic_Carbon", "Organic carbon", 0.42, 0, 10),
+      numberField("Electrical_Conductivity", "Electrical conductivity", 2.17, 0, 100),
+      numberField("Temperature_C", "Temperature (°C)", 21.9, -20, 60),
+      numberField("Humidity", "Humidity (%)", 31.19, 0, 100),
+      numberField("Rainfall_mm", "Rainfall (mm)", 1167.7),
+      numberField("Sunlight_Hours", "Sunlight hours", 4.01, 0, 24),
+      numberField("Wind_Speed_kmh", "Wind speed (km/h)", 1.97, 0, 300),
+      selectField("Crop_Type", "Crop", "Wheat", ["Cotton", "Maize", "Potato", "Rice", "Sugarcane", "Wheat"]),
+      selectField("Crop_Growth_Stage", "Growth stage", "Vegetative", ["Flowering", "Harvest", "Sowing", "Vegetative"]),
+      selectField("Season", "Season", "Rabi", ["Kharif", "Rabi", "Zaid"]),
+      selectField("Irrigation_Type", "Irrigation type", "Rainfed", ["Canal", "Drip", "Rainfed", "Sprinkler"]),
+      selectField("Water_Source", "Water source", "Reservoir", ["Groundwater", "Rainwater", "Reservoir", "River"]),
+      numberField("Field_Area_hectare", "Field area (hectares)", 4.73, 0.01, 1e4),
+      selectField("Mulching_Used", "Mulching used", "Yes", ["No", "Yes"]),
+      numberField("Previous_Irrigation_mm", "Previous irrigation (mm)", 1.98),
+      selectField("Region", "Region", "South", ["Central", "East", "North", "South", "West"])
+    ]
+  },
+  {
+    id: "price",
+    title: "Price prediction",
+    icon: "chart",
+    color: "gold",
+    description: "Estimate modal commodity price from the provided market attributes.",
+    endpoint: "/api/price/predict",
+    output: "Estimated modal price",
+    guidance: "Treat this as a historical-model estimate and confirm current local market prices.",
+    fields: [
+      dateField("month", "Month", "2025-03-01"),
+      selectField("commodity_name", "Commodity", "Maize", ["Barley (Jau)", "Coconut", "Coffee", "Cotton", "Ginger(Dry)", "Groundnut", "Jowar(Sorghum)", "Maize", "Millets", "Rice", "Sugar", "Sugarcane", "Sunflower", "Tea", "Turmeric", "Wheat"]),
+      selectField("state_name", "State", "India", ["India"]),
+      selectField("district_name", "District", "All", ["All"]),
+      numberField("avg_min_price", "Average minimum price (₹)", 2191.23),
+      numberField("avg_max_price", "Average maximum price (₹)", 2402.98),
+      selectField("calculationType", "Calculation type", "Monthly", ["Monthly"]),
+      numberField("change", "Recent change (%)", -14.43, -1e5, 1e5)
+    ]
+  },
+  {
+    id: "yield",
+    title: "Yield prediction",
+    icon: "chart",
+    color: "orange",
+    description: "Estimate yield from crop, field size, planting date and growing inputs.",
+    endpoint: "/api/yield/predict",
+    output: "Estimated yield",
+    guidance: "Use this estimate for planning; actual yield depends on conditions through harvest.",
+    fields: [
+      selectField("Crop_Type", "Crop", "Soybean", ["Cotton", "Groundnut", "Maize", "Onion", "Potato", "Rice", "Soybean", "Sugarcane", "Wheat"]),
+      numberField("Field_Size_hectares", "Field size (hectares)", 1.04, 0.01, 1e4),
+      dateField("Planting_Date", "Planting date", "2025-06-08"),
+      selectField("Soil_Type", "Soil type", "Loamy", ["Alluvial", "Chalky", "Clay", "Laterite", "Loamy", "Peaty", "Sandy", "Silty"]),
+      selectField("Fertilizer_Used", "Fertilizer used", "Urea", ["Ammonium Sulphate", "Biofertilizers", "Compost/Organic Manure", "DAP", "MOP", "NPK", "Urea"]),
+      selectField("Irrigation_Type", "Irrigation type", "Furrow/Canal irrigation", ["Drip Irrigation", "Flood Irrigation", "Furrow/Canal irrigation", "Rainfed", "Sprinkler Irrigation"])
+    ]
+  }
+];
+const iconPaths = {
+  grid: /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV("rect", { x: "3", y: "3", width: "7", height: "7", rx: "1" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 119,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV("rect", { x: "14", y: "3", width: "7", height: "7", rx: "1" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 119,
+      columnNumber: 59
+    }, this),
+    /* @__PURE__ */ jsxDEV("rect", { x: "3", y: "14", width: "7", height: "7", rx: "1" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 119,
+      columnNumber: 108
+    }, this),
+    /* @__PURE__ */ jsxDEV("rect", { x: "14", y: "14", width: "7", height: "7", rx: "1" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 119,
+      columnNumber: 157
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+    lineNumber: 119,
+    columnNumber: 9
+  }, this),
+  sprout: /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV("path", { d: "M12 21V11" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 120,
+      columnNumber: 13
+    }, this),
+    /* @__PURE__ */ jsxDEV("path", { d: "M12 15c-3.8 0-6-2.2-6-6 3.8 0 6 2.2 6 6Z" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 120,
+      columnNumber: 35
+    }, this),
+    /* @__PURE__ */ jsxDEV("path", { d: "M12 12c0-3.8 2.2-6 6-6 0 3.8-2.2 6-6 6Z" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 120,
+      columnNumber: 88
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+    lineNumber: 120,
+    columnNumber: 11
+  }, this),
+  droplet: /* @__PURE__ */ jsxDEV("path", { d: "M12 3.5S5.8 10.1 5.8 14.7a6.2 6.2 0 0 0 12.4 0C18.2 10.1 12 3.5 12 3.5Z" }, void 0, false, {
+    fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+    lineNumber: 121,
+    columnNumber: 12
+  }, this),
+  chart: /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV("path", { d: "M4 19V5" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 122,
+      columnNumber: 12
+    }, this),
+    /* @__PURE__ */ jsxDEV("path", { d: "M4 19h16" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 122,
+      columnNumber: 32
+    }, this),
+    /* @__PURE__ */ jsxDEV("path", { d: "m7 15 3-4 3 2 5-6" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 122,
+      columnNumber: 53
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+    lineNumber: 122,
+    columnNumber: 10
+  }, this),
+  leaf: /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV("path", { d: "M20 4C10 4 4 8 4 15c0 3 2 5 5 5 7 0 11-6 11-16Z" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 123,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV("path", { d: "M4 20c3-5 7-8 12-10" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 123,
+      columnNumber: 71
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+    lineNumber: 123,
+    columnNumber: 9
+  }, this),
+  arrow: /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV("path", { d: "M5 12h14" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 124,
+      columnNumber: 12
+    }, this),
+    /* @__PURE__ */ jsxDEV("path", { d: "m13 6 6 6-6 6" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 124,
+      columnNumber: 33
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+    lineNumber: 124,
+    columnNumber: 10
+  }, this),
+  sun: /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV("circle", { cx: "12", cy: "12", r: "4" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 125,
+      columnNumber: 10
+    }, this),
+    /* @__PURE__ */ jsxDEV("path", { d: "M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 125,
+      columnNumber: 42
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+    lineNumber: 125,
+    columnNumber: 8
+  }, this)
+};
+function Icon({ name, size = 20 }) {
+  return /* @__PURE__ */ jsxDEV("svg", { width: size, height: size, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "1.8", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", children: iconPaths[name] }, void 0, false, {
+    fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+    lineNumber: 129,
+    columnNumber: 10
+  }, this);
+}
+_c = Icon;
+async function getJSON(path) {
+  const response = await fetch(`${API_BASE_URL}${path}`);
+  const data = await response.json();
+  if (!response.ok) throw new Error(typeof data.detail === "string" ? data.detail : "The service could not complete this request.");
+  return data;
+}
+function formatPrediction(service, value) {
+  if (service.id === "price") return new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 2 }).format(Number(value));
+  if (service.id === "yield") return `${Number(value).toFixed(2)} t/ha`;
+  return String(value).replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+function PredictionPage({ service, onBack }) {
+  _s();
+  const [values, setValues] = useState(() => Object.fromEntries(service.fields.map((field) => [field.key, field.value])));
+  const [prediction, setPrediction] = useState(null);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const submit = async (event) => {
+    event.preventDefault();
+    setLoading(true);
+    setError("");
+    try {
+      const response = await fetch(`${API_BASE_URL}${service.endpoint}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values)
+      });
+      const data = await response.json();
+      if (!response.ok) throw new Error(typeof data.detail === "string" ? data.detail : "Check the submitted values and try again.");
+      setPrediction(data.prediction);
+    } catch (requestError) {
+      setError(requestError.message);
+      setPrediction(null);
+    } finally {
+      setLoading(false);
+    }
+  };
+  return /* @__PURE__ */ jsxDEV("section", { className: "service-page", children: [
+    /* @__PURE__ */ jsxDEV("button", { className: "back-button", onClick: onBack, children: [
+      /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 16 }, void 0, false, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 174,
+        columnNumber: 56
+      }, this),
+      " All services"
+    ] }, void 0, true, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 174,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "service-page-header", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: `service-page-icon ${service.color}`, children: /* @__PURE__ */ jsxDEV(Icon, { name: service.icon, size: 28 }, void 0, false, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 175,
+        columnNumber: 98
+      }, this) }, void 0, false, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 175,
+        columnNumber: 44
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "section-kicker", children: "MODEL WORKSPACE" }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 175,
+          columnNumber: 147
+        }, this),
+        /* @__PURE__ */ jsxDEV("h1", { children: service.title }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 175,
+          columnNumber: 202
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { children: service.description }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 175,
+          columnNumber: 226
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 175,
+        columnNumber: 142
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 175,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "service-layout", children: [
+      /* @__PURE__ */ jsxDEV("form", { className: "input-card", onSubmit: submit, children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "input-card-heading", children: [
+          /* @__PURE__ */ jsxDEV("div", { children: [
+            /* @__PURE__ */ jsxDEV("span", { className: "section-kicker", children: "MODEL INPUTS" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 178,
+              columnNumber: 52
+            }, this),
+            /* @__PURE__ */ jsxDEV("h2", { children: "Field and market data" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 178,
+              columnNumber: 104
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 178,
+            columnNumber: 47
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { className: "step-count", children: [
+            service.fields.length,
+            " inputs"
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 178,
+            columnNumber: 140
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 178,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "sample-note", children: "Prefilled with an example row from this project's dataset. Edit values to match your case." }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 179,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "service-form-grid", children: service.fields.map((field) => /* @__PURE__ */ jsxDEV("label", { className: "field-label", children: [
+          field.label,
+          field.type === "select" ? /* @__PURE__ */ jsxDEV("select", { required: true, value: values[field.key], onChange: (event) => {
+            setValues((current) => ({ ...current, [field.key]: event.target.value }));
+            setPrediction(null);
+            setError("");
+          }, children: field.options.map((option) => /* @__PURE__ */ jsxDEV("option", { value: option, children: option }, option, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 180,
+            columnNumber: 370
+          }, this)) }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 180,
+            columnNumber: 164
+          }, this) : /* @__PURE__ */ jsxDEV("input", { required: true, type: field.type, min: field.min, max: field.max, step: field.step, value: values[field.key], onChange: (event) => {
+            setValues((current) => ({ ...current, [field.key]: event.target.value }));
+            setPrediction(null);
+            setError("");
+          } }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 180,
+            columnNumber: 437
+          }, this)
+        ] }, field.key, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 180,
+          columnNumber: 77
+        }, this)) }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 180,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { className: "primary-service-button", type: "submit", disabled: loading, children: [
+          loading ? "Running model…" : "Generate prediction",
+          /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 17 }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 181,
+            columnNumber: 139
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 181,
+          columnNumber: 11
+        }, this),
+        error && /* @__PURE__ */ jsxDEV("p", { className: "form-error", role: "alert", children: error }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 182,
+          columnNumber: 21
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 177,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("aside", { className: `service-result ${prediction !== null ? "result-ready" : ""}`, "aria-live": "polite", children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "result-label", children: "MODEL RESULT" }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 185,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: `result-orb ${service.color}`, children: /* @__PURE__ */ jsxDEV(Icon, { name: service.icon, size: 34 }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 185,
+          columnNumber: 108
+        }, this) }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 185,
+          columnNumber: 61
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "result-intro", children: prediction !== null ? service.output : "Result appears after prediction" }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 186,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("strong", { children: prediction !== null ? formatPrediction(service, prediction) : "—" }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 187,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "recommendation-note", children: [
+          /* @__PURE__ */ jsxDEV("span", { children: "Next step" }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 188,
+            columnNumber: 48
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { children: prediction !== null ? service.guidance : "Submit the inputs to get an output from the trained model." }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 188,
+            columnNumber: 70
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 188,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("small", { className: "frontend-note", children: "Model output is decision support, not a guaranteed outcome." }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 189,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 184,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 176,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+    lineNumber: 173,
+    columnNumber: 5
+  }, this);
+}
+_s(PredictionPage, "wl6TvpR8K0LiVXDUwJ7Zxw5URjw=");
+_c2 = PredictionPage;
+function WeatherPage({ weather, loading, error, onRetry }) {
+  return /* @__PURE__ */ jsxDEV("section", { className: "workspace-page", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "workspace-page-heading", children: [
+      /* @__PURE__ */ jsxDEV("div", { children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "section-kicker", children: "WEATHER" }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 199,
+          columnNumber: 52
+        }, this),
+        /* @__PURE__ */ jsxDEV("h1", { children: "Local conditions" }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 199,
+          columnNumber: 99
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { children: "Current conditions and forecast supplied by OpenWeather." }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 199,
+          columnNumber: 124
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 199,
+        columnNumber: 47
+      }, this),
+      /* @__PURE__ */ jsxDEV("button", { className: "filter-button", onClick: onRetry, disabled: loading, children: loading ? "Updating…" : "Refresh" }, void 0, false, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 199,
+        columnNumber: 193
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 199,
+      columnNumber: 7
+    }, this),
+    error && /* @__PURE__ */ jsxDEV("div", { className: "state-message error-state", role: "alert", children: [
+      /* @__PURE__ */ jsxDEV("strong", { children: "Weather unavailable" }, void 0, false, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 200,
+        columnNumber: 73
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { children: error }, void 0, false, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 200,
+        columnNumber: 109
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 200,
+      columnNumber: 17
+    }, this),
+    loading && !weather && /* @__PURE__ */ jsxDEV("div", { className: "state-message", children: "Loading current conditions…" }, void 0, false, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 201,
+      columnNumber: 31
+    }, this),
+    weather && /* @__PURE__ */ jsxDEV(Fragment, { children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "weather-dashboard", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "current-weather", children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "weather-sun large", children: /* @__PURE__ */ jsxDEV(Icon, { name: "sun", size: 39 }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 202,
+            columnNumber: 124
+          }, this) }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 202,
+            columnNumber: 89
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { children: [
+            /* @__PURE__ */ jsxDEV("strong", { children: [
+              weather.current.temperature,
+              "°"
+            ] }, void 0, true, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 202,
+              columnNumber: 164
+            }, this),
+            /* @__PURE__ */ jsxDEV("span", { children: weather.current.description }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 202,
+              columnNumber: 211
+            }, this),
+            /* @__PURE__ */ jsxDEV("small", { children: [
+              weather.location,
+              weather.country ? `, ${weather.country}` : ""
+            ] }, void 0, true, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 202,
+              columnNumber: 253
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 202,
+            columnNumber: 159
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 202,
+          columnNumber: 56
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "weather-reading", children: [
+          /* @__PURE__ */ jsxDEV("span", { children: "Humidity" }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 202,
+            columnNumber: 378
+          }, this),
+          /* @__PURE__ */ jsxDEV("strong", { children: [
+            weather.current.humidity,
+            "%"
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 202,
+            columnNumber: 399
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 202,
+          columnNumber: 345
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "weather-reading", children: [
+          /* @__PURE__ */ jsxDEV("span", { children: "Wind speed" }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 202,
+            columnNumber: 482
+          }, this),
+          /* @__PURE__ */ jsxDEV("strong", { children: [
+            weather.current.wind_speed,
+            " km/h"
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 202,
+            columnNumber: 505
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 202,
+          columnNumber: 449
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "weather-reading", children: [
+          /* @__PURE__ */ jsxDEV("span", { children: "Rain chance" }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 202,
+            columnNumber: 594
+          }, this),
+          /* @__PURE__ */ jsxDEV("strong", { children: [
+            weather.current.rain_probability,
+            "%"
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 202,
+            columnNumber: 618
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 202,
+          columnNumber: 561
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 202,
+        columnNumber: 21
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "forecast-card", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "panel-heading", children: /* @__PURE__ */ jsxDEV("div", { children: [
+          /* @__PURE__ */ jsxDEV("span", { className: "section-kicker", children: "FORECAST" }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 203,
+            columnNumber: 76
+          }, this),
+          /* @__PURE__ */ jsxDEV("h3", { children: "Upcoming conditions" }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 203,
+            columnNumber: 124
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 203,
+          columnNumber: 71
+        }, this) }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 203,
+          columnNumber: 40
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "forecast-row", children: weather.forecast.map((day) => /* @__PURE__ */ jsxDEV("div", { children: [
+          /* @__PURE__ */ jsxDEV("span", { children: (/* @__PURE__ */ new Date(`${day.date}T12:00:00`)).toLocaleDateString(void 0, { weekday: "short" }) }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 203,
+            columnNumber: 245
+          }, this),
+          /* @__PURE__ */ jsxDEV(Icon, { name: day.rain_probability > 40 ? "droplet" : "sun", size: 22 }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 203,
+            columnNumber: 344
+          }, this),
+          /* @__PURE__ */ jsxDEV("strong", { children: [
+            day.high,
+            "° / ",
+            day.low,
+            "°"
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 203,
+            columnNumber: 415
+          }, this),
+          /* @__PURE__ */ jsxDEV("small", { children: [
+            day.rain_probability,
+            "% rain"
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 203,
+            columnNumber: 456
+          }, this)
+        ] }, day.date, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 203,
+          columnNumber: 225
+        }, this)) }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 203,
+          columnNumber: 164
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 203,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 202,
+      columnNumber: 19
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+    lineNumber: 198,
+    columnNumber: 5
+  }, this);
+}
+_c3 = WeatherPage;
+function App() {
+  _s2();
+  const [page, setPage] = useState("overview");
+  const [selectedService, setSelectedService] = useState(null);
+  const [health, setHealth] = useState(null);
+  const [healthLoading, setHealthLoading] = useState(true);
+  const [healthError, setHealthError] = useState("");
+  const [weather, setWeather] = useState(null);
+  const [weatherError, setWeatherError] = useState("");
+  const [weatherLoading, setWeatherLoading] = useState(false);
+  const loadWeather = async () => {
+    setWeatherLoading(true);
+    setWeatherError("");
+    try {
+      setWeather(await getJSON("/api/weather"));
+    } catch (requestError) {
+      setWeatherError(requestError.message);
+    } finally {
+      setWeatherLoading(false);
+    }
+  };
+  useEffect(() => {
+    getJSON("/health").then(setHealth).catch((requestError) => setHealthError(requestError.message)).finally(() => setHealthLoading(false));
+    loadWeather();
+  }, []);
+  const goOverview = () => {
+    setSelectedService(null);
+    setPage("overview");
+  };
+  return /* @__PURE__ */ jsxDEV("div", { className: "app-shell", children: [
+    /* @__PURE__ */ jsxDEV("aside", { className: "sidebar", children: [
+      /* @__PURE__ */ jsxDEV("button", { className: "brand", onClick: goOverview, "aria-label": "AgriSense AI overview", children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "brand-mark", children: /* @__PURE__ */ jsxDEV(Icon, { name: "leaf", size: 22 }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 244,
+          columnNumber: 120
+        }, this) }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 244,
+          columnNumber: 91
+        }, this),
+        /* @__PURE__ */ jsxDEV("span", { children: [
+          "AgriSense ",
+          /* @__PURE__ */ jsxDEV("b", { children: "AI" }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 244,
+            columnNumber: 173
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 244,
+          columnNumber: 157
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 244,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "workspace-label", children: "WORKSPACE" }, void 0, false, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 245,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("nav", { className: "main-nav", "aria-label": "Main navigation", children: [
+        /* @__PURE__ */ jsxDEV("button", { className: `nav-item ${page === "overview" && !selectedService ? "active" : ""}`, onClick: goOverview, children: [
+          /* @__PURE__ */ jsxDEV(Icon, { name: "grid", size: 19 }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 246,
+            columnNumber: 175
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: "Overview" }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 246,
+            columnNumber: 205
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 246,
+          columnNumber: 64
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { className: `nav-item ${page === "weather" ? "active" : ""}`, onClick: () => {
+          setSelectedService(null);
+          setPage("weather");
+        }, children: [
+          /* @__PURE__ */ jsxDEV(Icon, { name: "sun", size: 19 }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 246,
+            columnNumber: 367
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: "Weather" }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 246,
+            columnNumber: 396
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 246,
+          columnNumber: 235
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 246,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "sidebar-bottom", children: /* @__PURE__ */ jsxDEV("div", { className: "sidebar-note", children: [
+        /* @__PURE__ */ jsxDEV(Icon, { name: "sprout", size: 20 }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 247,
+          columnNumber: 71
+        }, this),
+        /* @__PURE__ */ jsxDEV("strong", { children: "Decision support for agriculture" }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 247,
+          columnNumber: 103
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { children: "Five trained models and live weather in one workspace." }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 247,
+          columnNumber: 152
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 247,
+        columnNumber: 41
+      }, this) }, void 0, false, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 247,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 243,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("main", { className: "main-content", children: [
+      /* @__PURE__ */ jsxDEV("header", { className: "topbar", children: [
+        /* @__PURE__ */ jsxDEV("button", { className: "mobile-menu", onClick: goOverview, "aria-label": "Go to overview", children: /* @__PURE__ */ jsxDEV(Icon, { name: "grid" }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 250,
+          columnNumber: 117
+        }, this) }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 250,
+          columnNumber: 36
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "breadcrumb", children: [
+          /* @__PURE__ */ jsxDEV("span", { children: "AgriSense AI" }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 250,
+            columnNumber: 174
+          }, this),
+          /* @__PURE__ */ jsxDEV("b", { children: "/" }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 250,
+            columnNumber: 199
+          }, this),
+          /* @__PURE__ */ jsxDEV("strong", { children: selectedService?.title || (page === "weather" ? "Weather" : "Overview") }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 250,
+            columnNumber: 207
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 250,
+          columnNumber: 146
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "top-actions", children: [
+          /* @__PURE__ */ jsxDEV("span", { className: `sync-status ${health?.status === "ok" ? "online" : ""}`, children: [
+            /* @__PURE__ */ jsxDEV("i", {}, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 250,
+              columnNumber: 407
+            }, this),
+            health?.status === "ok" ? "API connected" : healthLoading ? "Checking API" : "API unavailable"
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 250,
+            columnNumber: 332
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "user-badge", children: [
+            /* @__PURE__ */ jsxDEV("span", { className: "user-avatar", children: "RG" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 250,
+              columnNumber: 543
+            }, this),
+            /* @__PURE__ */ jsxDEV("span", { className: "user-name", children: "Ritesh Girhe" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 250,
+              columnNumber: 582
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 250,
+            columnNumber: 515
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 250,
+          columnNumber: 303
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 250,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("nav", { className: "mobile-nav", "aria-label": "Mobile navigation", children: [
+        /* @__PURE__ */ jsxDEV("button", { className: !selectedService && page === "overview" ? "active" : "", onClick: goOverview, children: "Overview" }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 251,
+          columnNumber: 68
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { className: page === "weather" ? "active" : "", onClick: () => {
+          setSelectedService(null);
+          setPage("weather");
+        }, children: "Weather" }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 251,
+          columnNumber: 182
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 251,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "page-content", children: selectedService ? /* @__PURE__ */ jsxDEV(PredictionPage, { service: selectedService, onBack: goOverview }, selectedService.id, false, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 252,
+        columnNumber: 58
+      }, this) : page === "weather" ? /* @__PURE__ */ jsxDEV(WeatherPage, { weather, loading: weatherLoading, error: weatherError, onRetry: loadWeather }, void 0, false, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 252,
+        columnNumber: 171
+      }, this) : /* @__PURE__ */ jsxDEV("section", { className: "workspace-page", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "workspace-page-heading", children: [
+          /* @__PURE__ */ jsxDEV("div", { children: [
+            /* @__PURE__ */ jsxDEV("span", { className: "section-kicker", children: "AGRICULTURE INTELLIGENCE" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 253,
+              columnNumber: 56
+            }, this),
+            /* @__PURE__ */ jsxDEV("h1", { children: "AgriSense AI" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 253,
+              columnNumber: 120
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { children: "Move from field inputs to model output and a practical next step." }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 253,
+              columnNumber: 141
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 253,
+            columnNumber: 51
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { className: `live-chip ${health?.status === "ok" ? "healthy" : ""}`, children: [
+            /* @__PURE__ */ jsxDEV("i", {}, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 253,
+              columnNumber: 293
+            }, this),
+            health?.status === "ok" ? "API online" : healthLoading ? "Connecting" : "API unavailable"
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 253,
+            columnNumber: 219
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 253,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "connection-grid", children: [
+          /* @__PURE__ */ jsxDEV("article", { className: "connection-card", children: [
+            /* @__PURE__ */ jsxDEV("span", { children: "API status" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 254,
+              columnNumber: 81
+            }, this),
+            /* @__PURE__ */ jsxDEV("strong", { children: health?.status === "ok" ? "Online" : healthLoading ? "Checking" : "Unavailable" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 254,
+              columnNumber: 104
+            }, this),
+            /* @__PURE__ */ jsxDEV("small", { children: health?.service || healthError || "Waiting for backend health check" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 254,
+              columnNumber: 202
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 254,
+            columnNumber: 44
+          }, this),
+          /* @__PURE__ */ jsxDEV("article", { className: "connection-card", children: [
+            /* @__PURE__ */ jsxDEV("span", { children: "Model artifacts" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 254,
+              columnNumber: 334
+            }, this),
+            /* @__PURE__ */ jsxDEV("strong", { children: health ? `${health.models_available} / ${health.models_total}` : "—" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 254,
+              columnNumber: 362
+            }, this),
+            /* @__PURE__ */ jsxDEV("small", { children: "Available to serve predictions" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 254,
+              columnNumber: 449
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 254,
+            columnNumber: 297
+          }, this),
+          /* @__PURE__ */ jsxDEV("article", { className: "connection-card", children: [
+            /* @__PURE__ */ jsxDEV("span", { children: "Weather source" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 254,
+              columnNumber: 541
+            }, this),
+            /* @__PURE__ */ jsxDEV("strong", { children: weather ? `${weather.current.temperature}°` : weatherLoading ? "Loading" : "Unavailable" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 254,
+              columnNumber: 568
+            }, this),
+            /* @__PURE__ */ jsxDEV("small", { children: weather ? `${weather.location} · ${weather.current.description}` : weatherError || "Live provider data" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 254,
+              columnNumber: 675
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 254,
+            columnNumber: 504
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 254,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "section-heading services-heading", children: [
+          /* @__PURE__ */ jsxDEV("div", { children: [
+            /* @__PURE__ */ jsxDEV("span", { className: "section-kicker", children: "PREDICTION WORKFLOWS" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 255,
+              columnNumber: 66
+            }, this),
+            /* @__PURE__ */ jsxDEV("h2", { children: "Choose a model" }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 255,
+              columnNumber: 126
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 255,
+            columnNumber: 61
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { children: "Each result is generated from submitted inputs." }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 255,
+            columnNumber: 155
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 255,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "services-grid", children: services.map((service) => /* @__PURE__ */ jsxDEV("button", { className: "service-card", onClick: () => setSelectedService(service), children: [
+          /* @__PURE__ */ jsxDEV("span", { className: `service-icon ${service.color}`, children: /* @__PURE__ */ jsxDEV(Icon, { name: service.icon, size: 25 }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 256,
+            columnNumber: 213
+          }, this) }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 256,
+            columnNumber: 163
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { className: "service-card-copy", children: [
+            /* @__PURE__ */ jsxDEV("strong", { children: service.title }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 256,
+              columnNumber: 294
+            }, this),
+            /* @__PURE__ */ jsxDEV("small", { children: service.description }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 256,
+              columnNumber: 326
+            }, this),
+            /* @__PURE__ */ jsxDEV("em", { children: [
+              "Open model ",
+              /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 14 }, void 0, false, {
+                fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+                lineNumber: 256,
+                columnNumber: 377
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 256,
+              columnNumber: 362
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 256,
+            columnNumber: 258
+          }, this)
+        ] }, service.id, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 256,
+          columnNumber: 69
+        }, this)) }, void 0, false, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 256,
+          columnNumber: 11
+        }, this),
+        weatherError && /* @__PURE__ */ jsxDEV("div", { className: "state-message weather-inline", children: [
+          /* @__PURE__ */ jsxDEV("strong", { children: "Weather integration unavailable" }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 257,
+            columnNumber: 74
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { children: weatherError }, void 0, false, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 257,
+            columnNumber: 122
+          }, this),
+          /* @__PURE__ */ jsxDEV("button", { className: "text-button", onClick: loadWeather, children: [
+            "Retry weather request ",
+            /* @__PURE__ */ jsxDEV(Icon, { name: "arrow", size: 15 }, void 0, false, {
+              fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+              lineNumber: 257,
+              columnNumber: 219
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+            lineNumber: 257,
+            columnNumber: 143
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+          lineNumber: 257,
+          columnNumber: 28
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 252,
+        columnNumber: 275
+      }, this) }, void 0, false, {
+        fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+        lineNumber: 252,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+      lineNumber: 249,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx",
+    lineNumber: 242,
+    columnNumber: 5
+  }, this);
+}
+_s2(App, "CBuplxzyHL7N7JNacAlZgpT4sXI=");
+_c4 = App;
+export default App;
+var _c, _c2, _c3, _c4;
+$RefreshReg$(_c, "Icon");
+$RefreshReg$(_c2, "PredictionPage");
+$RefreshReg$(_c3, "WeatherPage");
+$RefreshReg$(_c4, "App");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Data Science/ML/ML Project/Smart-Agriculture-MLOps/frontend/src/AgriSenseApp.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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O0FBQUEsZUFBK1YsQ0FBUyxLQUFsYTtBQUFBO0FBQUE7QUFBQTtBQUFBLGVBQW9hO0FBQUEsUUFDbmF3RyxnQkFBZ0IsdUJBQUMsU0FBSSxXQUFVLGdDQUErQjtBQUFBLGlDQUFDLFlBQU8sK0NBQVI7QUFBQTtBQUFBO0FBQUE7QUFBQSxpQkFBdUM7QUFBQSxVQUFTLHVCQUFDLE9BQUdBLDBCQUFKO0FBQUE7QUFBQTtBQUFBO0FBQUEsaUJBQWlCO0FBQUEsVUFBSSx1QkFBQyxZQUFPLFdBQVUsZUFBYyxTQUFTSSxhQUFhO0FBQUE7QUFBQSxZQUFzQix1QkFBQyxRQUFLLE1BQUssU0FBUSxNQUFNLE1BQXpCO0FBQUE7QUFBQTtBQUFBO0FBQUEsbUJBQTRCO0FBQUEsZUFBeEc7QUFBQTtBQUFBO0FBQUE7QUFBQSxpQkFBMkc7QUFBQSxhQUE5TjtBQUFBO0FBQUE7QUFBQTtBQUFBLGVBQXVPO0FBQUEsV0FMZ0I7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQU0xUSxLQU5BO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFNVztBQUFBLFNBVGI7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQVVBO0FBQUEsT0FqQkY7QUFBQTtBQUFBO0FBQUE7QUFBQSxTQWtCQTtBQUVKO0FBQUNoQixJQXJEUUQsS0FBRztBQUFBLE1BQUhBO0FBdURULGVBQWVBO0FBQUksSUFBQXZFLElBQUFnRyxLQUFBMUIsS0FBQTJCO0FBQUEsYUFBQWpHLElBQUE7QUFBQSxhQUFBZ0csS0FBQTtBQUFBLGFBQUExQixLQUFBO0FBQUEsYUFBQTJCLEtBQUEiLCJuYW1lcyI6WyJ1c2VFZmZlY3QiLCJ1c2VTdGF0ZSIsIkFQSV9CQVNFX1VSTCIsImltcG9ydCIsImVudiIsIlZJVEVfQVBJX1VSTCIsIm51bWJlckZpZWxkIiwia2V5IiwibGFiZWwiLCJ2YWx1ZSIsIm1pbiIsIm1heCIsInN0ZXAiLCJ0eXBlIiwiU3RyaW5nIiwic2VsZWN0RmllbGQiLCJvcHRpb25zIiwiZGF0ZUZpZWxkIiwic2VydmljZXMiLCJpZCIsInRpdGxlIiwiaWNvbiIsImNvbG9yIiwiZGVzY3JpcHRpb24iLCJlbmRwb2ludCIsIm91dHB1dCIsImd1aWRhbmNlIiwiZmllbGRzIiwiaWNvblBhdGhzIiwiZ3JpZCIsInNwcm91dCIsImRyb3BsZXQiLCJjaGFydCIsImxlYWYiLCJhcnJvdyIsInN1biIsIkljb24iLCJuYW1lIiwic2l6ZSIsIl9jIiwiZ2V0SlNPTiIsInBhdGgiLCJyZXNwb25zZSIsImZldGNoIiwiZGF0YSIsImpzb24iLCJvayIsIkVycm9yIiwiZGV0YWlsIiwiZm9ybWF0UHJlZGljdGlvbiIsInNlcnZpY2UiLCJJbnRsIiwiTnVtYmVyRm9ybWF0Iiwic3R5bGUiLCJjdXJyZW5jeSIsIm1heGltdW1GcmFjdGlvbkRpZ2l0cyIsImZvcm1hdCIsIk51bWJlciIsInRvRml4ZWQiLCJyZXBsYWNlIiwibGV0dGVyIiwidG9VcHBlckNhc2UiLCJQcmVkaWN0aW9uUGFnZSIsIm9uQmFjayIsIl9zIiwidmFsdWVzIiwic2V0VmFsdWVzIiwiT2JqZWN0IiwiZnJvbUVudHJpZXMiLCJtYXAiLCJmaWVsZCIsInByZWRpY3Rpb24iLCJzZXRQcmVkaWN0aW9uIiwiZXJyb3IiLCJzZXRFcnJvciIsImxvYWRpbmciLCJzZXRMb2FkaW5nIiwic3VibWl0IiwiZXZlbnQiLCJwcmV2ZW50RGVmYXVsdCIsIm1ldGhvZCIsImhlYWRlcnMiLCJib2R5IiwiSlNPTiIsInN0cmluZ2lmeSIsInJlcXVlc3RFcnJvciIsIm1lc3NhZ2UiLCJsZW5ndGgiLCJjdXJyZW50IiwidGFyZ2V0Iiwib3B0aW9uIiwiV2VhdGhlclBhZ2UiLCJ3ZWF0aGVyIiwib25SZXRyeSIsInRlbXBlcmF0dXJlIiwibG9jYXRpb24iLCJjb3VudHJ5IiwiaHVtaWRpdHkiLCJ3aW5kX3NwZWVkIiwicmFpbl9wcm9iYWJpbGl0eSIsImZvcmVjYXN0IiwiZGF5IiwiRGF0ZSIsImRhdGUiLCJ0b0xvY2FsZURhdGVTdHJpbmciLCJ1bmRlZmluZWQiLCJ3ZWVrZGF5IiwiaGlnaCIsImxvdyIsIl9jMyIsIkFwcCIsIl9zMiIsInBhZ2UiLCJzZXRQYWdlIiwic2VsZWN0ZWRTZXJ2aWNlIiwic2V0U2VsZWN0ZWRTZXJ2aWNlIiwiaGVhbHRoIiwic2V0SGVhbHRoIiwiaGVhbHRoTG9hZGluZyIsInNldEhlYWx0aExvYWRpbmciLCJoZWFsdGhFcnJvciIsInNldEhlYWx0aEVycm9yIiwic2V0V2VhdGhlciIsIndlYXRoZXJFcnJvciIsInNldFdlYXRoZXJFcnJvciIsIndlYXRoZXJMb2FkaW5nIiwic2V0V2VhdGhlckxvYWRpbmciLCJsb2FkV2VhdGhlciIsInRoZW4iLCJjYXRjaCIsImZpbmFsbHkiLCJnb092ZXJ2aWV3Iiwic3RhdHVzIiwibW9kZWxzX2F2YWlsYWJsZSIsIm1vZGVsc190b3RhbCIsIl9jMiIsIl9jNCJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJBZ3JpU2Vuc2VBcHAuanN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHVzZUVmZmVjdCwgdXNlU3RhdGUgfSBmcm9tIFwicmVhY3RcIjtcclxuaW1wb3J0IFwiLi9zdHlsZXMuY3NzXCI7XHJcbmltcG9ydCBcIi4vd29ya2JlbmNoLmNzc1wiO1xyXG5cclxuY29uc3QgQVBJX0JBU0VfVVJMID0gaW1wb3J0Lm1ldGEuZW52LlZJVEVfQVBJX1VSTCB8fCBcIlwiO1xyXG5jb25zdCBudW1iZXJGaWVsZCA9IChrZXksIGxhYmVsLCB2YWx1ZSwgbWluID0gMCwgbWF4ID0gMTAwMDAsIHN0ZXAgPSBcImFueVwiKSA9PiAoeyBrZXksIGxhYmVsLCB0eXBlOiBcIm51bWJlclwiLCB2YWx1ZTogU3RyaW5nKHZhbHVlKSwgbWluLCBtYXgsIHN0ZXAgfSk7XHJcbmNvbnN0IHNlbGVjdEZpZWxkID0gKGtleSwgbGFiZWwsIHZhbHVlLCBvcHRpb25zKSA9PiAoeyBrZXksIGxhYmVsLCB0eXBlOiBcInNlbGVjdFwiLCB2YWx1ZSwgb3B0aW9ucyB9KTtcclxuY29uc3QgZGF0ZUZpZWxkID0gKGtleSwgbGFiZWwsIHZhbHVlKSA9PiAoeyBrZXksIGxhYmVsLCB0eXBlOiBcImRhdGVcIiwgdmFsdWUgfSk7XHJcblxyXG5jb25zdCBzZXJ2aWNlcyA9IFtcclxuICB7XHJcbiAgICBpZDogXCJjcm9wXCIsIHRpdGxlOiBcIkNyb3AgcmVjb21tZW5kYXRpb25cIiwgaWNvbjogXCJzcHJvdXRcIiwgY29sb3I6IFwibWludFwiLFxyXG4gICAgZGVzY3JpcHRpb246IFwiTWF0Y2ggc29pbCBudXRyaWVudHMgYW5kIGNsaW1hdGUgdG8gYSBjcm9wIGZyb20gdGhlIG1vZGVsJ3Mgc3VwcG9ydGVkIGNsYXNzZXMuXCIsXHJcbiAgICBlbmRwb2ludDogXCIvYXBpL2Nyb3AvcmVjb21tZW5kXCIsIG91dHB1dDogXCJSZWNvbW1lbmRlZCBjcm9wXCIsXHJcbiAgICBndWlkYW5jZTogXCJDb21wYXJlIHRoaXMgc2hvcnRsaXN0IHdpdGggbG9jYWwgZ3Jvd2luZyBjb25kaXRpb25zIGFuZCByZWNlbnQgZmllbGQgaGlzdG9yeS5cIixcclxuICAgIGZpZWxkczogW1xyXG4gICAgICBudW1iZXJGaWVsZChcIk5cIiwgXCJOaXRyb2dlbiAoTilcIiwgOTAsIDAsIDIwMCksIG51bWJlckZpZWxkKFwiUFwiLCBcIlBob3NwaG9ydXMgKFApXCIsIDQyLCAwLCAyMDApLFxyXG4gICAgICBudW1iZXJGaWVsZChcIktcIiwgXCJQb3Rhc3NpdW0gKEspXCIsIDQzLCAwLCAyMDApLCBudW1iZXJGaWVsZChcInRlbXBlcmF0dXJlXCIsIFwiVGVtcGVyYXR1cmUgKMKwQylcIiwgMjAuODgsIC0yMCwgNjApLFxyXG4gICAgICBudW1iZXJGaWVsZChcImh1bWlkaXR5XCIsIFwiSHVtaWRpdHkgKCUpXCIsIDgyLCAwLCAxMDApLCBudW1iZXJGaWVsZChcInBoXCIsIFwiU29pbCBwSFwiLCA2LjUsIDAsIDE0KSxcclxuICAgICAgbnVtYmVyRmllbGQoXCJyYWluZmFsbFwiLCBcIlJhaW5mYWxsIChtbSlcIiwgMjAyLjksIDAsIDEwMDAwKSxcclxuICAgIF0sXHJcbiAgfSxcclxuICB7XHJcbiAgICBpZDogXCJmZXJ0aWxpemVyXCIsIHRpdGxlOiBcIkZlcnRpbGl6ZXIgcmVjb21tZW5kYXRpb25cIiwgaWNvbjogXCJsZWFmXCIsIGNvbG9yOiBcInZpb2xldFwiLFxyXG4gICAgZGVzY3JpcHRpb246IFwiVXNlIG1lYXN1cmVkIHNvaWwsIGNyb3AsIHNlYXNvbiBhbmQgcHJldmlvdXMtaGFydmVzdCBmZWF0dXJlcy5cIixcclxuICAgIGVuZHBvaW50OiBcIi9hcGkvZmVydGlsaXplci9wcmVkaWN0XCIsIG91dHB1dDogXCJSZWNvbW1lbmRlZCBmZXJ0aWxpemVyXCIsXHJcbiAgICBndWlkYW5jZTogXCJDaGVjayB0aGUgcmVzdWx0IGFnYWluc3QgYSBjdXJyZW50IHNvaWwgdGVzdCBhbmQgbG9jYWwgYXBwbGljYXRpb24gZ3VpZGFuY2UuXCIsXHJcbiAgICBmaWVsZHM6IFtcclxuICAgICAgc2VsZWN0RmllbGQoXCJTb2lsX1R5cGVcIiwgXCJTb2lsIHR5cGVcIiwgXCJDbGF5XCIsIFtcIkNsYXlcIiwgXCJMb2FteVwiLCBcIlNhbmR5XCIsIFwiU2lsdFwiXSksXHJcbiAgICAgIG51bWJlckZpZWxkKFwiU29pbF9wSFwiLCBcIlNvaWwgcEhcIiwgNi4wNywgMCwgMTQpLCBudW1iZXJGaWVsZChcIlNvaWxfTW9pc3R1cmVcIiwgXCJTb2lsIG1vaXN0dXJlICglKVwiLCAzNC45OCwgMCwgMTAwKSxcclxuICAgICAgbnVtYmVyRmllbGQoXCJPcmdhbmljX0NhcmJvblwiLCBcIk9yZ2FuaWMgY2FyYm9uXCIsIDAuMzIsIDAsIDEwKSwgbnVtYmVyRmllbGQoXCJFbGVjdHJpY2FsX0NvbmR1Y3Rpdml0eVwiLCBcIkVsZWN0cmljYWwgY29uZHVjdGl2aXR5XCIsIDEuODcsIDAsIDEwMCksXHJcbiAgICAgIG51bWJlckZpZWxkKFwiTml0cm9nZW5fTGV2ZWxcIiwgXCJOaXRyb2dlbiBsZXZlbFwiLCA2MSksIG51bWJlckZpZWxkKFwiUGhvc3Bob3J1c19MZXZlbFwiLCBcIlBob3NwaG9ydXMgbGV2ZWxcIiwgNDQpLFxyXG4gICAgICBudW1iZXJGaWVsZChcIlBvdGFzc2l1bV9MZXZlbFwiLCBcIlBvdGFzc2l1bSBsZXZlbFwiLCA4NCksIG51bWJlckZpZWxkKFwiVGVtcGVyYXR1cmVcIiwgXCJUZW1wZXJhdHVyZSAowrBDKVwiLCAxOS44NCwgLTIwLCA2MCksXHJcbiAgICAgIG51bWJlckZpZWxkKFwiSHVtaWRpdHlcIiwgXCJIdW1pZGl0eSAoJSlcIiwgODMuMzEsIDAsIDEwMCksIG51bWJlckZpZWxkKFwiUmFpbmZhbGxcIiwgXCJSYWluZmFsbCAobW0pXCIsIDE2OTMuMjIpLFxyXG4gICAgICBzZWxlY3RGaWVsZChcIkNyb3BfVHlwZVwiLCBcIkNyb3BcIiwgXCJDb3R0b25cIiwgW1wiQ290dG9uXCIsIFwiTWFpemVcIiwgXCJQb3RhdG9cIiwgXCJSaWNlXCIsIFwiU3VnYXJjYW5lXCIsIFwiVG9tYXRvXCIsIFwiV2hlYXRcIl0pLFxyXG4gICAgICBzZWxlY3RGaWVsZChcIkNyb3BfR3Jvd3RoX1N0YWdlXCIsIFwiR3Jvd3RoIHN0YWdlXCIsIFwiSGFydmVzdFwiLCBbXCJGbG93ZXJpbmdcIiwgXCJIYXJ2ZXN0XCIsIFwiU293aW5nXCIsIFwiVmVnZXRhdGl2ZVwiXSksXHJcbiAgICAgIHNlbGVjdEZpZWxkKFwiU2Vhc29uXCIsIFwiU2Vhc29uXCIsIFwiS2hhcmlmXCIsIFtcIktoYXJpZlwiLCBcIlJhYmlcIiwgXCJaYWlkXCJdKSxcclxuICAgICAgc2VsZWN0RmllbGQoXCJJcnJpZ2F0aW9uX1R5cGVcIiwgXCJJcnJpZ2F0aW9uIHR5cGVcIiwgXCJDYW5hbFwiLCBbXCJDYW5hbFwiLCBcIkRyaXBcIiwgXCJSYWluZmVkXCIsIFwiU3ByaW5rbGVyXCJdKSxcclxuICAgICAgc2VsZWN0RmllbGQoXCJQcmV2aW91c19Dcm9wXCIsIFwiUHJldmlvdXMgY3JvcFwiLCBcIldoZWF0XCIsIFtcIkNvdHRvblwiLCBcIk1haXplXCIsIFwiUG90YXRvXCIsIFwiUmljZVwiLCBcIlN1Z2FyY2FuZVwiLCBcIlRvbWF0b1wiLCBcIldoZWF0XCJdKSxcclxuICAgICAgc2VsZWN0RmllbGQoXCJSZWdpb25cIiwgXCJSZWdpb25cIiwgXCJTb3V0aFwiLCBbXCJDZW50cmFsXCIsIFwiRWFzdFwiLCBcIk5vcnRoXCIsIFwiU291dGhcIiwgXCJXZXN0XCJdKSxcclxuICAgICAgbnVtYmVyRmllbGQoXCJGZXJ0aWxpemVyX1VzZWRfTGFzdF9TZWFzb25cIiwgXCJGZXJ0aWxpemVyIHVzZWQgbGFzdCBzZWFzb25cIiwgMjk3LjE1KSxcclxuICAgICAgbnVtYmVyRmllbGQoXCJZaWVsZF9MYXN0X1NlYXNvblwiLCBcIllpZWxkIGxhc3Qgc2Vhc29uICh0L2hhKVwiLCAxLjE5LCAwLCAxMDApLFxyXG4gICAgXSxcclxuICB9LFxyXG4gIHtcclxuICAgIGlkOiBcImlycmlnYXRpb25cIiwgdGl0bGU6IFwiSXJyaWdhdGlvbiBwcmVkaWN0aW9uXCIsIGljb246IFwiZHJvcGxldFwiLCBjb2xvcjogXCJibHVlXCIsXHJcbiAgICBkZXNjcmlwdGlvbjogXCJFc3RpbWF0ZSBpcnJpZ2F0aW9uIG5lZWQgZnJvbSBzb2lsLCB3ZWF0aGVyLCBjcm9wIGFuZCBmaWVsZCBjb25kaXRpb25zLlwiLFxyXG4gICAgZW5kcG9pbnQ6IFwiL2FwaS9pcnJpZ2F0aW9uL3ByZWRpY3RcIiwgb3V0cHV0OiBcIklycmlnYXRpb24gbmVlZFwiLFxyXG4gICAgZ3VpZGFuY2U6IFwiQ2hlY2sgbWVhc3VyZWQgZmllbGQgbW9pc3R1cmUgYW5kIG5lYXItdGVybSByYWluIGJlZm9yZSBzY2hlZHVsaW5nIGlycmlnYXRpb24uXCIsXHJcbiAgICBmaWVsZHM6IFtcclxuICAgICAgc2VsZWN0RmllbGQoXCJTb2lsX1R5cGVcIiwgXCJTb2lsIHR5cGVcIiwgXCJDbGF5XCIsIFtcIkNsYXlcIiwgXCJMb2FteVwiLCBcIlNhbmR5XCIsIFwiU2lsdFwiXSksXHJcbiAgICAgIG51bWJlckZpZWxkKFwiU29pbF9wSFwiLCBcIlNvaWwgcEhcIiwgNi4xNCwgMCwgMTQpLCBudW1iZXJGaWVsZChcIlNvaWxfTW9pc3R1cmVcIiwgXCJTb2lsIG1vaXN0dXJlICglKVwiLCAzNi40OCwgMCwgMTAwKSxcclxuICAgICAgbnVtYmVyRmllbGQoXCJPcmdhbmljX0NhcmJvblwiLCBcIk9yZ2FuaWMgY2FyYm9uXCIsIDAuNDIsIDAsIDEwKSwgbnVtYmVyRmllbGQoXCJFbGVjdHJpY2FsX0NvbmR1Y3Rpdml0eVwiLCBcIkVsZWN0cmljYWwgY29uZHVjdGl2aXR5XCIsIDIuMTcsIDAsIDEwMCksXHJcbiAgICAgIG51bWJlckZpZWxkKFwiVGVtcGVyYXR1cmVfQ1wiLCBcIlRlbXBlcmF0dXJlICjCsEMpXCIsIDIxLjksIC0yMCwgNjApLCBudW1iZXJGaWVsZChcIkh1bWlkaXR5XCIsIFwiSHVtaWRpdHkgKCUpXCIsIDMxLjE5LCAwLCAxMDApLFxyXG4gICAgICBudW1iZXJGaWVsZChcIlJhaW5mYWxsX21tXCIsIFwiUmFpbmZhbGwgKG1tKVwiLCAxMTY3LjcpLCBudW1iZXJGaWVsZChcIlN1bmxpZ2h0X0hvdXJzXCIsIFwiU3VubGlnaHQgaG91cnNcIiwgNC4wMSwgMCwgMjQpLFxyXG4gICAgICBudW1iZXJGaWVsZChcIldpbmRfU3BlZWRfa21oXCIsIFwiV2luZCBzcGVlZCAoa20vaClcIiwgMS45NywgMCwgMzAwKSxcclxuICAgICAgc2VsZWN0RmllbGQoXCJDcm9wX1R5cGVcIiwgXCJDcm9wXCIsIFwiV2hlYXRcIiwgW1wiQ290dG9uXCIsIFwiTWFpemVcIiwgXCJQb3RhdG9cIiwgXCJSaWNlXCIsIFwiU3VnYXJjYW5lXCIsIFwiV2hlYXRcIl0pLFxyXG4gICAgICBzZWxlY3RGaWVsZChcIkNyb3BfR3Jvd3RoX1N0YWdlXCIsIFwiR3Jvd3RoIHN0YWdlXCIsIFwiVmVnZXRhdGl2ZVwiLCBbXCJGbG93ZXJpbmdcIiwgXCJIYXJ2ZXN0XCIsIFwiU293aW5nXCIsIFwiVmVnZXRhdGl2ZVwiXSksXHJcbiAgICAgIHNlbGVjdEZpZWxkKFwiU2Vhc29uXCIsIFwiU2Vhc29uXCIsIFwiUmFiaVwiLCBbXCJLaGFyaWZcIiwgXCJSYWJpXCIsIFwiWmFpZFwiXSksXHJcbiAgICAgIHNlbGVjdEZpZWxkKFwiSXJyaWdhdGlvbl9UeXBlXCIsIFwiSXJyaWdhdGlvbiB0eXBlXCIsIFwiUmFpbmZlZFwiLCBbXCJDYW5hbFwiLCBcIkRyaXBcIiwgXCJSYWluZmVkXCIsIFwiU3ByaW5rbGVyXCJdKSxcclxuICAgICAgc2VsZWN0RmllbGQoXCJXYXRlcl9Tb3VyY2VcIiwgXCJXYXRlciBzb3VyY2VcIiwgXCJSZXNlcnZvaXJcIiwgW1wiR3JvdW5kd2F0ZXJcIiwgXCJSYWlud2F0ZXJcIiwgXCJSZXNlcnZvaXJcIiwgXCJSaXZlclwiXSksXHJcbiAgICAgIG51bWJlckZpZWxkKFwiRmllbGRfQXJlYV9oZWN0YXJlXCIsIFwiRmllbGQgYXJlYSAoaGVjdGFyZXMpXCIsIDQuNzMsIDAuMDEsIDEwMDAwKSxcclxuICAgICAgc2VsZWN0RmllbGQoXCJNdWxjaGluZ19Vc2VkXCIsIFwiTXVsY2hpbmcgdXNlZFwiLCBcIlllc1wiLCBbXCJOb1wiLCBcIlllc1wiXSksXHJcbiAgICAgIG51bWJlckZpZWxkKFwiUHJldmlvdXNfSXJyaWdhdGlvbl9tbVwiLCBcIlByZXZpb3VzIGlycmlnYXRpb24gKG1tKVwiLCAxLjk4KSxcclxuICAgICAgc2VsZWN0RmllbGQoXCJSZWdpb25cIiwgXCJSZWdpb25cIiwgXCJTb3V0aFwiLCBbXCJDZW50cmFsXCIsIFwiRWFzdFwiLCBcIk5vcnRoXCIsIFwiU291dGhcIiwgXCJXZXN0XCJdKSxcclxuICAgIF0sXHJcbiAgfSxcclxuICB7XHJcbiAgICBpZDogXCJwcmljZVwiLCB0aXRsZTogXCJQcmljZSBwcmVkaWN0aW9uXCIsIGljb246IFwiY2hhcnRcIiwgY29sb3I6IFwiZ29sZFwiLFxyXG4gICAgZGVzY3JpcHRpb246IFwiRXN0aW1hdGUgbW9kYWwgY29tbW9kaXR5IHByaWNlIGZyb20gdGhlIHByb3ZpZGVkIG1hcmtldCBhdHRyaWJ1dGVzLlwiLFxyXG4gICAgZW5kcG9pbnQ6IFwiL2FwaS9wcmljZS9wcmVkaWN0XCIsIG91dHB1dDogXCJFc3RpbWF0ZWQgbW9kYWwgcHJpY2VcIixcclxuICAgIGd1aWRhbmNlOiBcIlRyZWF0IHRoaXMgYXMgYSBoaXN0b3JpY2FsLW1vZGVsIGVzdGltYXRlIGFuZCBjb25maXJtIGN1cnJlbnQgbG9jYWwgbWFya2V0IHByaWNlcy5cIixcclxuICAgIGZpZWxkczogW1xyXG4gICAgICBkYXRlRmllbGQoXCJtb250aFwiLCBcIk1vbnRoXCIsIFwiMjAyNS0wMy0wMVwiKSxcclxuICAgICAgc2VsZWN0RmllbGQoXCJjb21tb2RpdHlfbmFtZVwiLCBcIkNvbW1vZGl0eVwiLCBcIk1haXplXCIsIFtcIkJhcmxleSAoSmF1KVwiLCBcIkNvY29udXRcIiwgXCJDb2ZmZWVcIiwgXCJDb3R0b25cIiwgXCJHaW5nZXIoRHJ5KVwiLCBcIkdyb3VuZG51dFwiLCBcIkpvd2FyKFNvcmdodW0pXCIsIFwiTWFpemVcIiwgXCJNaWxsZXRzXCIsIFwiUmljZVwiLCBcIlN1Z2FyXCIsIFwiU3VnYXJjYW5lXCIsIFwiU3VuZmxvd2VyXCIsIFwiVGVhXCIsIFwiVHVybWVyaWNcIiwgXCJXaGVhdFwiXSksXHJcbiAgICAgIHNlbGVjdEZpZWxkKFwic3RhdGVfbmFtZVwiLCBcIlN0YXRlXCIsIFwiSW5kaWFcIiwgW1wiSW5kaWFcIl0pLCBzZWxlY3RGaWVsZChcImRpc3RyaWN0X25hbWVcIiwgXCJEaXN0cmljdFwiLCBcIkFsbFwiLCBbXCJBbGxcIl0pLFxyXG4gICAgICBudW1iZXJGaWVsZChcImF2Z19taW5fcHJpY2VcIiwgXCJBdmVyYWdlIG1pbmltdW0gcHJpY2UgKOKCuSlcIiwgMjE5MS4yMyksXHJcbiAgICAgIG51bWJlckZpZWxkKFwiYXZnX21heF9wcmljZVwiLCBcIkF2ZXJhZ2UgbWF4aW11bSBwcmljZSAo4oK5KVwiLCAyNDAyLjk4KSxcclxuICAgICAgc2VsZWN0RmllbGQoXCJjYWxjdWxhdGlvblR5cGVcIiwgXCJDYWxjdWxhdGlvbiB0eXBlXCIsIFwiTW9udGhseVwiLCBbXCJNb250aGx5XCJdKSxcclxuICAgICAgbnVtYmVyRmllbGQoXCJjaGFuZ2VcIiwgXCJSZWNlbnQgY2hhbmdlICglKVwiLCAtMTQuNDMsIC0xMDAwMDAsIDEwMDAwMCksXHJcbiAgICBdLFxyXG4gIH0sXHJcbiAge1xyXG4gICAgaWQ6IFwieWllbGRcIiwgdGl0bGU6IFwiWWllbGQgcHJlZGljdGlvblwiLCBpY29uOiBcImNoYXJ0XCIsIGNvbG9yOiBcIm9yYW5nZVwiLFxyXG4gICAgZGVzY3JpcHRpb246IFwiRXN0aW1hdGUgeWllbGQgZnJvbSBjcm9wLCBmaWVsZCBzaXplLCBwbGFudGluZyBkYXRlIGFuZCBncm93aW5nIGlucHV0cy5cIixcclxuICAgIGVuZHBvaW50OiBcIi9hcGkveWllbGQvcHJlZGljdFwiLCBvdXRwdXQ6IFwiRXN0aW1hdGVkIHlpZWxkXCIsXHJcbiAgICBndWlkYW5jZTogXCJVc2UgdGhpcyBlc3RpbWF0ZSBmb3IgcGxhbm5pbmc7IGFjdHVhbCB5aWVsZCBkZXBlbmRzIG9uIGNvbmRpdGlvbnMgdGhyb3VnaCBoYXJ2ZXN0LlwiLFxyXG4gICAgZmllbGRzOiBbXHJcbiAgICAgIHNlbGVjdEZpZWxkKFwiQ3JvcF9UeXBlXCIsIFwiQ3JvcFwiLCBcIlNveWJlYW5cIiwgW1wiQ290dG9uXCIsIFwiR3JvdW5kbnV0XCIsIFwiTWFpemVcIiwgXCJPbmlvblwiLCBcIlBvdGF0b1wiLCBcIlJpY2VcIiwgXCJTb3liZWFuXCIsIFwiU3VnYXJjYW5lXCIsIFwiV2hlYXRcIl0pLFxyXG4gICAgICBudW1iZXJGaWVsZChcIkZpZWxkX1NpemVfaGVjdGFyZXNcIiwgXCJGaWVsZCBzaXplIChoZWN0YXJlcylcIiwgMS4wNCwgMC4wMSwgMTAwMDApLFxyXG4gICAgICBkYXRlRmllbGQoXCJQbGFudGluZ19EYXRlXCIsIFwiUGxhbnRpbmcgZGF0ZVwiLCBcIjIwMjUtMDYtMDhcIiksXHJcbiAgICAgIHNlbGVjdEZpZWxkKFwiU29pbF9UeXBlXCIsIFwiU29pbCB0eXBlXCIsIFwiTG9hbXlcIiwgW1wiQWxsdXZpYWxcIiwgXCJDaGFsa3lcIiwgXCJDbGF5XCIsIFwiTGF0ZXJpdGVcIiwgXCJMb2FteVwiLCBcIlBlYXR5XCIsIFwiU2FuZHlcIiwgXCJTaWx0eVwiXSksXHJcbiAgICAgIHNlbGVjdEZpZWxkKFwiRmVydGlsaXplcl9Vc2VkXCIsIFwiRmVydGlsaXplciB1c2VkXCIsIFwiVXJlYVwiLCBbXCJBbW1vbml1bSBTdWxwaGF0ZVwiLCBcIkJpb2ZlcnRpbGl6ZXJzXCIsIFwiQ29tcG9zdC9PcmdhbmljIE1hbnVyZVwiLCBcIkRBUFwiLCBcIk1PUFwiLCBcIk5QS1wiLCBcIlVyZWFcIl0pLFxyXG4gICAgICBzZWxlY3RGaWVsZChcIklycmlnYXRpb25fVHlwZVwiLCBcIklycmlnYXRpb24gdHlwZVwiLCBcIkZ1cnJvdy9DYW5hbCBpcnJpZ2F0aW9uXCIsIFtcIkRyaXAgSXJyaWdhdGlvblwiLCBcIkZsb29kIElycmlnYXRpb25cIiwgXCJGdXJyb3cvQ2FuYWwgaXJyaWdhdGlvblwiLCBcIlJhaW5mZWRcIiwgXCJTcHJpbmtsZXIgSXJyaWdhdGlvblwiXSksXHJcbiAgICBdLFxyXG4gIH0sXHJcbl07XHJcblxyXG5jb25zdCBpY29uUGF0aHMgPSB7XHJcbiAgZ3JpZDogPD48cmVjdCB4PVwiM1wiIHk9XCIzXCIgd2lkdGg9XCI3XCIgaGVpZ2h0PVwiN1wiIHJ4PVwiMVwiIC8+PHJlY3QgeD1cIjE0XCIgeT1cIjNcIiB3aWR0aD1cIjdcIiBoZWlnaHQ9XCI3XCIgcng9XCIxXCIgLz48cmVjdCB4PVwiM1wiIHk9XCIxNFwiIHdpZHRoPVwiN1wiIGhlaWdodD1cIjdcIiByeD1cIjFcIiAvPjxyZWN0IHg9XCIxNFwiIHk9XCIxNFwiIHdpZHRoPVwiN1wiIGhlaWdodD1cIjdcIiByeD1cIjFcIiAvPjwvPixcclxuICBzcHJvdXQ6IDw+PHBhdGggZD1cIk0xMiAyMVYxMVwiIC8+PHBhdGggZD1cIk0xMiAxNWMtMy44IDAtNi0yLjItNi02IDMuOCAwIDYgMi4yIDYgNlpcIiAvPjxwYXRoIGQ9XCJNMTIgMTJjMC0zLjggMi4yLTYgNi02IDAgMy44LTIuMiA2LTYgNlpcIiAvPjwvPixcclxuICBkcm9wbGV0OiA8cGF0aCBkPVwiTTEyIDMuNVM1LjggMTAuMSA1LjggMTQuN2E2LjIgNi4yIDAgMCAwIDEyLjQgMEMxOC4yIDEwLjEgMTIgMy41IDEyIDMuNVpcIiAvPixcclxuICBjaGFydDogPD48cGF0aCBkPVwiTTQgMTlWNVwiIC8+PHBhdGggZD1cIk00IDE5aDE2XCIgLz48cGF0aCBkPVwibTcgMTUgMy00IDMgMiA1LTZcIiAvPjwvPixcclxuICBsZWFmOiA8PjxwYXRoIGQ9XCJNMjAgNEMxMCA0IDQgOCA0IDE1YzAgMyAyIDUgNSA1IDcgMCAxMS02IDExLTE2WlwiIC8+PHBhdGggZD1cIk00IDIwYzMtNSA3LTggMTItMTBcIiAvPjwvPixcclxuICBhcnJvdzogPD48cGF0aCBkPVwiTTUgMTJoMTRcIiAvPjxwYXRoIGQ9XCJtMTMgNiA2IDYtNiA2XCIgLz48Lz4sXHJcbiAgc3VuOiA8PjxjaXJjbGUgY3g9XCIxMlwiIGN5PVwiMTJcIiByPVwiNFwiIC8+PHBhdGggZD1cIk0xMiAydjJNMTIgMjB2Mk00LjkgNC45bDEuNCAxLjRNMTcuNyAxNy43bDEuNCAxLjRNMiAxMmgyTTIwIDEyaDJNNC45IDE5LjFsMS40LTEuNE0xNy43IDYuM2wxLjQtMS40XCIgLz48Lz4sXHJcbn07XHJcblxyXG5mdW5jdGlvbiBJY29uKHsgbmFtZSwgc2l6ZSA9IDIwIH0pIHtcclxuICByZXR1cm4gPHN2ZyB3aWR0aD17c2l6ZX0gaGVpZ2h0PXtzaXplfSB2aWV3Qm94PVwiMCAwIDI0IDI0XCIgZmlsbD1cIm5vbmVcIiBzdHJva2U9XCJjdXJyZW50Q29sb3JcIiBzdHJva2VXaWR0aD1cIjEuOFwiIHN0cm9rZUxpbmVjYXA9XCJyb3VuZFwiIHN0cm9rZUxpbmVqb2luPVwicm91bmRcIiBhcmlhLWhpZGRlbj1cInRydWVcIj57aWNvblBhdGhzW25hbWVdfTwvc3ZnPjtcclxufVxyXG5cclxuYXN5bmMgZnVuY3Rpb24gZ2V0SlNPTihwYXRoKSB7XHJcbiAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChgJHtBUElfQkFTRV9VUkx9JHtwYXRofWApO1xyXG4gIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5qc29uKCk7XHJcbiAgaWYgKCFyZXNwb25zZS5vaykgdGhyb3cgbmV3IEVycm9yKHR5cGVvZiBkYXRhLmRldGFpbCA9PT0gXCJzdHJpbmdcIiA/IGRhdGEuZGV0YWlsIDogXCJUaGUgc2VydmljZSBjb3VsZCBub3QgY29tcGxldGUgdGhpcyByZXF1ZXN0LlwiKTtcclxuICByZXR1cm4gZGF0YTtcclxufVxyXG5cclxuZnVuY3Rpb24gZm9ybWF0UHJlZGljdGlvbihzZXJ2aWNlLCB2YWx1ZSkge1xyXG4gIGlmIChzZXJ2aWNlLmlkID09PSBcInByaWNlXCIpIHJldHVybiBuZXcgSW50bC5OdW1iZXJGb3JtYXQoXCJlbi1JTlwiLCB7IHN0eWxlOiBcImN1cnJlbmN5XCIsIGN1cnJlbmN5OiBcIklOUlwiLCBtYXhpbXVtRnJhY3Rpb25EaWdpdHM6IDIgfSkuZm9ybWF0KE51bWJlcih2YWx1ZSkpO1xyXG4gIGlmIChzZXJ2aWNlLmlkID09PSBcInlpZWxkXCIpIHJldHVybiBgJHtOdW1iZXIodmFsdWUpLnRvRml4ZWQoMil9IHQvaGFgO1xyXG4gIHJldHVybiBTdHJpbmcodmFsdWUpLnJlcGxhY2UoL1xcYlxcdy9nLCAobGV0dGVyKSA9PiBsZXR0ZXIudG9VcHBlckNhc2UoKSk7XHJcbn1cclxuXHJcbmZ1bmN0aW9uIFByZWRpY3Rpb25QYWdlKHsgc2VydmljZSwgb25CYWNrIH0pIHtcclxuICBjb25zdCBbdmFsdWVzLCBzZXRWYWx1ZXNdID0gdXNlU3RhdGUoKCkgPT4gT2JqZWN0LmZyb21FbnRyaWVzKHNlcnZpY2UuZmllbGRzLm1hcCgoZmllbGQpID0+IFtmaWVsZC5rZXksIGZpZWxkLnZhbHVlXSkpKTtcclxuICBjb25zdCBbcHJlZGljdGlvbiwgc2V0UHJlZGljdGlvbl0gPSB1c2VTdGF0ZShudWxsKTtcclxuICBjb25zdCBbZXJyb3IsIHNldEVycm9yXSA9IHVzZVN0YXRlKFwiXCIpO1xyXG4gIGNvbnN0IFtsb2FkaW5nLCBzZXRMb2FkaW5nXSA9IHVzZVN0YXRlKGZhbHNlKTtcclxuXHJcbiAgY29uc3Qgc3VibWl0ID0gYXN5bmMgKGV2ZW50KSA9PiB7XHJcbiAgICBldmVudC5wcmV2ZW50RGVmYXVsdCgpO1xyXG4gICAgc2V0TG9hZGluZyh0cnVlKTtcclxuICAgIHNldEVycm9yKFwiXCIpO1xyXG4gICAgdHJ5IHtcclxuICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChgJHtBUElfQkFTRV9VUkx9JHtzZXJ2aWNlLmVuZHBvaW50fWAsIHtcclxuICAgICAgICBtZXRob2Q6IFwiUE9TVFwiLFxyXG4gICAgICAgIGhlYWRlcnM6IHsgXCJDb250ZW50LVR5cGVcIjogXCJhcHBsaWNhdGlvbi9qc29uXCIgfSxcclxuICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeSh2YWx1ZXMpLFxyXG4gICAgICB9KTtcclxuICAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlc3BvbnNlLmpzb24oKTtcclxuICAgICAgaWYgKCFyZXNwb25zZS5vaykgdGhyb3cgbmV3IEVycm9yKHR5cGVvZiBkYXRhLmRldGFpbCA9PT0gXCJzdHJpbmdcIiA/IGRhdGEuZGV0YWlsIDogXCJDaGVjayB0aGUgc3VibWl0dGVkIHZhbHVlcyBhbmQgdHJ5IGFnYWluLlwiKTtcclxuICAgICAgc2V0UHJlZGljdGlvbihkYXRhLnByZWRpY3Rpb24pO1xyXG4gICAgfSBjYXRjaCAocmVxdWVzdEVycm9yKSB7XHJcbiAgICAgIHNldEVycm9yKHJlcXVlc3RFcnJvci5tZXNzYWdlKTtcclxuICAgICAgc2V0UHJlZGljdGlvbihudWxsKTtcclxuICAgIH0gZmluYWxseSB7XHJcbiAgICAgIHNldExvYWRpbmcoZmFsc2UpO1xyXG4gICAgfVxyXG4gIH07XHJcblxyXG4gIHJldHVybiAoXHJcbiAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJzZXJ2aWNlLXBhZ2VcIj5cclxuICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJiYWNrLWJ1dHRvblwiIG9uQ2xpY2s9e29uQmFja30+PEljb24gbmFtZT1cImFycm93XCIgc2l6ZT17MTZ9IC8+IEFsbCBzZXJ2aWNlczwvYnV0dG9uPlxyXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInNlcnZpY2UtcGFnZS1oZWFkZXJcIj48ZGl2IGNsYXNzTmFtZT17YHNlcnZpY2UtcGFnZS1pY29uICR7c2VydmljZS5jb2xvcn1gfT48SWNvbiBuYW1lPXtzZXJ2aWNlLmljb259IHNpemU9ezI4fSAvPjwvZGl2PjxkaXY+PHNwYW4gY2xhc3NOYW1lPVwic2VjdGlvbi1raWNrZXJcIj5NT0RFTCBXT1JLU1BBQ0U8L3NwYW4+PGgxPntzZXJ2aWNlLnRpdGxlfTwvaDE+PHA+e3NlcnZpY2UuZGVzY3JpcHRpb259PC9wPjwvZGl2PjwvZGl2PlxyXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInNlcnZpY2UtbGF5b3V0XCI+XHJcbiAgICAgICAgPGZvcm0gY2xhc3NOYW1lPVwiaW5wdXQtY2FyZFwiIG9uU3VibWl0PXtzdWJtaXR9PlxyXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJpbnB1dC1jYXJkLWhlYWRpbmdcIj48ZGl2PjxzcGFuIGNsYXNzTmFtZT1cInNlY3Rpb24ta2lja2VyXCI+TU9ERUwgSU5QVVRTPC9zcGFuPjxoMj5GaWVsZCBhbmQgbWFya2V0IGRhdGE8L2gyPjwvZGl2PjxzcGFuIGNsYXNzTmFtZT1cInN0ZXAtY291bnRcIj57c2VydmljZS5maWVsZHMubGVuZ3RofSBpbnB1dHM8L3NwYW4+PC9kaXY+XHJcbiAgICAgICAgICA8cCBjbGFzc05hbWU9XCJzYW1wbGUtbm90ZVwiPlByZWZpbGxlZCB3aXRoIGFuIGV4YW1wbGUgcm93IGZyb20gdGhpcyBwcm9qZWN0J3MgZGF0YXNldC4gRWRpdCB2YWx1ZXMgdG8gbWF0Y2ggeW91ciBjYXNlLjwvcD5cclxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwic2VydmljZS1mb3JtLWdyaWRcIj57c2VydmljZS5maWVsZHMubWFwKChmaWVsZCkgPT4gPGxhYmVsIGNsYXNzTmFtZT1cImZpZWxkLWxhYmVsXCIga2V5PXtmaWVsZC5rZXl9PntmaWVsZC5sYWJlbH17ZmllbGQudHlwZSA9PT0gXCJzZWxlY3RcIiA/IDxzZWxlY3QgcmVxdWlyZWQgdmFsdWU9e3ZhbHVlc1tmaWVsZC5rZXldfSBvbkNoYW5nZT17KGV2ZW50KSA9PiB7IHNldFZhbHVlcygoY3VycmVudCkgPT4gKHsgLi4uY3VycmVudCwgW2ZpZWxkLmtleV06IGV2ZW50LnRhcmdldC52YWx1ZSB9KSk7IHNldFByZWRpY3Rpb24obnVsbCk7IHNldEVycm9yKFwiXCIpOyB9fT57ZmllbGQub3B0aW9ucy5tYXAoKG9wdGlvbikgPT4gPG9wdGlvbiBrZXk9e29wdGlvbn0gdmFsdWU9e29wdGlvbn0+e29wdGlvbn08L29wdGlvbj4pfTwvc2VsZWN0PiA6IDxpbnB1dCByZXF1aXJlZCB0eXBlPXtmaWVsZC50eXBlfSBtaW49e2ZpZWxkLm1pbn0gbWF4PXtmaWVsZC5tYXh9IHN0ZXA9e2ZpZWxkLnN0ZXB9IHZhbHVlPXt2YWx1ZXNbZmllbGQua2V5XX0gb25DaGFuZ2U9eyhldmVudCkgPT4geyBzZXRWYWx1ZXMoKGN1cnJlbnQpID0+ICh7IC4uLmN1cnJlbnQsIFtmaWVsZC5rZXldOiBldmVudC50YXJnZXQudmFsdWUgfSkpOyBzZXRQcmVkaWN0aW9uKG51bGwpOyBzZXRFcnJvcihcIlwiKTsgfX0gLz59PC9sYWJlbD4pfTwvZGl2PlxyXG4gICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJwcmltYXJ5LXNlcnZpY2UtYnV0dG9uXCIgdHlwZT1cInN1Ym1pdFwiIGRpc2FibGVkPXtsb2FkaW5nfT57bG9hZGluZyA/IFwiUnVubmluZyBtb2RlbOKAplwiIDogXCJHZW5lcmF0ZSBwcmVkaWN0aW9uXCJ9PEljb24gbmFtZT1cImFycm93XCIgc2l6ZT17MTd9IC8+PC9idXR0b24+XHJcbiAgICAgICAgICB7ZXJyb3IgJiYgPHAgY2xhc3NOYW1lPVwiZm9ybS1lcnJvclwiIHJvbGU9XCJhbGVydFwiPntlcnJvcn08L3A+fVxyXG4gICAgICAgIDwvZm9ybT5cclxuICAgICAgICA8YXNpZGUgY2xhc3NOYW1lPXtgc2VydmljZS1yZXN1bHQgJHtwcmVkaWN0aW9uICE9PSBudWxsID8gXCJyZXN1bHQtcmVhZHlcIiA6IFwiXCJ9YH0gYXJpYS1saXZlPVwicG9saXRlXCI+XHJcbiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJyZXN1bHQtbGFiZWxcIj5NT0RFTCBSRVNVTFQ8L3NwYW4+PGRpdiBjbGFzc05hbWU9e2ByZXN1bHQtb3JiICR7c2VydmljZS5jb2xvcn1gfT48SWNvbiBuYW1lPXtzZXJ2aWNlLmljb259IHNpemU9ezM0fSAvPjwvZGl2PlxyXG4gICAgICAgICAgPHAgY2xhc3NOYW1lPVwicmVzdWx0LWludHJvXCI+e3ByZWRpY3Rpb24gIT09IG51bGwgPyBzZXJ2aWNlLm91dHB1dCA6IFwiUmVzdWx0IGFwcGVhcnMgYWZ0ZXIgcHJlZGljdGlvblwifTwvcD5cclxuICAgICAgICAgIDxzdHJvbmc+e3ByZWRpY3Rpb24gIT09IG51bGwgPyBmb3JtYXRQcmVkaWN0aW9uKHNlcnZpY2UsIHByZWRpY3Rpb24pIDogXCLigJRcIn08L3N0cm9uZz5cclxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicmVjb21tZW5kYXRpb24tbm90ZVwiPjxzcGFuPk5leHQgc3RlcDwvc3Bhbj48cD57cHJlZGljdGlvbiAhPT0gbnVsbCA/IHNlcnZpY2UuZ3VpZGFuY2UgOiBcIlN1Ym1pdCB0aGUgaW5wdXRzIHRvIGdldCBhbiBvdXRwdXQgZnJvbSB0aGUgdHJhaW5lZCBtb2RlbC5cIn08L3A+PC9kaXY+XHJcbiAgICAgICAgICA8c21hbGwgY2xhc3NOYW1lPVwiZnJvbnRlbmQtbm90ZVwiPk1vZGVsIG91dHB1dCBpcyBkZWNpc2lvbiBzdXBwb3J0LCBub3QgYSBndWFyYW50ZWVkIG91dGNvbWUuPC9zbWFsbD5cclxuICAgICAgICA8L2FzaWRlPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvc2VjdGlvbj5cclxuICApO1xyXG59XHJcblxyXG5mdW5jdGlvbiBXZWF0aGVyUGFnZSh7IHdlYXRoZXIsIGxvYWRpbmcsIGVycm9yLCBvblJldHJ5IH0pIHtcclxuICByZXR1cm4gKFxyXG4gICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwid29ya3NwYWNlLXBhZ2VcIj5cclxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJ3b3Jrc3BhY2UtcGFnZS1oZWFkaW5nXCI+PGRpdj48c3BhbiBjbGFzc05hbWU9XCJzZWN0aW9uLWtpY2tlclwiPldFQVRIRVI8L3NwYW4+PGgxPkxvY2FsIGNvbmRpdGlvbnM8L2gxPjxwPkN1cnJlbnQgY29uZGl0aW9ucyBhbmQgZm9yZWNhc3Qgc3VwcGxpZWQgYnkgT3BlbldlYXRoZXIuPC9wPjwvZGl2PjxidXR0b24gY2xhc3NOYW1lPVwiZmlsdGVyLWJ1dHRvblwiIG9uQ2xpY2s9e29uUmV0cnl9IGRpc2FibGVkPXtsb2FkaW5nfT57bG9hZGluZyA/IFwiVXBkYXRpbmfigKZcIiA6IFwiUmVmcmVzaFwifTwvYnV0dG9uPjwvZGl2PlxyXG4gICAgICB7ZXJyb3IgJiYgPGRpdiBjbGFzc05hbWU9XCJzdGF0ZS1tZXNzYWdlIGVycm9yLXN0YXRlXCIgcm9sZT1cImFsZXJ0XCI+PHN0cm9uZz5XZWF0aGVyIHVuYXZhaWxhYmxlPC9zdHJvbmc+PHA+e2Vycm9yfTwvcD48L2Rpdj59XHJcbiAgICAgIHtsb2FkaW5nICYmICF3ZWF0aGVyICYmIDxkaXYgY2xhc3NOYW1lPVwic3RhdGUtbWVzc2FnZVwiPkxvYWRpbmcgY3VycmVudCBjb25kaXRpb25z4oCmPC9kaXY+fVxyXG4gICAgICB7d2VhdGhlciAmJiA8PjxkaXYgY2xhc3NOYW1lPVwid2VhdGhlci1kYXNoYm9hcmRcIj48ZGl2IGNsYXNzTmFtZT1cImN1cnJlbnQtd2VhdGhlclwiPjxkaXYgY2xhc3NOYW1lPVwid2VhdGhlci1zdW4gbGFyZ2VcIj48SWNvbiBuYW1lPVwic3VuXCIgc2l6ZT17Mzl9IC8+PC9kaXY+PGRpdj48c3Ryb25nPnt3ZWF0aGVyLmN1cnJlbnQudGVtcGVyYXR1cmV9wrA8L3N0cm9uZz48c3Bhbj57d2VhdGhlci5jdXJyZW50LmRlc2NyaXB0aW9ufTwvc3Bhbj48c21hbGw+e3dlYXRoZXIubG9jYXRpb259e3dlYXRoZXIuY291bnRyeSA/IGAsICR7d2VhdGhlci5jb3VudHJ5fWAgOiBcIlwifTwvc21hbGw+PC9kaXY+PC9kaXY+PGRpdiBjbGFzc05hbWU9XCJ3ZWF0aGVyLXJlYWRpbmdcIj48c3Bhbj5IdW1pZGl0eTwvc3Bhbj48c3Ryb25nPnt3ZWF0aGVyLmN1cnJlbnQuaHVtaWRpdHl9JTwvc3Ryb25nPjwvZGl2PjxkaXYgY2xhc3NOYW1lPVwid2VhdGhlci1yZWFkaW5nXCI+PHNwYW4+V2luZCBzcGVlZDwvc3Bhbj48c3Ryb25nPnt3ZWF0aGVyLmN1cnJlbnQud2luZF9zcGVlZH0ga20vaDwvc3Ryb25nPjwvZGl2PjxkaXYgY2xhc3NOYW1lPVwid2VhdGhlci1yZWFkaW5nXCI+PHNwYW4+UmFpbiBjaGFuY2U8L3NwYW4+PHN0cm9uZz57d2VhdGhlci5jdXJyZW50LnJhaW5fcHJvYmFiaWxpdHl9JTwvc3Ryb25nPjwvZGl2PjwvZGl2PlxyXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZm9yZWNhc3QtY2FyZFwiPjxkaXYgY2xhc3NOYW1lPVwicGFuZWwtaGVhZGluZ1wiPjxkaXY+PHNwYW4gY2xhc3NOYW1lPVwic2VjdGlvbi1raWNrZXJcIj5GT1JFQ0FTVDwvc3Bhbj48aDM+VXBjb21pbmcgY29uZGl0aW9uczwvaDM+PC9kaXY+PC9kaXY+PGRpdiBjbGFzc05hbWU9XCJmb3JlY2FzdC1yb3dcIj57d2VhdGhlci5mb3JlY2FzdC5tYXAoKGRheSkgPT4gPGRpdiBrZXk9e2RheS5kYXRlfT48c3Bhbj57bmV3IERhdGUoYCR7ZGF5LmRhdGV9VDEyOjAwOjAwYCkudG9Mb2NhbGVEYXRlU3RyaW5nKHVuZGVmaW5lZCwgeyB3ZWVrZGF5OiBcInNob3J0XCIgfSl9PC9zcGFuPjxJY29uIG5hbWU9e2RheS5yYWluX3Byb2JhYmlsaXR5ID4gNDAgPyBcImRyb3BsZXRcIiA6IFwic3VuXCJ9IHNpemU9ezIyfSAvPjxzdHJvbmc+e2RheS5oaWdofcKwIC8ge2RheS5sb3d9wrA8L3N0cm9uZz48c21hbGw+e2RheS5yYWluX3Byb2JhYmlsaXR5fSUgcmFpbjwvc21hbGw+PC9kaXY+KX08L2Rpdj48L2Rpdj5cclxuICAgICAgPC8+fVxyXG4gICAgPC9zZWN0aW9uPlxyXG4gICk7XHJcbn1cclxuXHJcbmZ1bmN0aW9uIEFwcCgpIHtcclxuICBjb25zdCBbcGFnZSwgc2V0UGFnZV0gPSB1c2VTdGF0ZShcIm92ZXJ2aWV3XCIpO1xyXG4gIGNvbnN0IFtzZWxlY3RlZFNlcnZpY2UsIHNldFNlbGVjdGVkU2VydmljZV0gPSB1c2VTdGF0ZShudWxsKTtcclxuICBjb25zdCBbaGVhbHRoLCBzZXRIZWFsdGhdID0gdXNlU3RhdGUobnVsbCk7XHJcbiAgY29uc3QgW2hlYWx0aExvYWRpbmcsIHNldEhlYWx0aExvYWRpbmddID0gdXNlU3RhdGUodHJ1ZSk7XHJcbiAgY29uc3QgW2hlYWx0aEVycm9yLCBzZXRIZWFsdGhFcnJvcl0gPSB1c2VTdGF0ZShcIlwiKTtcclxuICBjb25zdCBbd2VhdGhlciwgc2V0V2VhdGhlcl0gPSB1c2VTdGF0ZShudWxsKTtcclxuICBjb25zdCBbd2VhdGhlckVycm9yLCBzZXRXZWF0aGVyRXJyb3JdID0gdXNlU3RhdGUoXCJcIik7XHJcbiAgY29uc3QgW3dlYXRoZXJMb2FkaW5nLCBzZXRXZWF0aGVyTG9hZGluZ10gPSB1c2VTdGF0ZShmYWxzZSk7XHJcblxyXG4gIGNvbnN0IGxvYWRXZWF0aGVyID0gYXN5bmMgKCkgPT4ge1xyXG4gICAgc2V0V2VhdGhlckxvYWRpbmcodHJ1ZSk7XHJcbiAgICBzZXRXZWF0aGVyRXJyb3IoXCJcIik7XHJcbiAgICB0cnkge1xyXG4gICAgICBzZXRXZWF0aGVyKGF3YWl0IGdldEpTT04oXCIvYXBpL3dlYXRoZXJcIikpO1xyXG4gICAgfSBjYXRjaCAocmVxdWVzdEVycm9yKSB7XHJcbiAgICAgIHNldFdlYXRoZXJFcnJvcihyZXF1ZXN0RXJyb3IubWVzc2FnZSk7XHJcbiAgICB9IGZpbmFsbHkge1xyXG4gICAgICBzZXRXZWF0aGVyTG9hZGluZyhmYWxzZSk7XHJcbiAgICB9XHJcbiAgfTtcclxuXHJcbiAgdXNlRWZmZWN0KCgpID0+IHtcclxuICAgIGdldEpTT04oXCIvaGVhbHRoXCIpLnRoZW4oc2V0SGVhbHRoKS5jYXRjaCgocmVxdWVzdEVycm9yKSA9PiBzZXRIZWFsdGhFcnJvcihyZXF1ZXN0RXJyb3IubWVzc2FnZSkpLmZpbmFsbHkoKCkgPT4gc2V0SGVhbHRoTG9hZGluZyhmYWxzZSkpO1xyXG4gICAgbG9hZFdlYXRoZXIoKTtcclxuICB9LCBbXSk7XHJcblxyXG4gIGNvbnN0IGdvT3ZlcnZpZXcgPSAoKSA9PiB7XHJcbiAgICBzZXRTZWxlY3RlZFNlcnZpY2UobnVsbCk7XHJcbiAgICBzZXRQYWdlKFwib3ZlcnZpZXdcIik7XHJcbiAgfTtcclxuXHJcbiAgcmV0dXJuIChcclxuICAgIDxkaXYgY2xhc3NOYW1lPVwiYXBwLXNoZWxsXCI+XHJcbiAgICAgIDxhc2lkZSBjbGFzc05hbWU9XCJzaWRlYmFyXCI+XHJcbiAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJicmFuZFwiIG9uQ2xpY2s9e2dvT3ZlcnZpZXd9IGFyaWEtbGFiZWw9XCJBZ3JpU2Vuc2UgQUkgb3ZlcnZpZXdcIj48c3BhbiBjbGFzc05hbWU9XCJicmFuZC1tYXJrXCI+PEljb24gbmFtZT1cImxlYWZcIiBzaXplPXsyMn0gLz48L3NwYW4+PHNwYW4+QWdyaVNlbnNlIDxiPkFJPC9iPjwvc3Bhbj48L2J1dHRvbj5cclxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIndvcmtzcGFjZS1sYWJlbFwiPldPUktTUEFDRTwvZGl2PlxyXG4gICAgICAgIDxuYXYgY2xhc3NOYW1lPVwibWFpbi1uYXZcIiBhcmlhLWxhYmVsPVwiTWFpbiBuYXZpZ2F0aW9uXCI+PGJ1dHRvbiBjbGFzc05hbWU9e2BuYXYtaXRlbSAke3BhZ2UgPT09IFwib3ZlcnZpZXdcIiAmJiAhc2VsZWN0ZWRTZXJ2aWNlID8gXCJhY3RpdmVcIiA6IFwiXCJ9YH0gb25DbGljaz17Z29PdmVydmlld30+PEljb24gbmFtZT1cImdyaWRcIiBzaXplPXsxOX0gLz48c3Bhbj5PdmVydmlldzwvc3Bhbj48L2J1dHRvbj48YnV0dG9uIGNsYXNzTmFtZT17YG5hdi1pdGVtICR7cGFnZSA9PT0gXCJ3ZWF0aGVyXCIgPyBcImFjdGl2ZVwiIDogXCJcIn1gfSBvbkNsaWNrPXsoKSA9PiB7IHNldFNlbGVjdGVkU2VydmljZShudWxsKTsgc2V0UGFnZShcIndlYXRoZXJcIik7IH19PjxJY29uIG5hbWU9XCJzdW5cIiBzaXplPXsxOX0gLz48c3Bhbj5XZWF0aGVyPC9zcGFuPjwvYnV0dG9uPjwvbmF2PlxyXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwic2lkZWJhci1ib3R0b21cIj48ZGl2IGNsYXNzTmFtZT1cInNpZGViYXItbm90ZVwiPjxJY29uIG5hbWU9XCJzcHJvdXRcIiBzaXplPXsyMH0gLz48c3Ryb25nPkRlY2lzaW9uIHN1cHBvcnQgZm9yIGFncmljdWx0dXJlPC9zdHJvbmc+PHA+Rml2ZSB0cmFpbmVkIG1vZGVscyBhbmQgbGl2ZSB3ZWF0aGVyIGluIG9uZSB3b3Jrc3BhY2UuPC9wPjwvZGl2PjwvZGl2PlxyXG4gICAgICA8L2FzaWRlPlxyXG4gICAgICA8bWFpbiBjbGFzc05hbWU9XCJtYWluLWNvbnRlbnRcIj5cclxuICAgICAgICA8aGVhZGVyIGNsYXNzTmFtZT1cInRvcGJhclwiPjxidXR0b24gY2xhc3NOYW1lPVwibW9iaWxlLW1lbnVcIiBvbkNsaWNrPXtnb092ZXJ2aWV3fSBhcmlhLWxhYmVsPVwiR28gdG8gb3ZlcnZpZXdcIj48SWNvbiBuYW1lPVwiZ3JpZFwiIC8+PC9idXR0b24+PGRpdiBjbGFzc05hbWU9XCJicmVhZGNydW1iXCI+PHNwYW4+QWdyaVNlbnNlIEFJPC9zcGFuPjxiPi88L2I+PHN0cm9uZz57c2VsZWN0ZWRTZXJ2aWNlPy50aXRsZSB8fCAocGFnZSA9PT0gXCJ3ZWF0aGVyXCIgPyBcIldlYXRoZXJcIiA6IFwiT3ZlcnZpZXdcIil9PC9zdHJvbmc+PC9kaXY+PGRpdiBjbGFzc05hbWU9XCJ0b3AtYWN0aW9uc1wiPjxzcGFuIGNsYXNzTmFtZT17YHN5bmMtc3RhdHVzICR7aGVhbHRoPy5zdGF0dXMgPT09IFwib2tcIiA/IFwib25saW5lXCIgOiBcIlwifWB9PjxpIC8+e2hlYWx0aD8uc3RhdHVzID09PSBcIm9rXCIgPyBcIkFQSSBjb25uZWN0ZWRcIiA6IGhlYWx0aExvYWRpbmcgPyBcIkNoZWNraW5nIEFQSVwiIDogXCJBUEkgdW5hdmFpbGFibGVcIn08L3NwYW4+PGRpdiBjbGFzc05hbWU9XCJ1c2VyLWJhZGdlXCI+PHNwYW4gY2xhc3NOYW1lPVwidXNlci1hdmF0YXJcIj5SRzwvc3Bhbj48c3BhbiBjbGFzc05hbWU9XCJ1c2VyLW5hbWVcIj5SaXRlc2ggR2lyaGU8L3NwYW4+PC9kaXY+PC9kaXY+PC9oZWFkZXI+XHJcbiAgICAgICAgPG5hdiBjbGFzc05hbWU9XCJtb2JpbGUtbmF2XCIgYXJpYS1sYWJlbD1cIk1vYmlsZSBuYXZpZ2F0aW9uXCI+PGJ1dHRvbiBjbGFzc05hbWU9eyFzZWxlY3RlZFNlcnZpY2UgJiYgcGFnZSA9PT0gXCJvdmVydmlld1wiID8gXCJhY3RpdmVcIiA6IFwiXCJ9IG9uQ2xpY2s9e2dvT3ZlcnZpZXd9Pk92ZXJ2aWV3PC9idXR0b24+PGJ1dHRvbiBjbGFzc05hbWU9e3BhZ2UgPT09IFwid2VhdGhlclwiID8gXCJhY3RpdmVcIiA6IFwiXCJ9IG9uQ2xpY2s9eygpID0+IHsgc2V0U2VsZWN0ZWRTZXJ2aWNlKG51bGwpOyBzZXRQYWdlKFwid2VhdGhlclwiKTsgfX0+V2VhdGhlcjwvYnV0dG9uPjwvbmF2PlxyXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFnZS1jb250ZW50XCI+e3NlbGVjdGVkU2VydmljZSA/IDxQcmVkaWN0aW9uUGFnZSBrZXk9e3NlbGVjdGVkU2VydmljZS5pZH0gc2VydmljZT17c2VsZWN0ZWRTZXJ2aWNlfSBvbkJhY2s9e2dvT3ZlcnZpZXd9IC8+IDogcGFnZSA9PT0gXCJ3ZWF0aGVyXCIgPyA8V2VhdGhlclBhZ2Ugd2VhdGhlcj17d2VhdGhlcn0gbG9hZGluZz17d2VhdGhlckxvYWRpbmd9IGVycm9yPXt3ZWF0aGVyRXJyb3J9IG9uUmV0cnk9e2xvYWRXZWF0aGVyfSAvPiA6IDxzZWN0aW9uIGNsYXNzTmFtZT1cIndvcmtzcGFjZS1wYWdlXCI+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIndvcmtzcGFjZS1wYWdlLWhlYWRpbmdcIj48ZGl2PjxzcGFuIGNsYXNzTmFtZT1cInNlY3Rpb24ta2lja2VyXCI+QUdSSUNVTFRVUkUgSU5URUxMSUdFTkNFPC9zcGFuPjxoMT5BZ3JpU2Vuc2UgQUk8L2gxPjxwPk1vdmUgZnJvbSBmaWVsZCBpbnB1dHMgdG8gbW9kZWwgb3V0cHV0IGFuZCBhIHByYWN0aWNhbCBuZXh0IHN0ZXAuPC9wPjwvZGl2PjxzcGFuIGNsYXNzTmFtZT17YGxpdmUtY2hpcCAke2hlYWx0aD8uc3RhdHVzID09PSBcIm9rXCIgPyBcImhlYWx0aHlcIiA6IFwiXCJ9YH0+PGkgLz57aGVhbHRoPy5zdGF0dXMgPT09IFwib2tcIiA/IFwiQVBJIG9ubGluZVwiIDogaGVhbHRoTG9hZGluZyA/IFwiQ29ubmVjdGluZ1wiIDogXCJBUEkgdW5hdmFpbGFibGVcIn08L3NwYW4+PC9kaXY+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbm5lY3Rpb24tZ3JpZFwiPjxhcnRpY2xlIGNsYXNzTmFtZT1cImNvbm5lY3Rpb24tY2FyZFwiPjxzcGFuPkFQSSBzdGF0dXM8L3NwYW4+PHN0cm9uZz57aGVhbHRoPy5zdGF0dXMgPT09IFwib2tcIiA/IFwiT25saW5lXCIgOiBoZWFsdGhMb2FkaW5nID8gXCJDaGVja2luZ1wiIDogXCJVbmF2YWlsYWJsZVwifTwvc3Ryb25nPjxzbWFsbD57aGVhbHRoPy5zZXJ2aWNlIHx8IGhlYWx0aEVycm9yIHx8IFwiV2FpdGluZyBmb3IgYmFja2VuZCBoZWFsdGggY2hlY2tcIn08L3NtYWxsPjwvYXJ0aWNsZT48YXJ0aWNsZSBjbGFzc05hbWU9XCJjb25uZWN0aW9uLWNhcmRcIj48c3Bhbj5Nb2RlbCBhcnRpZmFjdHM8L3NwYW4+PHN0cm9uZz57aGVhbHRoID8gYCR7aGVhbHRoLm1vZGVsc19hdmFpbGFibGV9IC8gJHtoZWFsdGgubW9kZWxzX3RvdGFsfWAgOiBcIuKAlFwifTwvc3Ryb25nPjxzbWFsbD5BdmFpbGFibGUgdG8gc2VydmUgcHJlZGljdGlvbnM8L3NtYWxsPjwvYXJ0aWNsZT48YXJ0aWNsZSBjbGFzc05hbWU9XCJjb25uZWN0aW9uLWNhcmRcIj48c3Bhbj5XZWF0aGVyIHNvdXJjZTwvc3Bhbj48c3Ryb25nPnt3ZWF0aGVyID8gYCR7d2VhdGhlci5jdXJyZW50LnRlbXBlcmF0dXJlfcKwYCA6IHdlYXRoZXJMb2FkaW5nID8gXCJMb2FkaW5nXCIgOiBcIlVuYXZhaWxhYmxlXCJ9PC9zdHJvbmc+PHNtYWxsPnt3ZWF0aGVyID8gYCR7d2VhdGhlci5sb2NhdGlvbn0gwrcgJHt3ZWF0aGVyLmN1cnJlbnQuZGVzY3JpcHRpb259YCA6IHdlYXRoZXJFcnJvciB8fCBcIkxpdmUgcHJvdmlkZXIgZGF0YVwifTwvc21hbGw+PC9hcnRpY2xlPjwvZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJzZWN0aW9uLWhlYWRpbmcgc2VydmljZXMtaGVhZGluZ1wiPjxkaXY+PHNwYW4gY2xhc3NOYW1lPVwic2VjdGlvbi1raWNrZXJcIj5QUkVESUNUSU9OIFdPUktGTE9XUzwvc3Bhbj48aDI+Q2hvb3NlIGEgbW9kZWw8L2gyPjwvZGl2PjxwPkVhY2ggcmVzdWx0IGlzIGdlbmVyYXRlZCBmcm9tIHN1Ym1pdHRlZCBpbnB1dHMuPC9wPjwvZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJzZXJ2aWNlcy1ncmlkXCI+e3NlcnZpY2VzLm1hcCgoc2VydmljZSkgPT4gPGJ1dHRvbiBjbGFzc05hbWU9XCJzZXJ2aWNlLWNhcmRcIiBrZXk9e3NlcnZpY2UuaWR9IG9uQ2xpY2s9eygpID0+IHNldFNlbGVjdGVkU2VydmljZShzZXJ2aWNlKX0+PHNwYW4gY2xhc3NOYW1lPXtgc2VydmljZS1pY29uICR7c2VydmljZS5jb2xvcn1gfT48SWNvbiBuYW1lPXtzZXJ2aWNlLmljb259IHNpemU9ezI1fSAvPjwvc3Bhbj48c3BhbiBjbGFzc05hbWU9XCJzZXJ2aWNlLWNhcmQtY29weVwiPjxzdHJvbmc+e3NlcnZpY2UudGl0bGV9PC9zdHJvbmc+PHNtYWxsPntzZXJ2aWNlLmRlc2NyaXB0aW9ufTwvc21hbGw+PGVtPk9wZW4gbW9kZWwgPEljb24gbmFtZT1cImFycm93XCIgc2l6ZT17MTR9IC8+PC9lbT48L3NwYW4+PC9idXR0b24+KX08L2Rpdj5cclxuICAgICAgICAgIHt3ZWF0aGVyRXJyb3IgJiYgPGRpdiBjbGFzc05hbWU9XCJzdGF0ZS1tZXNzYWdlIHdlYXRoZXItaW5saW5lXCI+PHN0cm9uZz5XZWF0aGVyIGludGVncmF0aW9uIHVuYXZhaWxhYmxlPC9zdHJvbmc+PHA+e3dlYXRoZXJFcnJvcn08L3A+PGJ1dHRvbiBjbGFzc05hbWU9XCJ0ZXh0LWJ1dHRvblwiIG9uQ2xpY2s9e2xvYWRXZWF0aGVyfT5SZXRyeSB3ZWF0aGVyIHJlcXVlc3QgPEljb24gbmFtZT1cImFycm93XCIgc2l6ZT17MTV9IC8+PC9idXR0b24+PC9kaXY+fVxyXG4gICAgICAgIDwvc2VjdGlvbj59PC9kaXY+XHJcbiAgICAgIDwvbWFpbj5cclxuICAgIDwvZGl2PlxyXG4gICk7XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IEFwcDsiXSwiZmlsZSI6IkM6L0RhdGEgU2NpZW5jZS9NTC9NTCBQcm9qZWN0L1NtYXJ0LUFncmljdWx0dXJlLU1MT3BzL2Zyb250ZW5kL3NyYy9BZ3JpU2Vuc2VBcHAuanN4In0=

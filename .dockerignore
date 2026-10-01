@@ -1,0 +1,14 @@
+.git
+.venv
+.agri
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+**/.vite
+**/dist
+**/build
+**/.env
+**/.env.*
+!.env.example
+tests
+data

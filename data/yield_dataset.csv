@@ -1,0 +1,2001 @@
+Crop Type,Field Size (hectares),Planting Date,Soil Type,Fertilizer Used,Irrigation Type,Yield_t_per_ha
+Soybean,1.04,08-06-2025,Loamy,Urea,Furrow/Canal irrigation,1.111
+Cotton,0.44,07-04-2023,Loamy,MOP,Rainfed,0.461
+Groundnut,0.22,26-06-2024,Alluvial,Compost/Organic Manure,Sprinkler Irrigation,1.576
+Maize,2.56,04-10-2024,Sandy,Urea,Furrow/Canal irrigation,3.713
+Soybean,0.14,13-06-2025,Sandy,DAP,Rainfed,0.774
+Potato,0.51,02-06-2025,Silty,Compost/Organic Manure,Furrow/Canal irrigation,23.276
+Potato,0.83,21-11-2024,Laterite,Urea,Flood Irrigation,16.522
+Sugarcane,0.79,18-10-2025,Laterite,Urea,Flood Irrigation,88.063
+Onion,1.99,08-04-2025,Laterite,Compost/Organic Manure,Flood Irrigation,19.707
+Rice,1.01,13-07-2024,Alluvial,MOP,Sprinkler Irrigation,4.805
+Rice,1.32,19-07-2025,Clay,DAP,Furrow/Canal irrigation,4.291
+Cotton,1.54,05-04-2025,Silty,Compost/Organic Manure,Rainfed,0.44
+Rice,1.9,17-07-2025,Loamy,NPK,Furrow/Canal irrigation,5.269
+Sugarcane,0.47,25-11-2025,Silty,Urea,Rainfed,78.095
+Maize,0.23,17-09-2025,Alluvial,Compost/Organic Manure,Flood Irrigation,3.647
+Soybean,0.31,18-06-2024,Alluvial,Biofertilizers,Furrow/Canal irrigation,1.216
+Soybean,2.41,27-06-2023,Laterite,DAP,Flood Irrigation,0.888
+Cotton,1.47,27-07-2023,Sandy,Compost/Organic Manure,Furrow/Canal irrigation,0.422
+Rice,0.17,09-06-2025,Silty,MOP,Furrow/Canal irrigation,4.597
+Onion,2.27,22-05-2025,Silty,NPK,Rainfed,22.465
+Rice,0.85,19-06-2023,Silty,MOP,Drip Irrigation,5.96
+Sugarcane,0.51,28-10-2024,Loamy,NPK,Flood Irrigation,107.567
+Maize,7.09,08-07-2025,Laterite,Compost/Organic Manure,Sprinkler Irrigation,3.701
+Rice,5.2,15-07-2024,Alluvial,Urea,Rainfed,4.635
+Soybean,0.29,26-06-2024,Alluvial,DAP,Sprinkler Irrigation,1.149
+Maize,0.73,08-10-2024,Alluvial,Urea,Furrow/Canal irrigation,3.687
+Potato,3.63,03-10-2023,Alluvial,Compost/Organic Manure,Sprinkler Irrigation,23.81
+Maize,1.66,06-06-2025,Clay,Biofertilizers,Flood Irrigation,3.078
+Groundnut,0.4,05-06-2024,Loamy,DAP,Drip Irrigation,1.738
+Groundnut,2.71,02-05-2025,Silty,NPK,Furrow/Canal irrigation,1.6
+Rice,3.05,20-06-2025,Sandy,Compost/Organic Manure,Flood Irrigation,3.712
+Onion,0.35,20-04-2025,Sandy,MOP,Rainfed,16.063
+Wheat,4.08,11-12-2024,Loamy,NPK,Rainfed,2.818
+Wheat,0.23,01-10-2025,Clay,Biofertilizers,Furrow/Canal irrigation,3.294
+Rice,0.84,12-06-2025,Alluvial,Compost/Organic Manure,Flood Irrigation,5.034
+Rice,2.13,22-06-2025,Laterite,DAP,Rainfed,3.35
+Onion,4.46,24-04-2024,Silty,DAP,Rainfed,19.513
+Groundnut,2.6,17-06-2025,Clay,Compost/Organic Manure,Furrow/Canal irrigation,1.318
+Rice,2.96,01-06-2025,Loamy,Urea,Furrow/Canal irrigation,5.608
+Rice,1.46,18-07-2025,Sandy,Urea,Furrow/Canal irrigation,4.28
+Potato,1.58,19-02-2023,Silty,NPK,Drip Irrigation,26.578
+Maize,0.33,22-06-2025,Loamy,Urea,Furrow/Canal irrigation,4.183
+Potato,0.16,08-06-2025,Alluvial,Biofertilizers,Furrow/Canal irrigation,22.583
+Potato,1.52,26-11-2024,Alluvial,Compost/Organic Manure,Furrow/Canal irrigation,27.135
+Potato,4.86,13-06-2024,Alluvial,Compost/Organic Manure,Flood Irrigation,23.039
+Potato,2.92,08-06-2024,Sandy,DAP,Flood Irrigation,17.829
+Potato,0.62,22-07-2024,Alluvial,NPK,Furrow/Canal irrigation,26.247
+Rice,0.45,02-07-2024,Sandy,NPK,Furrow/Canal irrigation,4.147
+Wheat,5.41,07-12-2024,Loamy,Ammonium Sulphate,Drip Irrigation,3.93
+Onion,4.2,22-04-2024,Alluvial,MOP,Rainfed,23.598
+Rice,3.36,11-07-2025,Clay,DAP,Sprinkler Irrigation,5.141
+Maize,4.63,20-09-2025,Silty,NPK,Furrow/Canal irrigation,4.109
+Wheat,0.87,20-12-2024,Silty,NPK,Rainfed,2.908
+Wheat,1.21,06-12-2025,Silty,DAP,Rainfed,2.822
+Soybean,3.51,22-06-2025,Loamy,Compost/Organic Manure,Sprinkler Irrigation,0.998
+Rice,0.6,15-06-2025,Clay,MOP,Sprinkler Irrigation,4.622
+Sugarcane,0.36,21-12-2024,Peaty,Compost/Organic Manure,Furrow/Canal irrigation,88.08
+Potato,0.88,02-07-2024,Silty,Biofertilizers,Sprinkler Irrigation,24.568
+Rice,1.56,25-07-2025,Alluvial,MOP,Rainfed,3.844
+Cotton,7.24,15-07-2025,Loamy,DAP,Rainfed,0.523
+Groundnut,6.66,15-06-2025,Sandy,DAP,Flood Irrigation,1.22
+Wheat,0.82,13-10-2024,Chalky,Ammonium Sulphate,Drip Irrigation,2.778
+Maize,0.77,27-09-2024,Clay,Compost/Organic Manure,Rainfed,3.004
+Sugarcane,1.5,10-01-2025,Laterite,Compost/Organic Manure,Furrow/Canal irrigation,81.208
+Maize,0.21,14-07-2024,Clay,NPK,Rainfed,3.319
+Potato,0.65,05-02-2024,Alluvial,NPK,Furrow/Canal irrigation,26.164
+Soybean,0.41,05-06-2023,Alluvial,DAP,Flood Irrigation,1.157
+Wheat,0.65,09-11-2024,Laterite,Compost/Organic Manure,Flood Irrigation,2.788
+Rice,2.33,12-06-2025,Loamy,Urea,Furrow/Canal irrigation,4.836
+Rice,2.71,27-06-2025,Sandy,Urea,Sprinkler Irrigation,4.598
+Sugarcane,1.02,25-11-2024,Loamy,MOP,Furrow/Canal irrigation,109.005
+Groundnut,1.63,19-05-2025,Sandy,DAP,Rainfed,1.211
+Onion,0.29,03-10-2025,Silty,Compost/Organic Manure,Flood Irrigation,22.012
+Sugarcane,0.51,26-02-2025,Loamy,Biofertilizers,Furrow/Canal irrigation,104.878
+Wheat,0.18,17-10-2025,Silty,Urea,Rainfed,3.29
+Maize,0.13,23-10-2025,Loamy,Urea,Rainfed,3.85
+Sugarcane,1.54,19-02-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,103.864
+Rice,0.48,19-07-2024,Silty,NPK,Drip Irrigation,4.854
+Potato,2.45,26-11-2024,Loamy,DAP,Rainfed,23.972
+Potato,0.4,03-01-2023,Loamy,NPK,Rainfed,23.037
+Wheat,0.93,15-11-2025,Laterite,Urea,Flood Irrigation,2.794
+Sugarcane,2.26,16-01-2025,Silty,DAP,Furrow/Canal irrigation,100.682
+Cotton,3.5,10-06-2025,Loamy,Urea,Sprinkler Irrigation,0.607
+Rice,0.65,09-07-2024,Laterite,Biofertilizers,Rainfed,4.306
+Wheat,0.3,08-11-2025,Loamy,DAP,Rainfed,2.774
+Rice,0.96,23-07-2025,Alluvial,MOP,Furrow/Canal irrigation,5.292
+Rice,2.69,16-07-2025,Clay,DAP,Drip Irrigation,5.055
+Onion,0.28,13-10-2024,Clay,MOP,Rainfed,20.842
+Rice,0.45,04-06-2023,Silty,NPK,Rainfed,4.284
+Soybean,0.12,10-06-2024,Alluvial,Biofertilizers,Flood Irrigation,1.148
+Soybean,0.31,21-06-2025,Loamy,Ammonium Sulphate,Sprinkler Irrigation,1.234
+Rice,2.45,15-07-2024,Peaty,NPK,Drip Irrigation,4.431
+Wheat,2.21,03-11-2025,Peaty,Biofertilizers,Furrow/Canal irrigation,3.146
+Soybean,0.64,21-06-2024,Loamy,DAP,Sprinkler Irrigation,1.174
+Rice,0.89,15-07-2025,Loamy,Ammonium Sulphate,Rainfed,4.554
+Onion,3.88,14-10-2024,Laterite,MOP,Drip Irrigation,25.772
+Wheat,2.24,27-12-2025,Loamy,Urea,Furrow/Canal irrigation,3.392
+Maize,1.02,19-09-2025,Clay,Compost/Organic Manure,Furrow/Canal irrigation,3.611
+Maize,0.72,28-09-2024,Loamy,NPK,Rainfed,3.956
+Sugarcane,2.09,02-02-2025,Clay,DAP,Flood Irrigation,83.371
+Onion,3.27,22-10-2025,Alluvial,NPK,Drip Irrigation,33.193
+Cotton,1.46,07-04-2025,Loamy,Urea,Flood Irrigation,0.516
+Potato,0.53,23-06-2024,Loamy,NPK,Rainfed,21.625
+Rice,0.15,21-06-2024,Laterite,NPK,Rainfed,4.072
+Cotton,2.17,16-07-2024,Loamy,NPK,Flood Irrigation,0.522
+Onion,6.9,25-05-2025,Laterite,NPK,Furrow/Canal irrigation,24.623
+Cotton,6.73,27-06-2024,Silty,Biofertilizers,Rainfed,0.402
+Rice,1.07,15-07-2024,Alluvial,Compost/Organic Manure,Furrow/Canal irrigation,5.152
+Wheat,3.91,02-11-2024,Loamy,NPK,Furrow/Canal irrigation,3.468
+Maize,1.73,05-06-2024,Clay,MOP,Furrow/Canal irrigation,3.426
+Potato,5.6,01-07-2023,Laterite,NPK,Rainfed,20.689
+Rice,0.3,11-07-2025,Silty,NPK,Drip Irrigation,5.869
+Wheat,2.01,23-12-2025,Alluvial,NPK,Rainfed,3.374
+Soybean,2.8,08-06-2025,Laterite,NPK,Drip Irrigation,1.134
+Soybean,2.49,01-06-2024,Sandy,Compost/Organic Manure,Flood Irrigation,0.813
+Maize,0.8,19-07-2024,Peaty,DAP,Sprinkler Irrigation,4.167
+Soybean,3.41,16-06-2025,Alluvial,Urea,Rainfed,1.034
+Wheat,4.99,10-11-2025,Peaty,Urea,Rainfed,2.642
+Wheat,1.53,23-11-2025,Loamy,Compost/Organic Manure,Sprinkler Irrigation,3.975
+Maize,2.2,19-10-2024,Loamy,DAP,Rainfed,3.642
+Rice,2.52,20-06-2024,Laterite,Compost/Organic Manure,Furrow/Canal irrigation,4.286
+Groundnut,0.92,08-06-2025,Silty,MOP,Rainfed,1.227
+Groundnut,1.04,10-05-2025,Laterite,Urea,Flood Irrigation,1.265
+Rice,0.17,06-07-2024,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,4.681
+Maize,1.35,27-10-2025,Alluvial,Biofertilizers,Flood Irrigation,3.279
+Potato,1.89,05-10-2024,Laterite,DAP,Rainfed,19.549
+Sugarcane,0.16,12-02-2025,Sandy,NPK,Flood Irrigation,74.677
+Rice,1.58,19-07-2025,Clay,MOP,Flood Irrigation,3.966
+Sugarcane,3.04,11-02-2024,Alluvial,DAP,Drip Irrigation,111.687
+Potato,0.28,04-02-2024,Loamy,Biofertilizers,Flood Irrigation,21.963
+Maize,0.21,13-06-2024,Clay,Ammonium Sulphate,Furrow/Canal irrigation,4.274
+Onion,2.13,14-10-2025,Silty,Compost/Organic Manure,Rainfed,23.704
+Onion,2.69,07-11-2023,Clay,Biofertilizers,Furrow/Canal irrigation,22.247
+Rice,0.88,02-07-2025,Clay,DAP,Sprinkler Irrigation,4.825
+Potato,3.27,21-06-2023,Silty,Biofertilizers,Drip Irrigation,24.958
+Wheat,0.26,03-10-2025,Laterite,NPK,Rainfed,2.239
+Potato,0.15,26-10-2024,Alluvial,Urea,Furrow/Canal irrigation,24.602
+Rice,0.48,04-06-2025,Silty,Urea,Drip Irrigation,5.707
+Groundnut,0.44,06-05-2025,Loamy,Urea,Rainfed,1.372
+Rice,2.61,17-07-2024,Silty,NPK,Flood Irrigation,4.127
+Soybean,2.26,02-06-2024,Alluvial,Compost/Organic Manure,Rainfed,1.01
+Rice,1.99,11-06-2023,Silty,Urea,Flood Irrigation,5.109
+Soybean,1.19,15-06-2024,Clay,NPK,Furrow/Canal irrigation,1.022
+Rice,2.94,14-06-2024,Loamy,NPK,Flood Irrigation,4.537
+Rice,0.13,12-07-2024,Alluvial,Ammonium Sulphate,Rainfed,4.127
+Rice,0.31,24-06-2023,Laterite,Compost/Organic Manure,Rainfed,4.121
+Soybean,1.45,12-06-2025,Alluvial,Biofertilizers,Rainfed,0.866
+Onion,1.24,10-06-2025,Loamy,MOP,Sprinkler Irrigation,26.435
+Sugarcane,1.12,28-11-2025,Silty,Urea,Flood Irrigation,101.443
+Wheat,0.19,20-12-2025,Peaty,NPK,Rainfed,2.988
+Sugarcane,1.04,23-01-2024,Laterite,Biofertilizers,Flood Irrigation,78.598
+Rice,3.98,03-07-2025,Loamy,MOP,Drip Irrigation,6.111
+Groundnut,2.25,11-06-2024,Loamy,DAP,Flood Irrigation,1.474
+Onion,1.86,06-04-2025,Laterite,Urea,Drip Irrigation,24.307
+Maize,5.73,14-10-2024,Loamy,Compost/Organic Manure,Drip Irrigation,3.879
+Maize,2.16,17-10-2025,Silty,Urea,Flood Irrigation,4.104
+Soybean,1.33,25-06-2024,Loamy,DAP,Flood Irrigation,1.205
+Rice,1.08,18-07-2024,Chalky,NPK,Furrow/Canal irrigation,4.402
+Potato,6.6,14-10-2024,Sandy,Biofertilizers,Furrow/Canal irrigation,20.044
+Cotton,0.87,10-07-2025,Sandy,Urea,Flood Irrigation,0.421
+Potato,3.83,03-02-2024,Clay,Urea,Rainfed,18.265
+Maize,2.49,24-07-2024,Loamy,DAP,Sprinkler Irrigation,4.275
+Cotton,2.08,25-05-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,0.54
+Potato,3.35,07-11-2024,Loamy,Urea,Furrow/Canal irrigation,27.423
+Rice,0.76,22-07-2024,Alluvial,MOP,Rainfed,4.353
+Soybean,3.39,16-06-2024,Clay,DAP,Flood Irrigation,0.943
+Rice,9.41,02-07-2024,Sandy,Compost/Organic Manure,Drip Irrigation,3.812
+Potato,3.1,15-11-2025,Silty,Biofertilizers,Furrow/Canal irrigation,21.832
+Rice,0.93,17-07-2024,Loamy,Urea,Drip Irrigation,5.968
+Potato,2.91,17-06-2025,Silty,Urea,Rainfed,20.346
+Onion,0.32,13-05-2024,Clay,DAP,Rainfed,19.601
+Groundnut,3.6,18-05-2023,Peaty,DAP,Furrow/Canal irrigation,1.449
+Sugarcane,0.87,12-10-2024,Loamy,MOP,Rainfed,83.373
+Rice,0.12,21-07-2024,Laterite,Compost/Organic Manure,Rainfed,3.775
+Potato,4.82,21-01-2025,Peaty,NPK,Drip Irrigation,24.603
+Wheat,6.09,07-11-2024,Loamy,Urea,Drip Irrigation,3.723
+Potato,6.12,22-10-2025,Loamy,Compost/Organic Manure,Sprinkler Irrigation,30.206
+Maize,1.29,24-06-2024,Clay,NPK,Rainfed,3.483
+Wheat,0.79,26-12-2025,Clay,NPK,Flood Irrigation,3.349
+Potato,2.89,12-06-2025,Peaty,MOP,Rainfed,16.154
+Groundnut,3.24,06-06-2025,Laterite,Compost/Organic Manure,Sprinkler Irrigation,1.266
+Wheat,1.69,04-12-2025,Chalky,NPK,Sprinkler Irrigation,3.208
+Rice,1.27,27-06-2024,Clay,Biofertilizers,Flood Irrigation,3.932
+Maize,0.35,02-10-2025,Clay,NPK,Flood Irrigation,3.795
+Rice,0.41,27-06-2023,Chalky,DAP,Sprinkler Irrigation,4.671
+Rice,0.31,25-06-2025,Chalky,NPK,Drip Irrigation,5.179
+Rice,0.28,18-06-2024,Alluvial,MOP,Rainfed,4.018
+Groundnut,3.55,08-05-2024,Clay,Compost/Organic Manure,Rainfed,1.126
+Rice,2.55,21-06-2025,Clay,DAP,Sprinkler Irrigation,5.067
+Maize,5.98,06-10-2024,Silty,Urea,Furrow/Canal irrigation,3.856
+Rice,8.64,02-07-2024,Silty,Biofertilizers,Flood Irrigation,4.194
+Rice,0.27,25-06-2024,Silty,Compost/Organic Manure,Sprinkler Irrigation,5.307
+Maize,3.1,27-09-2025,Laterite,NPK,Rainfed,2.51
+Soybean,4.84,02-06-2023,Loamy,Urea,Sprinkler Irrigation,1.366
+Rice,0.34,09-07-2025,Sandy,MOP,Flood Irrigation,3.68
+Potato,1.36,09-11-2025,Loamy,NPK,Furrow/Canal irrigation,27.052
+Groundnut,0.22,16-05-2024,Chalky,NPK,Furrow/Canal irrigation,1.471
+Wheat,1.85,14-10-2025,Silty,Compost/Organic Manure,Rainfed,2.975
+Wheat,6.65,10-11-2024,Clay,Compost/Organic Manure,Sprinkler Irrigation,2.863
+Maize,4.16,20-10-2023,Alluvial,DAP,Furrow/Canal irrigation,3.929
+Onion,0.61,12-05-2025,Clay,Compost/Organic Manure,Sprinkler Irrigation,23.443
+Rice,10.01,08-06-2023,Laterite,NPK,Flood Irrigation,4.584
+Cotton,0.25,12-06-2025,Clay,Urea,Sprinkler Irrigation,0.508
+Maize,1.58,04-09-2025,Sandy,DAP,Rainfed,2.885
+Onion,2.09,23-05-2024,Clay,Biofertilizers,Flood Irrigation,20.14
+Onion,2.08,28-10-2024,Sandy,Urea,Rainfed,21.094
+Onion,1.86,18-10-2025,Silty,Compost/Organic Manure,Furrow/Canal irrigation,24.005
+Groundnut,2.04,04-05-2025,Alluvial,Compost/Organic Manure,Flood Irrigation,1.519
+Maize,0.75,15-10-2025,Laterite,NPK,Rainfed,3.036
+Rice,0.97,17-07-2024,Clay,NPK,Rainfed,3.407
+Rice,1.85,15-07-2025,Peaty,DAP,Furrow/Canal irrigation,3.77
+Groundnut,3.46,14-05-2025,Clay,Compost/Organic Manure,Furrow/Canal irrigation,1.364
+Cotton,2.41,23-06-2024,Loamy,Biofertilizers,Rainfed,0.472
+Wheat,1.18,18-12-2024,Loamy,MOP,Rainfed,3.354
+Rice,5.5,06-06-2025,Silty,Compost/Organic Manure,Rainfed,3.97
+Potato,3.43,03-01-2023,Sandy,MOP,Rainfed,16.663
+Sugarcane,8.83,16-12-2025,Alluvial,NPK,Rainfed,91.259
+Wheat,1.06,13-12-2025,Loamy,Urea,Drip Irrigation,3.577
+Maize,7.11,20-10-2024,Loamy,Compost/Organic Manure,Flood Irrigation,3.997
+Onion,1.36,25-10-2025,Clay,MOP,Flood Irrigation,21.611
+Maize,1.17,04-09-2024,Sandy,Biofertilizers,Furrow/Canal irrigation,3.26
+Maize,4.1,07-07-2025,Laterite,NPK,Rainfed,3.064
+Maize,3.45,13-09-2024,Clay,Biofertilizers,Sprinkler Irrigation,4.1
+Maize,5.89,10-07-2024,Silty,Compost/Organic Manure,Rainfed,3.377
+Potato,3.89,12-02-2024,Sandy,Urea,Rainfed,17.269
+Maize,0.38,25-10-2023,Silty,Compost/Organic Manure,Rainfed,2.807
+Soybean,6.26,12-06-2025,Laterite,DAP,Furrow/Canal irrigation,0.931
+Groundnut,2.33,17-06-2025,Sandy,Urea,Rainfed,1.109
+Potato,2.03,11-01-2024,Alluvial,DAP,Flood Irrigation,23.403
+Soybean,2.33,23-06-2025,Silty,NPK,Drip Irrigation,1.216
+Wheat,1.57,10-12-2025,Laterite,Compost/Organic Manure,Rainfed,2.488
+Rice,3.92,24-06-2024,Sandy,NPK,Rainfed,4.097
+Groundnut,1.71,02-05-2024,Silty,Ammonium Sulphate,Sprinkler Irrigation,1.602
+Maize,1.13,14-09-2024,Clay,MOP,Rainfed,3.022
+Potato,0.39,17-01-2023,Loamy,DAP,Rainfed,25.501
+Cotton,0.58,18-07-2025,Loamy,DAP,Furrow/Canal irrigation,0.576
+Groundnut,0.39,08-05-2025,Loamy,DAP,Furrow/Canal irrigation,1.393
+Onion,1.25,11-11-2025,Clay,MOP,Furrow/Canal irrigation,24.982
+Groundnut,4.79,13-06-2024,Laterite,Biofertilizers,Furrow/Canal irrigation,1.295
+Wheat,3.16,12-10-2025,Alluvial,MOP,Furrow/Canal irrigation,2.929
+Wheat,1.11,09-12-2025,Loamy,MOP,Rainfed,3.236
+Wheat,6.07,04-10-2025,Clay,Compost/Organic Manure,Drip Irrigation,3.409
+Groundnut,0.42,14-05-2025,Silty,Compost/Organic Manure,Rainfed,1.207
+Sugarcane,0.7,02-02-2025,Alluvial,Urea,Rainfed,91.266
+Cotton,1.33,14-05-2025,Alluvial,Urea,Furrow/Canal irrigation,0.531
+Onion,0.9,24-10-2025,Alluvial,Biofertilizers,Furrow/Canal irrigation,25.789
+Rice,2.11,10-07-2025,Clay,MOP,Rainfed,3.571
+Potato,0.38,09-11-2025,Loamy,Urea,Sprinkler Irrigation,27.147
+Maize,0.37,24-09-2025,Loamy,DAP,Rainfed,3.332
+Rice,0.95,03-07-2025,Clay,Urea,Furrow/Canal irrigation,4.628
+Maize,4.64,08-07-2023,Clay,DAP,Flood Irrigation,4.075
+Soybean,0.48,23-06-2024,Loamy,Ammonium Sulphate,Rainfed,0.984
+Rice,0.53,12-07-2025,Silty,DAP,Sprinkler Irrigation,4.738
+Rice,0.29,25-07-2024,Silty,Ammonium Sulphate,Sprinkler Irrigation,4.697
+Wheat,0.36,23-12-2025,Loamy,Biofertilizers,Drip Irrigation,3.376
+Potato,1.01,06-01-2024,Loamy,NPK,Drip Irrigation,28.483
+Wheat,1.5,15-12-2023,Laterite,NPK,Rainfed,2.616
+Maize,3.31,24-07-2025,Sandy,DAP,Drip Irrigation,3.757
+Wheat,2.08,23-11-2023,Sandy,Biofertilizers,Furrow/Canal irrigation,3.024
+Rice,2.86,06-07-2023,Laterite,Compost/Organic Manure,Furrow/Canal irrigation,3.997
+Soybean,0.51,15-06-2024,Alluvial,Compost/Organic Manure,Flood Irrigation,1.046
+Sugarcane,1.43,04-11-2025,Loamy,NPK,Rainfed,81.749
+Groundnut,2.03,10-05-2025,Clay,Compost/Organic Manure,Rainfed,1.04
+Maize,2.85,05-07-2024,Loamy,Biofertilizers,Furrow/Canal irrigation,3.446
+Rice,0.17,08-06-2025,Loamy,Urea,Drip Irrigation,5.729
+Soybean,4.61,13-06-2024,Clay,NPK,Furrow/Canal irrigation,1.001
+Groundnut,1.53,08-06-2025,Laterite,Compost/Organic Manure,Flood Irrigation,1.108
+Soybean,1.29,22-06-2024,Silty,NPK,Flood Irrigation,1.106
+Cotton,1.62,18-07-2025,Clay,Biofertilizers,Furrow/Canal irrigation,0.425
+Sugarcane,1.05,05-01-2025,Loamy,DAP,Rainfed,82.249
+Wheat,0.14,05-12-2024,Laterite,Biofertilizers,Rainfed,2.175
+Onion,0.89,07-05-2024,Loamy,Urea,Rainfed,21.508
+Maize,0.36,22-07-2023,Silty,Urea,Drip Irrigation,4.296
+Potato,2.37,16-01-2025,Loamy,Compost/Organic Manure,Flood Irrigation,26.023
+Potato,3.21,24-10-2025,Alluvial,NPK,Flood Irrigation,23.762
+Soybean,1.64,18-06-2024,Loamy,DAP,Rainfed,1.04
+Soybean,1.87,15-06-2024,Sandy,Biofertilizers,Rainfed,0.735
+Potato,0.37,02-11-2024,Silty,DAP,Sprinkler Irrigation,28.744
+Wheat,0.77,11-10-2024,Loamy,MOP,Flood Irrigation,3.665
+Cotton,1.79,24-07-2024,Silty,NPK,Sprinkler Irrigation,0.493
+Potato,0.98,06-11-2024,Alluvial,NPK,Rainfed,22.929
+Rice,0.64,27-06-2025,Silty,Compost/Organic Manure,Flood Irrigation,4.463
+Potato,0.31,01-10-2023,Loamy,NPK,Drip Irrigation,28.014
+Soybean,0.45,01-06-2025,Silty,NPK,Drip Irrigation,1.19
+Groundnut,0.51,26-06-2023,Alluvial,Urea,Furrow/Canal irrigation,1.448
+Cotton,4.64,27-06-2024,Loamy,Compost/Organic Manure,Drip Irrigation,0.543
+Onion,0.27,10-10-2025,Peaty,Compost/Organic Manure,Rainfed,13.855
+Potato,8.18,13-11-2023,Silty,Urea,Drip Irrigation,28.045
+Rice,0.34,19-07-2025,Alluvial,Biofertilizers,Furrow/Canal irrigation,4.978
+Onion,4.11,19-06-2024,Clay,Urea,Drip Irrigation,24.711
+Onion,3.5,01-05-2024,Alluvial,MOP,Furrow/Canal irrigation,24.026
+Groundnut,2.31,06-06-2025,Silty,MOP,Furrow/Canal irrigation,1.375
+Sugarcane,5.4,05-02-2025,Laterite,Ammonium Sulphate,Drip Irrigation,106.545
+Groundnut,0.76,08-06-2023,Laterite,DAP,Furrow/Canal irrigation,1.507
+Onion,3.03,01-11-2025,Silty,Compost/Organic Manure,Rainfed,19.466
+Wheat,1.21,19-12-2024,Silty,Urea,Rainfed,2.64
+Potato,1.52,05-02-2023,Clay,Compost/Organic Manure,Sprinkler Irrigation,22.513
+Maize,1.99,10-09-2024,Clay,Compost/Organic Manure,Drip Irrigation,3.764
+Rice,0.78,04-07-2024,Sandy,DAP,Drip Irrigation,4.16
+Soybean,1.41,10-06-2025,Clay,Compost/Organic Manure,Furrow/Canal irrigation,1.041
+Cotton,1.62,22-05-2025,Clay,Urea,Flood Irrigation,0.44
+Maize,0.39,14-07-2024,Loamy,Compost/Organic Manure,Flood Irrigation,3.771
+Onion,0.23,15-10-2025,Sandy,DAP,Furrow/Canal irrigation,20.721
+Wheat,2.39,15-11-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,3.692
+Onion,2.96,23-06-2024,Loamy,DAP,Furrow/Canal irrigation,25.347
+Onion,1.16,19-11-2025,Laterite,DAP,Flood Irrigation,25.624
+Groundnut,0.96,19-05-2024,Alluvial,Urea,Furrow/Canal irrigation,1.552
+Rice,0.5,15-06-2025,Laterite,Compost/Organic Manure,Drip Irrigation,4.578
+Potato,0.24,21-06-2025,Loamy,DAP,Sprinkler Irrigation,28.359
+Maize,3.79,19-10-2023,Clay,NPK,Furrow/Canal irrigation,4.222
+Sugarcane,0.4,23-11-2025,Alluvial,NPK,Rainfed,84.357
+Rice,0.46,06-07-2025,Silty,Urea,Furrow/Canal irrigation,5.003
+Sugarcane,0.46,26-01-2025,Clay,Urea,Flood Irrigation,87.846
+Cotton,1.58,15-07-2024,Laterite,MOP,Rainfed,0.406
+Wheat,0.99,14-11-2024,Alluvial,Urea,Furrow/Canal irrigation,3.475
+Groundnut,3.49,26-06-2024,Loamy,NPK,Rainfed,1.477
+Maize,1.26,02-10-2024,Laterite,Urea,Furrow/Canal irrigation,3.381
+Soybean,0.82,17-06-2025,Loamy,Urea,Rainfed,0.852
+Onion,2.85,06-06-2025,Loamy,MOP,Flood Irrigation,21.639
+Groundnut,4.7,13-06-2024,Sandy,DAP,Flood Irrigation,1.211
+Sugarcane,1.07,12-10-2025,Loamy,NPK,Flood Irrigation,105.518
+Potato,2.06,20-02-2025,Clay,NPK,Drip Irrigation,25.688
+Maize,0.35,20-10-2025,Silty,Ammonium Sulphate,Flood Irrigation,3.721
+Wheat,0.92,05-12-2024,Clay,NPK,Sprinkler Irrigation,3.497
+Maize,0.4,18-06-2024,Loamy,DAP,Sprinkler Irrigation,4.518
+Potato,1.62,01-02-2023,Clay,DAP,Flood Irrigation,24.195
+Cotton,4.59,14-07-2024,Chalky,NPK,Sprinkler Irrigation,0.464
+Cotton,0.85,08-06-2024,Silty,Urea,Rainfed,0.447
+Groundnut,0.67,19-05-2025,Sandy,Compost/Organic Manure,Furrow/Canal irrigation,1.392
+Maize,4.29,18-07-2025,Loamy,NPK,Furrow/Canal irrigation,4.418
+Sugarcane,0.94,15-10-2024,Loamy,Compost/Organic Manure,Drip Irrigation,115.001
+Potato,0.42,07-10-2025,Laterite,MOP,Flood Irrigation,19.677
+Groundnut,0.62,26-05-2024,Loamy,DAP,Drip Irrigation,1.777
+Maize,2.15,11-09-2025,Alluvial,DAP,Rainfed,3.843
+Onion,2.47,02-05-2024,Alluvial,Compost/Organic Manure,Sprinkler Irrigation,23.307
+Potato,0.95,27-11-2024,Loamy,Compost/Organic Manure,Flood Irrigation,24.914
+Rice,0.5,15-07-2025,Sandy,Compost/Organic Manure,Furrow/Canal irrigation,4.096
+Maize,1.12,15-10-2025,Alluvial,DAP,Drip Irrigation,4.679
+Groundnut,1.34,21-06-2025,Silty,DAP,Drip Irrigation,1.605
+Cotton,1.99,16-05-2025,Loamy,Compost/Organic Manure,Flood Irrigation,0.595
+Cotton,0.14,02-04-2025,Sandy,Compost/Organic Manure,Rainfed,0.415
+Rice,5.21,14-06-2024,Loamy,Ammonium Sulphate,Sprinkler Irrigation,5.428
+Soybean,2.56,03-06-2025,Silty,DAP,Flood Irrigation,1.1
+Potato,1.97,24-11-2023,Chalky,DAP,Rainfed,16.474
+Sugarcane,1.2,05-10-2024,Silty,NPK,Rainfed,85.4
+Rice,5.3,23-07-2025,Loamy,Urea,Flood Irrigation,4.922
+Groundnut,1.3,10-06-2024,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,1.785
+Rice,1.12,20-06-2023,Silty,NPK,Furrow/Canal irrigation,5.108
+Soybean,0.21,28-06-2025,Loamy,Compost/Organic Manure,Sprinkler Irrigation,1.296
+Rice,0.11,11-07-2024,Laterite,DAP,Rainfed,3.457
+Wheat,0.91,01-12-2025,Alluvial,MOP,Flood Irrigation,3.475
+Cotton,5.15,21-06-2025,Sandy,Compost/Organic Manure,Furrow/Canal irrigation,0.348
+Maize,0.95,17-06-2024,Alluvial,Urea,Flood Irrigation,4.276
+Wheat,1.3,14-12-2025,Loamy,Ammonium Sulphate,Furrow/Canal irrigation,3.344
+Onion,0.61,01-04-2023,Loamy,Urea,Drip Irrigation,26.179
+Groundnut,0.49,14-06-2025,Chalky,Urea,Rainfed,1.064
+Soybean,1.48,17-06-2023,Alluvial,Biofertilizers,Sprinkler Irrigation,1.244
+Wheat,1,24-11-2024,Alluvial,DAP,Flood Irrigation,3.352
+Onion,1.84,02-06-2024,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,23.95
+Rice,6.59,16-06-2025,Alluvial,NPK,Furrow/Canal irrigation,5.361
+Groundnut,0.42,24-06-2024,Alluvial,Compost/Organic Manure,Drip Irrigation,1.516
+Potato,11.64,23-07-2025,Alluvial,MOP,Rainfed,21.49
+Cotton,1.5,12-05-2024,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,0.502
+Sugarcane,2.87,02-10-2024,Alluvial,Urea,Drip Irrigation,108.115
+Maize,0.57,18-06-2024,Laterite,Compost/Organic Manure,Rainfed,2.838
+Wheat,0.52,11-12-2024,Loamy,Urea,Flood Irrigation,3.457
+Cotton,0.17,13-04-2024,Sandy,NPK,Flood Irrigation,0.52
+Potato,0.24,01-07-2023,Loamy,DAP,Furrow/Canal irrigation,24.671
+Groundnut,3.09,25-06-2024,Laterite,Compost/Organic Manure,Rainfed,1.21
+Potato,1.26,01-11-2023,Loamy,DAP,Furrow/Canal irrigation,21.94
+Potato,1.12,28-07-2023,Laterite,DAP,Sprinkler Irrigation,21.468
+Onion,0.5,05-10-2024,Chalky,Urea,Furrow/Canal irrigation,22.359
+Potato,4.06,15-02-2024,Alluvial,Urea,Drip Irrigation,27.456
+Rice,0.73,14-06-2023,Silty,Urea,Flood Irrigation,4.727
+Potato,2.17,11-07-2025,Clay,DAP,Furrow/Canal irrigation,22.683
+Rice,0.44,15-06-2024,Clay,NPK,Rainfed,3.844
+Onion,2.62,09-05-2024,Alluvial,Urea,Furrow/Canal irrigation,25.803
+Wheat,0.6,05-11-2024,Sandy,DAP,Flood Irrigation,2.797
+Cotton,0.63,01-05-2024,Alluvial,Compost/Organic Manure,Rainfed,0.445
+Cotton,0.49,04-05-2024,Sandy,Compost/Organic Manure,Furrow/Canal irrigation,0.423
+Rice,2.22,19-06-2024,Silty,Biofertilizers,Drip Irrigation,4.853
+Onion,0.66,26-05-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,25.337
+Wheat,2.66,06-10-2025,Alluvial,NPK,Furrow/Canal irrigation,3.686
+Maize,1.11,12-09-2025,Loamy,DAP,Flood Irrigation,4.096
+Potato,2.31,21-10-2025,Loamy,NPK,Rainfed,22.163
+Rice,4.63,07-07-2024,Silty,Compost/Organic Manure,Flood Irrigation,4.101
+Onion,0.13,12-06-2025,Clay,Compost/Organic Manure,Flood Irrigation,18.181
+Cotton,4.56,01-05-2024,Loamy,DAP,Furrow/Canal irrigation,0.608
+Groundnut,3.5,17-06-2025,Loamy,MOP,Flood Irrigation,1.314
+Rice,1.06,18-07-2025,Laterite,Biofertilizers,Drip Irrigation,4.227
+Onion,1.88,12-05-2025,Alluvial,Biofertilizers,Sprinkler Irrigation,27.291
+Wheat,1.15,12-12-2025,Alluvial,Urea,Rainfed,2.691
+Onion,1.71,27-04-2025,Alluvial,Compost/Organic Manure,Rainfed,18.474
+Wheat,6.03,08-10-2023,Silty,Urea,Rainfed,2.779
+Wheat,2.98,23-11-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,3.743
+Rice,3.32,25-06-2025,Sandy,NPK,Flood Irrigation,4.027
+Rice,1.21,10-07-2025,Loamy,Biofertilizers,Furrow/Canal irrigation,5.663
+Maize,0.7,23-09-2025,Alluvial,Ammonium Sulphate,Furrow/Canal irrigation,4.248
+Groundnut,0.4,13-05-2025,Loamy,Ammonium Sulphate,Sprinkler Irrigation,1.452
+Groundnut,0.74,06-05-2025,Silty,Biofertilizers,Furrow/Canal irrigation,1.427
+Wheat,0.14,11-10-2025,Laterite,DAP,Furrow/Canal irrigation,2.699
+Rice,1.72,15-07-2025,Sandy,DAP,Rainfed,3.673
+Maize,2.21,13-06-2025,Clay,NPK,Sprinkler Irrigation,3.789
+Maize,0.12,04-10-2024,Laterite,Compost/Organic Manure,Rainfed,3.018
+Groundnut,0.39,26-05-2024,Alluvial,DAP,Flood Irrigation,1.638
+Onion,2.29,06-05-2024,Laterite,NPK,Furrow/Canal irrigation,25.864
+Rice,0.49,21-07-2025,Loamy,Compost/Organic Manure,Sprinkler Irrigation,5.089
+Rice,1.07,23-07-2025,Silty,Biofertilizers,Rainfed,4.184
+Sugarcane,1.56,13-12-2024,Silty,Compost/Organic Manure,Sprinkler Irrigation,94.534
+Maize,1.95,07-10-2023,Sandy,DAP,Rainfed,2.926
+Onion,0.66,26-11-2025,Clay,NPK,Rainfed,17.338
+Rice,0.98,12-07-2024,Loamy,Urea,Rainfed,4.106
+Wheat,2.64,25-10-2025,Chalky,Urea,Rainfed,2.628
+Potato,1.39,18-06-2025,Sandy,NPK,Rainfed,15.394
+Onion,2.28,16-10-2025,Loamy,NPK,Furrow/Canal irrigation,27.228
+Rice,0.58,06-07-2024,Alluvial,Urea,Sprinkler Irrigation,5.246
+Rice,0.16,07-07-2024,Alluvial,MOP,Furrow/Canal irrigation,5.094
+Wheat,0.21,13-12-2023,Silty,Compost/Organic Manure,Rainfed,2.425
+Onion,1.47,19-06-2025,Silty,NPK,Flood Irrigation,21.226
+Rice,3.05,26-06-2025,Loamy,NPK,Flood Irrigation,5.308
+Maize,0.33,02-10-2025,Loamy,NPK,Rainfed,3.76
+Sugarcane,1.47,23-01-2024,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,97.173
+Potato,2.43,10-11-2024,Loamy,NPK,Rainfed,20.578
+Rice,3.52,25-07-2024,Laterite,DAP,Flood Irrigation,3.986
+Soybean,3.31,24-06-2024,Clay,NPK,Flood Irrigation,0.933
+Rice,1.88,05-07-2023,Laterite,NPK,Rainfed,4.056
+Rice,1,02-06-2025,Clay,Biofertilizers,Rainfed,3.121
+Wheat,1.66,04-12-2025,Peaty,DAP,Rainfed,2.556
+Maize,4.23,12-10-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,4.324
+Sugarcane,2.25,06-12-2023,Alluvial,Compost/Organic Manure,Sprinkler Irrigation,105.357
+Wheat,2.46,21-11-2025,Clay,Urea,Furrow/Canal irrigation,3.041
+Groundnut,1.44,21-05-2024,Loamy,Compost/Organic Manure,Flood Irrigation,1.509
+Soybean,0.6,14-06-2025,Alluvial,Compost/Organic Manure,Rainfed,1.045
+Wheat,0.17,13-12-2025,Silty,Urea,Furrow/Canal irrigation,3.422
+Onion,2.49,10-11-2025,Peaty,NPK,Flood Irrigation,22.786
+Wheat,7.18,21-11-2025,Chalky,Compost/Organic Manure,Flood Irrigation,2.709
+Rice,5.87,22-07-2025,Loamy,Urea,Drip Irrigation,5.866
+Maize,3.82,13-10-2024,Clay,Urea,Rainfed,3.057
+Cotton,0.87,22-05-2024,Silty,Compost/Organic Manure,Furrow/Canal irrigation,0.444
+Sugarcane,0.36,18-02-2025,Loamy,Urea,Sprinkler Irrigation,108.807
+Wheat,0.26,21-11-2025,Sandy,DAP,Furrow/Canal irrigation,2.72
+Wheat,2.68,10-12-2024,Clay,Urea,Drip Irrigation,3.697
+Soybean,0.24,17-06-2024,Sandy,Ammonium Sulphate,Rainfed,0.823
+Maize,3.23,11-06-2024,Clay,MOP,Furrow/Canal irrigation,3.03
+Maize,0.87,25-09-2025,Sandy,DAP,Furrow/Canal irrigation,3.708
+Wheat,2.01,07-11-2023,Laterite,Urea,Furrow/Canal irrigation,3.128
+Maize,0.63,21-07-2024,Clay,NPK,Rainfed,3.385
+Rice,3.31,11-06-2025,Laterite,NPK,Drip Irrigation,4.818
+Rice,12.46,10-07-2024,Loamy,NPK,Rainfed,4.963
+Rice,1.13,15-07-2024,Laterite,MOP,Flood Irrigation,3.72
+Potato,1.41,12-11-2024,Laterite,Urea,Furrow/Canal irrigation,24.059
+Potato,8.38,07-10-2024,Laterite,MOP,Sprinkler Irrigation,23.432
+Maize,3.02,25-07-2024,Silty,Urea,Furrow/Canal irrigation,3.484
+Sugarcane,2.78,14-10-2023,Clay,Urea,Flood Irrigation,72.192
+Sugarcane,0.65,10-10-2025,Clay,Urea,Rainfed,72.758
+Soybean,0.78,17-06-2024,Chalky,Urea,Drip Irrigation,1.016
+Rice,0.8,27-07-2025,Silty,DAP,Rainfed,3.465
+Wheat,2.38,23-10-2025,Alluvial,DAP,Drip Irrigation,3.52
+Sugarcane,0.59,05-11-2025,Alluvial,Compost/Organic Manure,Drip Irrigation,103.423
+Groundnut,4.33,10-06-2025,Loamy,Urea,Furrow/Canal irrigation,1.474
+Potato,5.89,14-07-2024,Laterite,Urea,Furrow/Canal irrigation,26.725
+Rice,0.47,11-06-2025,Loamy,NPK,Rainfed,4.279
+Potato,9.56,06-11-2024,Sandy,NPK,Rainfed,20.754
+Potato,1.54,21-02-2025,Alluvial,Urea,Sprinkler Irrigation,29.693
+Groundnut,0.62,26-06-2024,Silty,NPK,Rainfed,1.233
+Groundnut,0.51,16-05-2025,Alluvial,Urea,Flood Irrigation,1.394
+Rice,3.12,23-06-2025,Alluvial,NPK,Furrow/Canal irrigation,4.974
+Groundnut,7.05,17-06-2025,Silty,Ammonium Sulphate,Drip Irrigation,1.543
+Sugarcane,4.4,05-11-2024,Laterite,NPK,Furrow/Canal irrigation,86.711
+Rice,2.94,28-07-2025,Clay,Urea,Furrow/Canal irrigation,4.063
+Wheat,2.48,17-10-2025,Loamy,MOP,Flood Irrigation,3.412
+Wheat,0.61,15-12-2024,Sandy,NPK,Flood Irrigation,2.76
+Onion,0.61,02-05-2024,Silty,Urea,Drip Irrigation,30.769
+Soybean,1.84,21-06-2025,Peaty,Biofertilizers,Flood Irrigation,1.005
+Rice,0.29,18-07-2025,Laterite,MOP,Rainfed,3.362
+Maize,0.38,01-09-2024,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,4.258
+Wheat,4.49,06-10-2025,Clay,Compost/Organic Manure,Furrow/Canal irrigation,3.19
+Maize,1.7,04-09-2025,Alluvial,NPK,Rainfed,3.943
+Groundnut,0.28,02-06-2024,Alluvial,Compost/Organic Manure,Rainfed,1.092
+Groundnut,0.7,16-05-2024,Sandy,Compost/Organic Manure,Rainfed,0.883
+Maize,2.67,23-09-2025,Silty,Compost/Organic Manure,Sprinkler Irrigation,3.755
+Maize,0.6,14-10-2025,Alluvial,Biofertilizers,Furrow/Canal irrigation,3.988
+Wheat,2.4,26-11-2025,Loamy,NPK,Rainfed,2.345
+Groundnut,1.89,23-06-2025,Laterite,NPK,Sprinkler Irrigation,1.326
+Wheat,3.58,05-12-2025,Alluvial,MOP,Furrow/Canal irrigation,3.768
+Cotton,1.77,18-06-2025,Clay,MOP,Rainfed,0.342
+Maize,0.72,26-10-2025,Sandy,Urea,Flood Irrigation,3.287
+Rice,2.25,10-06-2024,Peaty,Urea,Drip Irrigation,4.821
+Groundnut,3.9,12-05-2025,Laterite,Urea,Furrow/Canal irrigation,1.368
+Groundnut,3.73,08-06-2025,Clay,Compost/Organic Manure,Rainfed,1.179
+Sugarcane,2.49,14-11-2025,Alluvial,Biofertilizers,Flood Irrigation,98.658
+Cotton,2.89,20-05-2025,Alluvial,Compost/Organic Manure,Rainfed,0.496
+Wheat,0.45,24-12-2025,Silty,Compost/Organic Manure,Furrow/Canal irrigation,3.211
+Wheat,2.82,06-10-2025,Alluvial,Compost/Organic Manure,Drip Irrigation,3.49
+Rice,0.45,06-06-2025,Silty,DAP,Flood Irrigation,4.732
+Sugarcane,1.52,20-11-2023,Sandy,Biofertilizers,Rainfed,68.173
+Sugarcane,0.11,12-02-2025,Sandy,Ammonium Sulphate,Rainfed,72.711
+Onion,8.05,14-04-2025,Silty,NPK,Flood Irrigation,21.799
+Potato,2.1,10-02-2024,Loamy,Compost/Organic Manure,Rainfed,23.326
+Onion,1.65,15-05-2024,Loamy,MOP,Furrow/Canal irrigation,23.364
+Wheat,3.13,13-11-2025,Alluvial,Biofertilizers,Flood Irrigation,3.304
+Cotton,1.66,17-06-2023,Laterite,NPK,Drip Irrigation,0.494
+Potato,6.69,04-10-2024,Loamy,Biofertilizers,Rainfed,24.128
+Rice,5.48,28-06-2024,Peaty,Compost/Organic Manure,Sprinkler Irrigation,3.972
+Potato,0.32,24-01-2025,Peaty,Urea,Rainfed,19.229
+Rice,0.24,18-07-2023,Sandy,Compost/Organic Manure,Furrow/Canal irrigation,4.176
+Maize,0.82,11-10-2025,Sandy,Ammonium Sulphate,Rainfed,2.663
+Soybean,1.85,23-06-2025,Alluvial,DAP,Rainfed,1.034
+Wheat,0.95,25-11-2025,Alluvial,NPK,Furrow/Canal irrigation,3.515
+Rice,4.2,24-06-2025,Clay,Compost/Organic Manure,Rainfed,3.656
+Onion,7.36,21-06-2024,Clay,Biofertilizers,Rainfed,19.346
+Cotton,0.15,18-07-2023,Silty,Urea,Sprinkler Irrigation,0.508
+Groundnut,0.14,06-05-2024,Loamy,MOP,Flood Irrigation,1.429
+Rice,3.04,21-07-2025,Silty,DAP,Drip Irrigation,4.493
+Rice,2.4,05-07-2025,Peaty,DAP,Flood Irrigation,3.587
+Rice,11.8,11-07-2024,Silty,DAP,Rainfed,4.027
+Cotton,1.21,06-07-2025,Sandy,DAP,Flood Irrigation,0.374
+Groundnut,3.27,05-06-2024,Peaty,DAP,Rainfed,1.113
+Maize,2.47,06-09-2024,Silty,Urea,Flood Irrigation,4.059
+Potato,0.74,24-01-2024,Sandy,Urea,Rainfed,20.127
+Rice,6.13,02-06-2025,Silty,NPK,Furrow/Canal irrigation,4.897
+Maize,5.85,25-06-2024,Silty,Compost/Organic Manure,Sprinkler Irrigation,3.704
+Cotton,1.19,22-04-2024,Loamy,Biofertilizers,Furrow/Canal irrigation,0.478
+Sugarcane,0.74,19-10-2024,Alluvial,MOP,Furrow/Canal irrigation,109.039
+Groundnut,8.37,08-05-2025,Laterite,DAP,Flood Irrigation,1.367
+Wheat,0.62,13-11-2025,Clay,NPK,Drip Irrigation,3.43
+Onion,0.58,27-11-2024,Laterite,MOP,Rainfed,18.171
+Maize,1.02,17-09-2024,Loamy,Biofertilizers,Flood Irrigation,3.786
+Maize,4.1,20-10-2024,Sandy,Compost/Organic Manure,Rainfed,2.872
+Wheat,0.51,06-10-2024,Loamy,Compost/Organic Manure,Drip Irrigation,3.743
+Wheat,4.16,22-11-2025,Clay,DAP,Sprinkler Irrigation,3.47
+Potato,3.83,19-10-2024,Silty,Urea,Rainfed,22.392
+Potato,2.96,06-11-2023,Clay,NPK,Furrow/Canal irrigation,22.098
+Soybean,0.17,15-06-2025,Silty,NPK,Rainfed,1.016
+Wheat,5.17,27-12-2025,Laterite,MOP,Rainfed,2.79
+Rice,1.41,08-06-2025,Clay,Urea,Drip Irrigation,4.97
+Cotton,0.35,06-04-2025,Clay,MOP,Drip Irrigation,0.508
+Groundnut,1.23,20-05-2023,Silty,Urea,Furrow/Canal irrigation,1.39
+Sugarcane,0.55,28-01-2025,Sandy,NPK,Flood Irrigation,75.712
+Potato,1.84,14-06-2024,Loamy,NPK,Flood Irrigation,25.715
+Potato,0.73,09-07-2025,Loamy,Ammonium Sulphate,Furrow/Canal irrigation,24.843
+Cotton,1.31,21-07-2025,Loamy,Compost/Organic Manure,Flood Irrigation,0.535
+Rice,0.12,09-07-2025,Alluvial,NPK,Flood Irrigation,4.829
+Wheat,1.41,18-11-2025,Laterite,NPK,Flood Irrigation,2.805
+Cotton,1.93,25-06-2025,Chalky,Compost/Organic Manure,Furrow/Canal irrigation,0.473
+Sugarcane,4.03,04-10-2024,Loamy,NPK,Flood Irrigation,92.013
+Cotton,3.13,26-04-2024,Sandy,Urea,Furrow/Canal irrigation,0.44
+Maize,0.32,03-07-2024,Silty,Compost/Organic Manure,Furrow/Canal irrigation,3.69
+Maize,0.65,25-09-2025,Laterite,MOP,Rainfed,3.543
+Wheat,2.52,17-12-2024,Clay,DAP,Sprinkler Irrigation,3.295
+Rice,1.74,03-06-2025,Alluvial,Compost/Organic Manure,Flood Irrigation,4.335
+Maize,0.96,03-06-2025,Silty,Compost/Organic Manure,Rainfed,3.266
+Soybean,0.17,08-06-2025,Silty,DAP,Furrow/Canal irrigation,1.126
+Cotton,0.38,18-04-2024,Sandy,DAP,Furrow/Canal irrigation,0.419
+Potato,1.78,23-07-2025,Clay,NPK,Rainfed,21.76
+Wheat,0.55,22-11-2025,Clay,MOP,Drip Irrigation,3.45
+Rice,0.47,22-06-2024,Chalky,Compost/Organic Manure,Flood Irrigation,3.961
+Maize,2.55,08-07-2025,Loamy,NPK,Furrow/Canal irrigation,4.081
+Wheat,0.16,07-11-2024,Alluvial,DAP,Furrow/Canal irrigation,4.005
+Sugarcane,4.2,08-10-2024,Laterite,Compost/Organic Manure,Sprinkler Irrigation,89.984
+Wheat,2.6,05-11-2025,Laterite,Urea,Drip Irrigation,3.161
+Onion,3.47,28-10-2025,Clay,MOP,Rainfed,20.617
+Onion,0.27,13-11-2024,Loamy,MOP,Drip Irrigation,27.702
+Potato,3.5,17-06-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,27.412
+Maize,1.3,11-07-2025,Peaty,Urea,Sprinkler Irrigation,3.857
+Soybean,2.73,06-06-2024,Silty,DAP,Rainfed,1.145
+Soybean,0.27,07-06-2024,Clay,Compost/Organic Manure,Flood Irrigation,0.877
+Maize,3.22,19-09-2024,Peaty,Compost/Organic Manure,Furrow/Canal irrigation,3.352
+Potato,2.25,07-02-2024,Loamy,Biofertilizers,Sprinkler Irrigation,31.618
+Potato,2.64,28-10-2024,Silty,NPK,Flood Irrigation,24.03
+Maize,0.62,13-09-2025,Sandy,Urea,Sprinkler Irrigation,3.254
+Wheat,2.38,09-11-2024,Loamy,MOP,Furrow/Canal irrigation,3.645
+Wheat,0.25,28-11-2024,Peaty,MOP,Rainfed,2.752
+Soybean,2.7,12-06-2025,Loamy,NPK,Furrow/Canal irrigation,1.221
+Maize,2.82,15-07-2024,Silty,Urea,Sprinkler Irrigation,3.573
+Potato,1.03,28-07-2024,Alluvial,Urea,Flood Irrigation,23.053
+Wheat,8.89,21-12-2025,Clay,Compost/Organic Manure,Furrow/Canal irrigation,2.715
+Onion,2.68,28-10-2024,Sandy,Compost/Organic Manure,Rainfed,20.683
+Onion,1.43,04-05-2024,Sandy,Biofertilizers,Rainfed,14.066
+Rice,1.89,04-06-2025,Loamy,Urea,Rainfed,4.183
+Potato,4.97,15-07-2024,Silty,Urea,Furrow/Canal irrigation,25.798
+Rice,2.1,28-07-2025,Clay,Biofertilizers,Rainfed,3.144
+Wheat,2.74,18-12-2024,Loamy,MOP,Rainfed,3.096
+Soybean,4.89,12-06-2025,Clay,DAP,Drip Irrigation,1.085
+Wheat,0.5,01-11-2024,Sandy,Compost/Organic Manure,Furrow/Canal irrigation,2.928
+Wheat,1.46,16-12-2025,Alluvial,NPK,Drip Irrigation,3.8
+Maize,0.67,18-09-2025,Clay,NPK,Rainfed,3.141
+Maize,1.55,27-07-2025,Clay,DAP,Rainfed,3.412
+Wheat,0.99,18-12-2024,Laterite,NPK,Furrow/Canal irrigation,2.873
+Rice,1.09,20-07-2024,Clay,Ammonium Sulphate,Rainfed,3.764
+Wheat,7.07,01-12-2023,Loamy,Urea,Flood Irrigation,3.644
+Groundnut,0.89,01-05-2024,Clay,DAP,Flood Irrigation,1.17
+Potato,3.07,11-06-2024,Sandy,Compost/Organic Manure,Sprinkler Irrigation,19.042
+Wheat,0.25,06-11-2023,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,3.445
+Potato,0.47,13-10-2025,Laterite,NPK,Furrow/Canal irrigation,19.413
+Rice,3.63,17-06-2025,Silty,DAP,Flood Irrigation,4.676
+Onion,1.23,24-10-2024,Alluvial,NPK,Flood Irrigation,26.442
+Soybean,2.55,28-06-2024,Silty,Biofertilizers,Flood Irrigation,0.919
+Maize,0.47,19-07-2024,Sandy,Compost/Organic Manure,Drip Irrigation,3.842
+Rice,1.39,12-06-2025,Laterite,DAP,Rainfed,4.071
+Sugarcane,3.82,02-02-2025,Sandy,MOP,Rainfed,68.766
+Potato,4.15,18-11-2024,Laterite,Compost/Organic Manure,Furrow/Canal irrigation,24.066
+Maize,0.56,12-07-2023,Laterite,DAP,Drip Irrigation,3.793
+Sugarcane,0.22,07-01-2025,Silty,NPK,Flood Irrigation,89.754
+Maize,1.62,15-06-2023,Loamy,DAP,Flood Irrigation,3.988
+Rice,5.53,20-06-2025,Alluvial,Compost/Organic Manure,Flood Irrigation,4.323
+Groundnut,0.86,25-06-2024,Silty,MOP,Flood Irrigation,1.291
+Soybean,0.42,02-06-2023,Laterite,Urea,Furrow/Canal irrigation,1.021
+Wheat,8.73,19-10-2024,Silty,NPK,Rainfed,3.033
+Soybean,4.15,20-06-2023,Chalky,Urea,Furrow/Canal irrigation,1.036
+Sugarcane,1.31,12-10-2024,Silty,Biofertilizers,Flood Irrigation,73.264
+Maize,2.3,17-07-2025,Sandy,Urea,Flood Irrigation,4.043
+Onion,0.4,18-04-2024,Clay,DAP,Rainfed,17.928
+Cotton,2.34,24-07-2025,Sandy,MOP,Flood Irrigation,0.424
+Maize,7.11,26-09-2025,Loamy,NPK,Flood Irrigation,4.207
+Rice,1.27,18-07-2025,Alluvial,DAP,Flood Irrigation,4.581
+Groundnut,4.15,20-06-2025,Loamy,NPK,Flood Irrigation,1.578
+Cotton,3.74,15-07-2024,Alluvial,Urea,Drip Irrigation,0.534
+Wheat,5.89,01-11-2025,Loamy,DAP,Furrow/Canal irrigation,3.653
+Rice,2.02,04-06-2025,Sandy,DAP,Sprinkler Irrigation,5.059
+Maize,4.16,03-07-2024,Silty,MOP,Sprinkler Irrigation,3.864
+Rice,5.45,16-06-2025,Laterite,Ammonium Sulphate,Rainfed,3.593
+Potato,2.44,24-01-2025,Laterite,NPK,Furrow/Canal irrigation,21.205
+Onion,2.25,14-11-2024,Alluvial,Urea,Furrow/Canal irrigation,27.136
+Groundnut,1.1,02-06-2025,Loamy,Urea,Rainfed,1.259
+Rice,2.24,15-07-2024,Laterite,MOP,Drip Irrigation,4.648
+Maize,14.98,03-10-2024,Clay,Compost/Organic Manure,Rainfed,3.291
+Wheat,3.15,05-12-2025,Laterite,NPK,Sprinkler Irrigation,3.209
+Maize,1.77,08-06-2025,Sandy,Compost/Organic Manure,Flood Irrigation,3.273
+Onion,1.14,14-05-2024,Loamy,DAP,Flood Irrigation,25.926
+Sugarcane,0.89,20-01-2025,Laterite,Compost/Organic Manure,Rainfed,76.819
+Maize,2.97,05-07-2024,Laterite,Compost/Organic Manure,Drip Irrigation,3.905
+Rice,3.3,01-07-2025,Loamy,Compost/Organic Manure,Flood Irrigation,5.156
+Maize,0.36,07-09-2024,Silty,Compost/Organic Manure,Rainfed,3.182
+Soybean,1.67,13-06-2025,Silty,Ammonium Sulphate,Drip Irrigation,1.088
+Rice,2.48,02-07-2024,Clay,Biofertilizers,Drip Irrigation,4.074
+Sugarcane,1.08,10-12-2025,Alluvial,MOP,Flood Irrigation,82.091
+Maize,1.03,28-07-2025,Silty,Urea,Sprinkler Irrigation,4.01
+Onion,0.62,10-06-2023,Loamy,NPK,Sprinkler Irrigation,28.239
+Wheat,2.31,08-11-2024,Alluvial,Biofertilizers,Flood Irrigation,3.072
+Rice,2.03,18-06-2025,Alluvial,DAP,Flood Irrigation,4.038
+Maize,4.08,17-07-2023,Alluvial,MOP,Rainfed,3.239
+Wheat,1.56,10-11-2025,Alluvial,DAP,Rainfed,2.951
+Wheat,0.93,26-12-2025,Loamy,Urea,Rainfed,3.085
+Potato,1.06,21-10-2024,Alluvial,Biofertilizers,Flood Irrigation,26.304
+Cotton,1.63,24-05-2024,Sandy,DAP,Furrow/Canal irrigation,0.38
+Onion,1.97,05-11-2024,Laterite,Urea,Sprinkler Irrigation,24.517
+Groundnut,2.63,20-05-2025,Loamy,Ammonium Sulphate,Flood Irrigation,1.516
+Sugarcane,6.33,16-02-2025,Chalky,NPK,Furrow/Canal irrigation,86.682
+Maize,5.34,02-06-2024,Clay,Biofertilizers,Furrow/Canal irrigation,3.68
+Onion,0.22,25-04-2025,Loamy,Urea,Furrow/Canal irrigation,26.068
+Maize,0.31,08-10-2025,Clay,Compost/Organic Manure,Rainfed,3.13
+Potato,1.43,17-01-2024,Sandy,NPK,Furrow/Canal irrigation,20.688
+Potato,0.83,24-11-2025,Sandy,NPK,Furrow/Canal irrigation,20.488
+Onion,3.35,10-05-2024,Laterite,DAP,Sprinkler Irrigation,20.175
+Wheat,1.98,15-10-2025,Laterite,NPK,Furrow/Canal irrigation,3.245
+Rice,2.62,15-07-2024,Sandy,NPK,Furrow/Canal irrigation,4.087
+Potato,0.36,23-07-2023,Silty,Compost/Organic Manure,Sprinkler Irrigation,22.287
+Groundnut,0.5,21-06-2024,Loamy,NPK,Flood Irrigation,1.42
+Potato,1.59,13-01-2025,Silty,Urea,Sprinkler Irrigation,26.71
+Wheat,2.57,06-10-2024,Laterite,Urea,Flood Irrigation,2.919
+Groundnut,0.69,04-05-2024,Alluvial,Biofertilizers,Drip Irrigation,1.489
+Groundnut,6.69,18-06-2024,Laterite,MOP,Rainfed,1.224
+Wheat,1.7,03-11-2024,Silty,Urea,Furrow/Canal irrigation,3.372
+Wheat,0.19,02-10-2023,Silty,Urea,Furrow/Canal irrigation,3.503
+Sugarcane,1.94,02-12-2024,Sandy,Biofertilizers,Sprinkler Irrigation,84.247
+Wheat,3.52,19-12-2025,Loamy,Urea,Furrow/Canal irrigation,3.532
+Wheat,0.58,27-11-2025,Silty,DAP,Sprinkler Irrigation,3.636
+Sugarcane,1.99,17-01-2025,Loamy,DAP,Drip Irrigation,117.466
+Cotton,4.71,14-06-2024,Silty,DAP,Rainfed,0.426
+Onion,0.97,17-11-2025,Laterite,NPK,Furrow/Canal irrigation,24.415
+Potato,0.74,01-10-2025,Sandy,NPK,Furrow/Canal irrigation,20.987
+Groundnut,3.56,14-06-2025,Sandy,DAP,Furrow/Canal irrigation,1.476
+Wheat,0.3,26-11-2025,Sandy,DAP,Rainfed,2.261
+Groundnut,2.06,13-06-2025,Laterite,MOP,Drip Irrigation,1.622
+Rice,0.47,16-07-2025,Laterite,MOP,Rainfed,3.064
+Soybean,2.77,24-06-2024,Sandy,NPK,Rainfed,0.812
+Sugarcane,0.3,26-11-2024,Alluvial,Compost/Organic Manure,Drip Irrigation,107.634
+Rice,0.15,21-07-2024,Silty,Urea,Rainfed,4.496
+Rice,1.68,23-07-2025,Alluvial,Ammonium Sulphate,Flood Irrigation,5.227
+Rice,0.63,07-07-2024,Silty,Urea,Flood Irrigation,5.044
+Rice,1.47,17-07-2025,Sandy,NPK,Rainfed,2.997
+Rice,8.91,25-07-2025,Loamy,Compost/Organic Manure,Drip Irrigation,5.496
+Onion,1.14,15-04-2024,Clay,Compost/Organic Manure,Drip Irrigation,22.841
+Wheat,1.22,28-12-2025,Sandy,NPK,Drip Irrigation,3.504
+Cotton,9.58,21-06-2023,Alluvial,DAP,Sprinkler Irrigation,0.598
+Wheat,0.37,04-12-2025,Loamy,Urea,Drip Irrigation,3.913
+Onion,1.83,18-05-2024,Loamy,Urea,Rainfed,21.72
+Wheat,0.74,20-11-2024,Alluvial,NPK,Drip Irrigation,3.606
+Rice,0.98,03-06-2024,Clay,Urea,Rainfed,3.498
+Soybean,0.24,11-06-2025,Laterite,Compost/Organic Manure,Rainfed,0.759
+Cotton,3.32,27-04-2025,Laterite,Ammonium Sulphate,Drip Irrigation,0.487
+Wheat,0.63,05-10-2024,Alluvial,MOP,Furrow/Canal irrigation,3.697
+Maize,2.2,15-10-2025,Clay,Urea,Drip Irrigation,3.985
+Maize,1.62,20-07-2024,Silty,NPK,Flood Irrigation,3.522
+Groundnut,2.31,26-05-2024,Loamy,NPK,Rainfed,1.25
+Wheat,10.38,13-11-2025,Sandy,DAP,Rainfed,2.657
+Maize,2.72,18-10-2025,Chalky,Urea,Rainfed,3.45
+Groundnut,1.35,11-06-2024,Silty,Compost/Organic Manure,Sprinkler Irrigation,1.492
+Onion,6.42,27-06-2025,Silty,Compost/Organic Manure,Flood Irrigation,21.902
+Soybean,0.49,19-06-2023,Alluvial,MOP,Drip Irrigation,1.151
+Rice,1.63,13-07-2024,Silty,NPK,Sprinkler Irrigation,5.314
+Potato,0.3,14-07-2025,Chalky,Biofertilizers,Furrow/Canal irrigation,23.907
+Soybean,0.95,02-06-2025,Loamy,NPK,Drip Irrigation,1.285
+Sugarcane,2.29,28-01-2025,Sandy,NPK,Rainfed,67.769
+Soybean,0.43,18-06-2024,Loamy,Urea,Sprinkler Irrigation,1.127
+Cotton,9.88,10-05-2025,Alluvial,Ammonium Sulphate,Sprinkler Irrigation,0.547
+Rice,3.79,22-07-2024,Clay,Biofertilizers,Drip Irrigation,4.898
+Soybean,1.57,20-06-2025,Loamy,NPK,Rainfed,1
+Maize,2.92,20-10-2024,Sandy,NPK,Furrow/Canal irrigation,3.598
+Groundnut,0.37,02-06-2024,Alluvial,MOP,Rainfed,1.326
+Rice,2.57,05-06-2025,Laterite,NPK,Furrow/Canal irrigation,4.661
+Groundnut,0.17,17-05-2024,Alluvial,Urea,Rainfed,1.202
+Groundnut,0.99,20-06-2025,Sandy,DAP,Furrow/Canal irrigation,1.194
+Maize,0.28,14-10-2025,Loamy,Biofertilizers,Flood Irrigation,3.874
+Rice,0.83,02-07-2025,Silty,MOP,Rainfed,4.193
+Sugarcane,1.11,01-02-2025,Loamy,Urea,Rainfed,102.209
+Potato,1.55,09-07-2024,Alluvial,Urea,Drip Irrigation,25.729
+Rice,5.14,26-07-2025,Loamy,Compost/Organic Manure,Flood Irrigation,4.845
+Rice,3.91,05-06-2024,Silty,Compost/Organic Manure,Furrow/Canal irrigation,4.674
+Groundnut,0.57,22-05-2025,Clay,MOP,Sprinkler Irrigation,1.332
+Groundnut,4.31,25-06-2023,Laterite,Urea,Rainfed,1.226
+Maize,4.15,13-09-2025,Peaty,NPK,Flood Irrigation,3.659
+Cotton,0.83,13-07-2023,Peaty,Biofertilizers,Rainfed,0.391
+Rice,0.27,20-07-2025,Alluvial,Compost/Organic Manure,Flood Irrigation,4.229
+Wheat,2.47,13-12-2024,Clay,Ammonium Sulphate,Flood Irrigation,2.825
+Sugarcane,0.95,11-10-2025,Silty,Ammonium Sulphate,Furrow/Canal irrigation,94.694
+Rice,3.56,12-07-2025,Loamy,DAP,Sprinkler Irrigation,5.37
+Rice,0.38,20-06-2023,Silty,Ammonium Sulphate,Drip Irrigation,5.896
+Potato,2.99,04-10-2024,Chalky,DAP,Rainfed,17.952
+Onion,0.48,25-11-2025,Clay,Compost/Organic Manure,Furrow/Canal irrigation,17.995
+Wheat,0.42,25-11-2025,Sandy,NPK,Furrow/Canal irrigation,3.045
+Wheat,1.02,16-10-2024,Alluvial,DAP,Flood Irrigation,3.512
+Soybean,1.23,07-06-2024,Silty,Urea,Rainfed,0.964
+Wheat,0.85,24-12-2023,Loamy,NPK,Furrow/Canal irrigation,2.997
+Rice,0.32,09-07-2025,Loamy,DAP,Flood Irrigation,4.987
+Rice,2.15,28-07-2024,Laterite,Compost/Organic Manure,Drip Irrigation,4.731
+Wheat,2.2,04-11-2025,Silty,Biofertilizers,Flood Irrigation,2.782
+Sugarcane,0.43,03-02-2024,Loamy,Compost/Organic Manure,Flood Irrigation,89.667
+Potato,10.64,18-06-2025,Sandy,NPK,Sprinkler Irrigation,23.21
+Sugarcane,0.22,16-11-2025,Sandy,MOP,Furrow/Canal irrigation,76.917
+Rice,0.36,16-06-2023,Clay,Compost/Organic Manure,Rainfed,3.473
+Maize,0.82,02-09-2025,Loamy,DAP,Furrow/Canal irrigation,4.32
+Maize,0.23,22-07-2025,Alluvial,NPK,Furrow/Canal irrigation,4.059
+Wheat,1.52,16-10-2023,Silty,NPK,Furrow/Canal irrigation,3.112
+Rice,2.06,10-06-2023,Laterite,Urea,Rainfed,3.923
+Potato,1.6,04-10-2025,Clay,Compost/Organic Manure,Flood Irrigation,19.283
+Potato,4.45,11-07-2024,Loamy,Ammonium Sulphate,Rainfed,21.852
+Wheat,1.29,06-12-2025,Loamy,Urea,Sprinkler Irrigation,3.598
+Maize,1.17,08-10-2025,Alluvial,Urea,Drip Irrigation,4.082
+Potato,3.62,01-01-2024,Alluvial,Urea,Drip Irrigation,29.266
+Onion,0.12,23-11-2024,Loamy,Urea,Flood Irrigation,26.421
+Maize,1.18,20-06-2025,Loamy,NPK,Furrow/Canal irrigation,4.195
+Soybean,0.7,18-06-2024,Loamy,Urea,Rainfed,1.029
+Rice,2.96,15-06-2025,Laterite,MOP,Flood Irrigation,3.99
+Rice,0.58,16-07-2025,Loamy,Ammonium Sulphate,Drip Irrigation,4.975
+Soybean,0.12,11-06-2024,Silty,Compost/Organic Manure,Rainfed,0.85
+Rice,1.69,06-06-2025,Laterite,NPK,Drip Irrigation,4.792
+Potato,1.31,14-02-2024,Loamy,Ammonium Sulphate,Flood Irrigation,22.54
+Groundnut,0.89,24-05-2024,Clay,DAP,Furrow/Canal irrigation,1.374
+Rice,2.77,05-07-2023,Loamy,MOP,Sprinkler Irrigation,4.36
+Maize,1.1,09-10-2025,Loamy,Urea,Rainfed,3.48
+Rice,1.33,15-07-2024,Clay,Compost/Organic Manure,Sprinkler Irrigation,4.602
+Wheat,6.32,20-12-2025,Alluvial,MOP,Rainfed,3.02
+Wheat,3.19,28-11-2025,Alluvial,MOP,Furrow/Canal irrigation,3.724
+Wheat,1.25,08-10-2025,Loamy,MOP,Furrow/Canal irrigation,3.241
+Soybean,0.69,14-06-2025,Alluvial,Urea,Rainfed,1.003
+Groundnut,2.13,16-06-2024,Laterite,Ammonium Sulphate,Drip Irrigation,1.5
+Maize,2.25,23-06-2025,Laterite,Biofertilizers,Sprinkler Irrigation,3.647
+Wheat,2,10-12-2023,Loamy,NPK,Rainfed,3.372
+Soybean,0.24,28-06-2024,Chalky,DAP,Furrow/Canal irrigation,0.915
+Soybean,2.77,13-06-2025,Alluvial,DAP,Drip Irrigation,1.275
+Maize,1.54,26-09-2025,Peaty,MOP,Flood Irrigation,3.226
+Onion,0.28,13-10-2025,Loamy,MOP,Flood Irrigation,24.578
+Rice,2.62,05-06-2025,Alluvial,DAP,Drip Irrigation,5.125
+Maize,0.8,11-06-2025,Loamy,DAP,Rainfed,4.004
+Wheat,0.96,16-11-2024,Clay,Compost/Organic Manure,Rainfed,2.713
+Cotton,0.51,26-06-2024,Peaty,Ammonium Sulphate,Furrow/Canal irrigation,0.496
+Potato,0.48,03-11-2025,Sandy,Compost/Organic Manure,Flood Irrigation,20.077
+Onion,2.99,23-04-2024,Loamy,Urea,Sprinkler Irrigation,26.034
+Onion,0.72,18-06-2024,Alluvial,NPK,Rainfed,23.949
+Groundnut,1.06,01-05-2024,Alluvial,DAP,Furrow/Canal irrigation,1.683
+Soybean,0.56,16-06-2025,Silty,Ammonium Sulphate,Furrow/Canal irrigation,1.132
+Maize,3.08,06-10-2025,Laterite,DAP,Flood Irrigation,3.136
+Wheat,2.17,15-11-2024,Alluvial,MOP,Sprinkler Irrigation,3.43
+Cotton,7.01,06-05-2025,Loamy,Urea,Flood Irrigation,0.519
+Rice,3.31,18-06-2024,Chalky,Ammonium Sulphate,Furrow/Canal irrigation,4.66
+Rice,2.86,18-06-2025,Loamy,Biofertilizers,Flood Irrigation,5.287
+Maize,3.44,05-07-2025,Sandy,Compost/Organic Manure,Furrow/Canal irrigation,3.086
+Wheat,0.93,25-11-2024,Alluvial,MOP,Sprinkler Irrigation,3.656
+Cotton,5.36,24-04-2024,Clay,Urea,Rainfed,0.379
+Rice,1.23,15-06-2024,Loamy,DAP,Rainfed,3.984
+Rice,1.26,07-07-2025,Sandy,NPK,Rainfed,3.767
+Sugarcane,0.65,07-11-2025,Clay,MOP,Rainfed,73.254
+Rice,0.36,12-07-2024,Clay,Urea,Flood Irrigation,4.279
+Wheat,2.18,07-10-2025,Laterite,NPK,Furrow/Canal irrigation,3.111
+Potato,0.77,24-07-2024,Alluvial,Urea,Rainfed,22.755
+Rice,3.85,03-07-2024,Alluvial,MOP,Flood Irrigation,4.723
+Rice,5.12,23-07-2024,Silty,Biofertilizers,Sprinkler Irrigation,5.13
+Potato,1.33,27-06-2025,Laterite,Compost/Organic Manure,Flood Irrigation,19.028
+Cotton,3.79,05-04-2024,Loamy,Biofertilizers,Furrow/Canal irrigation,0.554
+Maize,2.24,23-10-2024,Silty,Urea,Furrow/Canal irrigation,4.161
+Maize,0.49,19-07-2025,Clay,NPK,Flood Irrigation,3.661
+Sugarcane,5.64,28-10-2024,Loamy,MOP,Sprinkler Irrigation,103.906
+Maize,0.19,09-06-2024,Loamy,MOP,Furrow/Canal irrigation,4.069
+Rice,2.69,17-06-2025,Loamy,MOP,Furrow/Canal irrigation,4.943
+Soybean,3.51,27-06-2025,Alluvial,Compost/Organic Manure,Flood Irrigation,1.092
+Sugarcane,3.77,12-02-2024,Laterite,Urea,Rainfed,62.105
+Maize,2.74,04-09-2024,Loamy,NPK,Furrow/Canal irrigation,4.949
+Potato,1.52,14-01-2025,Clay,Urea,Furrow/Canal irrigation,24.993
+Onion,0.81,05-11-2024,Laterite,Compost/Organic Manure,Rainfed,21.228
+Groundnut,4.23,01-06-2024,Laterite,Urea,Sprinkler Irrigation,1.443
+Sugarcane,2.12,05-10-2024,Alluvial,NPK,Furrow/Canal irrigation,98.618
+Rice,1.34,02-07-2025,Loamy,Urea,Rainfed,4.54
+Soybean,0.12,02-06-2024,Sandy,Ammonium Sulphate,Furrow/Canal irrigation,1.026
+Groundnut,9.71,06-05-2025,Peaty,Urea,Sprinkler Irrigation,1.308
+Groundnut,0.31,12-06-2025,Loamy,NPK,Furrow/Canal irrigation,1.733
+Wheat,0.56,25-12-2023,Sandy,DAP,Sprinkler Irrigation,2.989
+Wheat,1.72,07-10-2025,Alluvial,Compost/Organic Manure,Rainfed,3.113
+Sugarcane,0.52,06-10-2024,Laterite,Biofertilizers,Rainfed,78.686
+Cotton,0.98,04-06-2024,Clay,NPK,Rainfed,0.42
+Maize,0.11,03-09-2025,Loamy,Urea,Flood Irrigation,4.397
+Soybean,2.96,08-06-2025,Silty,DAP,Furrow/Canal irrigation,1.024
+Rice,0.42,22-07-2025,Loamy,Urea,Rainfed,4.001
+Sugarcane,0.83,22-02-2025,Sandy,Urea,Flood Irrigation,72.643
+Soybean,2.66,03-06-2025,Loamy,DAP,Sprinkler Irrigation,1.082
+Potato,4.45,24-07-2024,Clay,Compost/Organic Manure,Furrow/Canal irrigation,19.45
+Soybean,1.16,16-06-2024,Clay,Urea,Rainfed,0.997
+Rice,2.48,01-06-2024,Sandy,Urea,Drip Irrigation,4.902
+Sugarcane,0.3,05-11-2024,Loamy,MOP,Furrow/Canal irrigation,95.554
+Sugarcane,1.87,10-12-2025,Silty,NPK,Flood Irrigation,108.557
+Wheat,0.23,14-10-2025,Alluvial,Urea,Rainfed,2.959
+Potato,1.83,06-06-2024,Silty,Compost/Organic Manure,Flood Irrigation,26.156
+Sugarcane,1.95,23-01-2025,Clay,Compost/Organic Manure,Rainfed,85.079
+Maize,2.36,17-09-2024,Sandy,DAP,Rainfed,2.695
+Maize,3.59,11-10-2025,Sandy,MOP,Sprinkler Irrigation,3.697
+Maize,1.48,13-07-2025,Sandy,DAP,Flood Irrigation,3.567
+Maize,2.56,19-07-2024,Sandy,Ammonium Sulphate,Furrow/Canal irrigation,3.178
+Rice,3.21,02-07-2023,Clay,Compost/Organic Manure,Rainfed,2.669
+Potato,0.42,19-07-2023,Sandy,DAP,Rainfed,19.45
+Wheat,0.9,23-10-2025,Peaty,DAP,Rainfed,2.408
+Groundnut,0.6,12-06-2024,Alluvial,DAP,Rainfed,1.312
+Onion,1.92,07-06-2025,Loamy,Urea,Furrow/Canal irrigation,26.734
+Maize,1.19,23-06-2025,Alluvial,Urea,Flood Irrigation,4.081
+Rice,2.12,26-07-2024,Sandy,Compost/Organic Manure,Rainfed,3.196
+Wheat,1.15,09-11-2024,Silty,NPK,Furrow/Canal irrigation,3.543
+Rice,3.76,19-06-2025,Clay,Ammonium Sulphate,Furrow/Canal irrigation,4.785
+Onion,1.87,19-11-2025,Laterite,Urea,Sprinkler Irrigation,19.91
+Maize,0.51,28-07-2024,Clay,DAP,Furrow/Canal irrigation,3.315
+Rice,0.15,27-07-2025,Loamy,Urea,Rainfed,3.978
+Wheat,0.15,01-10-2024,Loamy,Compost/Organic Manure,Rainfed,2.873
+Cotton,1.56,07-04-2024,Loamy,Urea,Flood Irrigation,0.541
+Potato,0.81,24-01-2025,Clay,Urea,Furrow/Canal irrigation,24.918
+Rice,3.79,12-07-2025,Peaty,Compost/Organic Manure,Flood Irrigation,3.929
+Potato,0.51,17-10-2024,Silty,MOP,Furrow/Canal irrigation,23.862
+Cotton,1.42,20-05-2025,Loamy,Compost/Organic Manure,Flood Irrigation,0.55
+Soybean,0.39,14-06-2025,Loamy,Urea,Sprinkler Irrigation,1.256
+Wheat,1.47,02-12-2024,Clay,NPK,Furrow/Canal irrigation,3.149
+Wheat,1.25,09-10-2024,Alluvial,Biofertilizers,Flood Irrigation,3.456
+Groundnut,0.45,27-05-2023,Laterite,Compost/Organic Manure,Drip Irrigation,1.472
+Onion,1.98,10-05-2024,Silty,Ammonium Sulphate,Furrow/Canal irrigation,25.116
+Sugarcane,2.24,01-11-2025,Alluvial,NPK,Furrow/Canal irrigation,98.951
+Wheat,6.38,10-10-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,3.306
+Soybean,0.67,28-06-2025,Sandy,Compost/Organic Manure,Rainfed,0.709
+Groundnut,4.83,27-05-2025,Loamy,DAP,Drip Irrigation,1.59
+Maize,2.95,25-09-2024,Sandy,MOP,Rainfed,2.472
+Potato,1.29,21-10-2023,Loamy,MOP,Drip Irrigation,26.574
+Wheat,0.23,14-12-2025,Laterite,DAP,Rainfed,2.577
+Groundnut,4.84,26-06-2024,Loamy,Urea,Flood Irrigation,1.493
+Maize,1.16,01-09-2025,Alluvial,Biofertilizers,Rainfed,3.078
+Soybean,0.95,09-06-2025,Chalky,Urea,Flood Irrigation,0.96
+Maize,1.74,06-10-2024,Alluvial,Urea,Rainfed,3.559
+Maize,5.62,04-10-2025,Loamy,DAP,Furrow/Canal irrigation,4.239
+Potato,0.7,13-07-2024,Loamy,Compost/Organic Manure,Rainfed,20.937
+Onion,2.72,14-10-2025,Loamy,Compost/Organic Manure,Drip Irrigation,25.546
+Onion,1.77,12-04-2025,Silty,MOP,Drip Irrigation,26.958
+Maize,1.35,22-10-2025,Loamy,NPK,Rainfed,3.732
+Soybean,0.96,02-06-2023,Loamy,DAP,Furrow/Canal irrigation,1.238
+Onion,0.34,20-06-2023,Clay,Biofertilizers,Rainfed,17.729
+Rice,0.68,06-07-2025,Clay,Biofertilizers,Furrow/Canal irrigation,4.108
+Rice,3.9,05-07-2025,Loamy,DAP,Furrow/Canal irrigation,5.488
+Maize,0.34,10-10-2025,Alluvial,DAP,Furrow/Canal irrigation,4.911
+Onion,4.03,11-10-2024,Laterite,NPK,Furrow/Canal irrigation,22.58
+Cotton,2.56,02-05-2023,Loamy,Urea,Flood Irrigation,0.518
+Sugarcane,1.67,02-01-2025,Clay,Biofertilizers,Rainfed,70.838
+Maize,1.43,04-06-2025,Loamy,DAP,Flood Irrigation,3.793
+Potato,0.46,19-02-2025,Alluvial,MOP,Rainfed,20.771
+Onion,1.16,08-04-2024,Laterite,Ammonium Sulphate,Furrow/Canal irrigation,25.538
+Rice,2.21,27-06-2024,Loamy,Urea,Rainfed,4.136
+Sugarcane,1.54,20-01-2025,Silty,DAP,Drip Irrigation,104.202
+Soybean,3.38,07-06-2024,Alluvial,Compost/Organic Manure,Flood Irrigation,1.038
+Potato,3.19,03-02-2023,Clay,Urea,Furrow/Canal irrigation,22.996
+Potato,0.55,06-10-2023,Clay,NPK,Rainfed,18.772
+Onion,0.9,26-05-2024,Clay,Compost/Organic Manure,Flood Irrigation,20.222
+Sugarcane,2.93,27-10-2024,Loamy,DAP,Rainfed,78.566
+Maize,4.3,03-10-2025,Laterite,Compost/Organic Manure,Rainfed,2.897
+Maize,4.33,15-10-2023,Peaty,MOP,Rainfed,2.804
+Onion,1.3,03-05-2024,Alluvial,NPK,Sprinkler Irrigation,28.4
+Rice,8.5,10-07-2025,Silty,NPK,Furrow/Canal irrigation,4.952
+Cotton,4.9,22-07-2024,Laterite,Compost/Organic Manure,Flood Irrigation,0.392
+Soybean,1.65,06-06-2024,Laterite,Compost/Organic Manure,Drip Irrigation,0.992
+Maize,2.24,25-10-2024,Peaty,MOP,Flood Irrigation,3.288
+Onion,3.55,24-04-2024,Alluvial,DAP,Rainfed,24.745
+Maize,6.78,01-06-2023,Loamy,NPK,Rainfed,3.586
+Potato,0.56,10-02-2025,Silty,Biofertilizers,Flood Irrigation,19.438
+Sugarcane,3.25,05-12-2025,Loamy,DAP,Furrow/Canal irrigation,104.214
+Sugarcane,1.82,16-10-2025,Silty,MOP,Rainfed,87.129
+Soybean,1.11,05-06-2023,Clay,Urea,Sprinkler Irrigation,1.133
+Rice,5.03,01-07-2025,Alluvial,MOP,Sprinkler Irrigation,4.686
+Cotton,2.48,04-04-2023,Silty,Compost/Organic Manure,Furrow/Canal irrigation,0.499
+Potato,3.25,02-02-2025,Clay,NPK,Rainfed,21.488
+Soybean,4.83,17-06-2024,Sandy,MOP,Rainfed,0.746
+Wheat,0.75,16-10-2025,Silty,MOP,Rainfed,2.659
+Maize,4.59,16-06-2024,Loamy,DAP,Sprinkler Irrigation,4.231
+Potato,2.22,05-07-2025,Alluvial,Compost/Organic Manure,Flood Irrigation,23.629
+Maize,2.01,20-09-2025,Loamy,Ammonium Sulphate,Drip Irrigation,4.084
+Maize,0.27,04-07-2024,Laterite,Biofertilizers,Rainfed,2.889
+Wheat,1.51,09-11-2025,Loamy,Urea,Furrow/Canal irrigation,3.658
+Potato,6.93,14-11-2025,Sandy,DAP,Rainfed,18.726
+Maize,2.3,25-09-2025,Alluvial,DAP,Sprinkler Irrigation,4.292
+Sugarcane,2.11,26-11-2025,Clay,Compost/Organic Manure,Drip Irrigation,85.415
+Rice,0.13,17-06-2025,Sandy,MOP,Furrow/Canal irrigation,3.951
+Onion,1.74,15-06-2025,Laterite,NPK,Furrow/Canal irrigation,26.256
+Rice,4.52,04-06-2024,Alluvial,NPK,Flood Irrigation,4.964
+Groundnut,0.27,11-06-2025,Loamy,Urea,Flood Irrigation,1.398
+Groundnut,4.01,05-05-2024,Laterite,NPK,Furrow/Canal irrigation,1.427
+Rice,3.52,15-07-2024,Alluvial,NPK,Rainfed,5.035
+Onion,0.85,23-10-2024,Laterite,Biofertilizers,Drip Irrigation,23.937
+Wheat,1.37,25-11-2024,Sandy,Biofertilizers,Sprinkler Irrigation,2.9
+Cotton,0.99,24-06-2024,Laterite,Compost/Organic Manure,Drip Irrigation,0.529
+Wheat,1.46,21-11-2025,Loamy,NPK,Furrow/Canal irrigation,3.57
+Sugarcane,0.48,13-02-2025,Laterite,Compost/Organic Manure,Drip Irrigation,97.7
+Cotton,2.59,17-05-2025,Alluvial,DAP,Drip Irrigation,0.551
+Cotton,0.96,01-05-2025,Sandy,Compost/Organic Manure,Rainfed,0.336
+Wheat,1.3,04-12-2025,Laterite,Compost/Organic Manure,Flood Irrigation,2.973
+Cotton,2.04,15-04-2023,Loamy,Compost/Organic Manure,Rainfed,0.495
+Onion,0.97,22-05-2024,Laterite,Compost/Organic Manure,Rainfed,17.859
+Groundnut,7.84,27-05-2024,Laterite,NPK,Sprinkler Irrigation,1.557
+Maize,2.11,14-09-2023,Alluvial,NPK,Rainfed,3.744
+Maize,0.89,28-10-2025,Loamy,NPK,Rainfed,3.489
+Maize,2.42,27-10-2025,Loamy,NPK,Rainfed,3.597
+Maize,3.73,16-07-2025,Sandy,Urea,Rainfed,2.982
+Onion,0.75,04-05-2025,Loamy,MOP,Drip Irrigation,29.922
+Rice,1.54,10-07-2024,Loamy,Urea,Sprinkler Irrigation,5.614
+Groundnut,0.83,10-06-2023,Loamy,Compost/Organic Manure,Rainfed,1.407
+Rice,5.67,14-06-2023,Clay,DAP,Rainfed,3.377
+Wheat,4.2,27-12-2024,Silty,Compost/Organic Manure,Rainfed,2.964
+Maize,2.29,28-09-2025,Laterite,Urea,Rainfed,3.162
+Soybean,0.7,11-06-2024,Silty,Biofertilizers,Furrow/Canal irrigation,1.112
+Groundnut,1.74,19-05-2025,Silty,Compost/Organic Manure,Flood Irrigation,1.42
+Soybean,0.34,19-06-2024,Silty,Compost/Organic Manure,Rainfed,0.794
+Rice,4.1,26-07-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,4.198
+Cotton,1.68,13-06-2025,Silty,NPK,Furrow/Canal irrigation,0.531
+Wheat,0.33,11-12-2024,Clay,Urea,Furrow/Canal irrigation,3.135
+Cotton,1.2,25-06-2024,Sandy,DAP,Flood Irrigation,0.411
+Rice,4.01,10-06-2024,Clay,DAP,Flood Irrigation,4.393
+Wheat,0.79,02-10-2025,Loamy,Compost/Organic Manure,Rainfed,3.047
+Maize,3.37,02-10-2025,Loamy,NPK,Drip Irrigation,4.674
+Rice,0.14,09-06-2025,Silty,MOP,Drip Irrigation,5.317
+Groundnut,0.76,15-06-2024,Sandy,MOP,Sprinkler Irrigation,1.232
+Onion,4.22,26-10-2025,Loamy,Biofertilizers,Furrow/Canal irrigation,26.118
+Cotton,1.66,27-07-2023,Silty,MOP,Sprinkler Irrigation,0.49
+Rice,0.3,27-07-2024,Peaty,Biofertilizers,Furrow/Canal irrigation,3.567
+Wheat,1.92,18-12-2023,Silty,DAP,Flood Irrigation,3.169
+Rice,0.81,14-07-2025,Loamy,NPK,Furrow/Canal irrigation,5.585
+Potato,0.2,09-07-2025,Loamy,Biofertilizers,Flood Irrigation,22.679
+Maize,4.76,21-09-2023,Alluvial,MOP,Drip Irrigation,4.425
+Rice,1.9,25-07-2024,Clay,Urea,Furrow/Canal irrigation,4.768
+Sugarcane,4.56,22-11-2025,Loamy,Biofertilizers,Flood Irrigation,98.493
+Soybean,0.17,04-06-2024,Clay,Biofertilizers,Rainfed,0.788
+Wheat,1.85,23-12-2025,Loamy,Urea,Rainfed,2.914
+Wheat,3.66,12-11-2024,Sandy,NPK,Rainfed,2.529
+Soybean,1.93,04-06-2024,Alluvial,MOP,Rainfed,1.001
+Cotton,3.64,24-05-2023,Sandy,DAP,Rainfed,0.392
+Wheat,4.32,01-12-2024,Alluvial,Ammonium Sulphate,Rainfed,3.127
+Wheat,1.23,21-11-2023,Peaty,MOP,Furrow/Canal irrigation,3.645
+Wheat,0.86,17-12-2024,Clay,NPK,Furrow/Canal irrigation,3.594
+Potato,1.94,18-11-2023,Clay,Urea,Sprinkler Irrigation,23.36
+Rice,4.56,23-06-2025,Clay,Urea,Flood Irrigation,4.923
+Rice,2.1,01-06-2023,Clay,Compost/Organic Manure,Rainfed,3.234
+Soybean,1.89,04-06-2025,Clay,Biofertilizers,Furrow/Canal irrigation,0.929
+Potato,1.54,25-01-2025,Silty,NPK,Drip Irrigation,28.658
+Maize,0.32,02-06-2023,Clay,Compost/Organic Manure,Rainfed,2.903
+Groundnut,2.21,02-06-2025,Loamy,MOP,Drip Irrigation,1.375
+Sugarcane,6.11,13-11-2024,Sandy,Compost/Organic Manure,Flood Irrigation,86.558
+Soybean,1.51,26-06-2024,Clay,MOP,Drip Irrigation,1.149
+Sugarcane,2.11,19-11-2024,Loamy,Urea,Rainfed,86.832
+Rice,1,21-06-2025,Clay,DAP,Rainfed,3.72
+Soybean,1.38,02-06-2024,Loamy,MOP,Rainfed,0.982
+Sugarcane,0.54,25-02-2025,Loamy,NPK,Rainfed,76.039
+Wheat,1.99,22-12-2025,Loamy,DAP,Furrow/Canal irrigation,3.415
+Cotton,1.55,07-05-2024,Silty,DAP,Drip Irrigation,0.525
+Rice,0.11,20-07-2025,Chalky,Compost/Organic Manure,Rainfed,3.769
+Wheat,1.8,04-10-2024,Clay,Compost/Organic Manure,Drip Irrigation,3.161
+Wheat,1.54,08-12-2025,Clay,DAP,Rainfed,2.761
+Groundnut,1.11,07-06-2025,Clay,Compost/Organic Manure,Drip Irrigation,1.411
+Rice,0.28,05-06-2023,Loamy,DAP,Rainfed,4.119
+Groundnut,0.95,07-05-2025,Loamy,DAP,Flood Irrigation,1.523
+Rice,1.52,06-06-2024,Alluvial,Biofertilizers,Drip Irrigation,5.179
+Sugarcane,2.52,11-12-2025,Alluvial,DAP,Flood Irrigation,103.368
+Potato,9.97,23-02-2024,Sandy,Urea,Furrow/Canal irrigation,21.078
+Potato,1.1,11-11-2025,Silty,Biofertilizers,Flood Irrigation,21.511
+Rice,1.2,26-07-2025,Loamy,DAP,Rainfed,4.703
+Wheat,2.6,16-12-2025,Loamy,Urea,Rainfed,3.046
+Sugarcane,1.97,25-11-2024,Alluvial,Compost/Organic Manure,Flood Irrigation,98.914
+Cotton,6.3,17-06-2024,Chalky,Compost/Organic Manure,Rainfed,0.345
+Wheat,3.54,21-12-2025,Sandy,DAP,Sprinkler Irrigation,3.125
+Potato,2.42,13-07-2024,Silty,Biofertilizers,Flood Irrigation,21.578
+Cotton,0.34,15-06-2025,Clay,DAP,Drip Irrigation,0.483
+Cotton,1.02,14-07-2024,Clay,Compost/Organic Manure,Flood Irrigation,0.352
+Maize,0.36,21-07-2024,Sandy,Compost/Organic Manure,Flood Irrigation,3.541
+Cotton,0.25,04-05-2025,Sandy,NPK,Rainfed,0.36
+Wheat,0.27,27-12-2024,Laterite,Compost/Organic Manure,Sprinkler Irrigation,3.213
+Soybean,2.31,01-06-2025,Laterite,DAP,Flood Irrigation,0.957
+Onion,2.37,16-10-2025,Silty,Biofertilizers,Furrow/Canal irrigation,26.05
+Potato,0.12,16-10-2024,Loamy,MOP,Rainfed,18.948
+Maize,2.12,11-09-2024,Alluvial,NPK,Furrow/Canal irrigation,4.293
+Maize,4.24,12-09-2024,Loamy,Compost/Organic Manure,Flood Irrigation,4.098
+Groundnut,2.67,11-06-2025,Loamy,NPK,Furrow/Canal irrigation,1.605
+Groundnut,0.41,19-05-2024,Laterite,Biofertilizers,Sprinkler Irrigation,1.249
+Onion,0.12,13-11-2025,Loamy,NPK,Rainfed,20.333
+Rice,1.43,21-07-2024,Alluvial,Urea,Drip Irrigation,5.136
+Cotton,1.82,01-07-2025,Loamy,Urea,Furrow/Canal irrigation,0.469
+Wheat,2.71,03-12-2024,Clay,NPK,Drip Irrigation,3.656
+Wheat,2.21,05-10-2024,Silty,NPK,Drip Irrigation,3.833
+Onion,1.22,10-04-2024,Clay,Ammonium Sulphate,Rainfed,20.408
+Soybean,2.34,09-06-2025,Loamy,Biofertilizers,Rainfed,0.914
+Potato,3.21,19-02-2025,Alluvial,NPK,Rainfed,20.954
+Groundnut,1.28,12-06-2025,Chalky,Compost/Organic Manure,Flood Irrigation,1.238
+Soybean,4,20-06-2024,Laterite,NPK,Furrow/Canal irrigation,1.089
+Rice,5.07,08-06-2024,Alluvial,Urea,Furrow/Canal irrigation,4.439
+Cotton,1.85,16-05-2025,Clay,Compost/Organic Manure,Sprinkler Irrigation,0.452
+Maize,1.03,14-07-2025,Clay,DAP,Rainfed,3.559
+Maize,2.43,13-07-2025,Loamy,NPK,Sprinkler Irrigation,4.663
+Rice,1.04,11-06-2024,Peaty,NPK,Rainfed,3.696
+Rice,0.41,05-07-2025,Clay,DAP,Sprinkler Irrigation,4.262
+Potato,4.52,04-02-2024,Silty,NPK,Drip Irrigation,25.583
+Groundnut,0.15,06-06-2024,Loamy,Urea,Rainfed,1.294
+Wheat,2.18,21-12-2025,Silty,Ammonium Sulphate,Drip Irrigation,3.231
+Sugarcane,0.25,02-12-2023,Laterite,Compost/Organic Manure,Furrow/Canal irrigation,92.401
+Maize,1.15,14-06-2024,Sandy,Urea,Furrow/Canal irrigation,3.741
+Sugarcane,1.96,26-10-2024,Laterite,Ammonium Sulphate,Furrow/Canal irrigation,76.953
+Rice,1.01,18-07-2025,Silty,MOP,Furrow/Canal irrigation,5.318
+Maize,0.4,04-09-2024,Loamy,Urea,Flood Irrigation,3.861
+Wheat,1.43,03-10-2024,Silty,DAP,Rainfed,2.911
+Rice,6.75,04-07-2024,Chalky,Compost/Organic Manure,Furrow/Canal irrigation,4.003
+Cotton,1.07,21-06-2025,Chalky,Ammonium Sulphate,Furrow/Canal irrigation,0.401
+Sugarcane,0.15,11-02-2025,Alluvial,Ammonium Sulphate,Drip Irrigation,102.94
+Rice,2.92,17-06-2024,Silty,Biofertilizers,Flood Irrigation,3.764
+Soybean,4.71,25-06-2024,Loamy,Urea,Sprinkler Irrigation,1.212
+Maize,0.35,21-06-2024,Sandy,Biofertilizers,Rainfed,2.669
+Onion,4.49,21-11-2024,Laterite,Urea,Furrow/Canal irrigation,22.843
+Maize,1.95,28-09-2025,Laterite,DAP,Sprinkler Irrigation,3.314
+Rice,0.93,20-06-2025,Alluvial,NPK,Sprinkler Irrigation,4.807
+Soybean,1.66,07-06-2025,Sandy,Biofertilizers,Furrow/Canal irrigation,0.955
+Rice,1.66,08-06-2025,Clay,NPK,Rainfed,3.466
+Rice,2.97,20-06-2024,Loamy,DAP,Rainfed,4.345
+Soybean,0.82,03-06-2025,Alluvial,DAP,Flood Irrigation,1.228
+Maize,0.7,25-10-2025,Loamy,Biofertilizers,Rainfed,3.112
+Groundnut,6.89,20-06-2025,Silty,NPK,Sprinkler Irrigation,1.483
+Maize,1.73,18-10-2024,Silty,Urea,Sprinkler Irrigation,4.364
+Maize,0.4,01-06-2025,Alluvial,Compost/Organic Manure,Flood Irrigation,3.304
+Maize,1.27,13-10-2025,Clay,MOP,Rainfed,2.918
+Maize,1.13,13-06-2025,Alluvial,Urea,Furrow/Canal irrigation,4.784
+Onion,10.28,21-11-2025,Peaty,Ammonium Sulphate,Rainfed,19.214
+Onion,1.79,27-04-2024,Loamy,Ammonium Sulphate,Drip Irrigation,29.303
+Sugarcane,2.04,22-11-2024,Loamy,DAP,Rainfed,85.354
+Sugarcane,0.18,21-10-2023,Chalky,NPK,Rainfed,64.424
+Onion,1.39,14-04-2025,Loamy,NPK,Rainfed,20.637
+Cotton,6.75,25-07-2025,Alluvial,Compost/Organic Manure,Drip Irrigation,0.567
+Soybean,4.9,24-06-2025,Loamy,Compost/Organic Manure,Rainfed,1.021
+Rice,4.18,04-06-2025,Sandy,Ammonium Sulphate,Rainfed,3.959
+Sugarcane,0.38,06-01-2025,Chalky,DAP,Sprinkler Irrigation,86.79
+Onion,3.26,06-10-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,26.233
+Rice,0.75,28-06-2024,Silty,Urea,Drip Irrigation,5.1
+Rice,8.03,16-06-2024,Clay,Compost/Organic Manure,Drip Irrigation,4.319
+Wheat,1.42,04-10-2025,Loamy,Compost/Organic Manure,Flood Irrigation,3.391
+Cotton,1.04,25-07-2025,Loamy,NPK,Flood Irrigation,0.564
+Potato,0.77,22-07-2025,Clay,MOP,Furrow/Canal irrigation,23.566
+Potato,1.08,24-11-2023,Laterite,Biofertilizers,Drip Irrigation,22.044
+Rice,1.53,12-06-2025,Clay,Ammonium Sulphate,Furrow/Canal irrigation,5.301
+Cotton,4.11,01-06-2023,Silty,Compost/Organic Manure,Furrow/Canal irrigation,0.485
+Groundnut,8,13-06-2024,Laterite,Compost/Organic Manure,Flood Irrigation,1.346
+Onion,2.99,24-10-2025,Clay,MOP,Rainfed,18.107
+Potato,1.8,05-01-2025,Clay,Urea,Furrow/Canal irrigation,25.152
+Onion,4.57,04-11-2024,Clay,NPK,Flood Irrigation,22.08
+Rice,0.23,06-06-2024,Alluvial,DAP,Flood Irrigation,4.757
+Wheat,1.53,04-12-2025,Silty,Biofertilizers,Rainfed,3.001
+Maize,2.07,21-09-2025,Loamy,Biofertilizers,Furrow/Canal irrigation,4.608
+Groundnut,2.67,09-05-2025,Sandy,Urea,Drip Irrigation,1.353
+Groundnut,2.46,19-05-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,1.478
+Cotton,0.99,28-05-2024,Clay,NPK,Furrow/Canal irrigation,0.459
+Potato,3.36,04-10-2025,Clay,NPK,Rainfed,18.446
+Rice,6.41,22-07-2025,Clay,MOP,Sprinkler Irrigation,4.315
+Sugarcane,0.12,17-11-2025,Alluvial,Urea,Furrow/Canal irrigation,96.658
+Sugarcane,0.13,16-12-2025,Loamy,Biofertilizers,Drip Irrigation,111.225
+Potato,2.78,28-10-2025,Laterite,Compost/Organic Manure,Rainfed,18.946
+Rice,0.41,10-07-2025,Alluvial,MOP,Furrow/Canal irrigation,5.131
+Onion,2.9,12-11-2024,Laterite,NPK,Rainfed,20.587
+Wheat,3.01,13-12-2025,Sandy,DAP,Furrow/Canal irrigation,3.254
+Potato,3.84,15-11-2025,Silty,MOP,Rainfed,19.11
+Maize,1.44,24-06-2024,Silty,NPK,Furrow/Canal irrigation,4.119
+Rice,0.26,22-07-2024,Alluvial,Biofertilizers,Drip Irrigation,4.627
+Onion,0.24,17-04-2025,Silty,MOP,Furrow/Canal irrigation,21.327
+Soybean,0.96,08-06-2024,Clay,DAP,Rainfed,0.899
+Rice,6,25-06-2025,Clay,Compost/Organic Manure,Flood Irrigation,4.077
+Soybean,0.25,04-06-2024,Sandy,NPK,Rainfed,0.842
+Cotton,0.81,09-07-2025,Chalky,Urea,Rainfed,0.395
+Maize,0.26,04-09-2024,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,4.502
+Cotton,2.56,13-04-2025,Silty,NPK,Furrow/Canal irrigation,0.522
+Maize,0.2,22-06-2025,Alluvial,DAP,Rainfed,3.525
+Rice,0.8,02-06-2025,Loamy,DAP,Sprinkler Irrigation,5.071
+Cotton,0.63,17-04-2023,Loamy,Biofertilizers,Sprinkler Irrigation,0.571
+Onion,5.4,17-04-2024,Alluvial,DAP,Rainfed,21.551
+Rice,1.14,20-07-2025,Silty,DAP,Drip Irrigation,5.09
+Potato,1.39,10-10-2023,Alluvial,DAP,Sprinkler Irrigation,28.175
+Cotton,0.61,03-07-2024,Silty,DAP,Rainfed,0.439
+Rice,1.95,22-07-2023,Clay,Ammonium Sulphate,Rainfed,3.663
+Rice,0.99,23-06-2025,Clay,MOP,Furrow/Canal irrigation,4.044
+Soybean,4.49,26-06-2025,Clay,Urea,Rainfed,0.907
+Rice,1.5,03-07-2025,Loamy,Urea,Furrow/Canal irrigation,5.844
+Groundnut,2.06,09-05-2025,Sandy,NPK,Furrow/Canal irrigation,1.179
+Maize,0.25,06-06-2025,Silty,Compost/Organic Manure,Rainfed,2.946
+Potato,2.6,18-11-2025,Loamy,Urea,Drip Irrigation,29.537
+Wheat,3.56,22-12-2024,Alluvial,NPK,Rainfed,3.177
+Potato,1.57,01-07-2025,Peaty,Compost/Organic Manure,Rainfed,20.671
+Rice,0.41,23-07-2023,Laterite,Ammonium Sulphate,Flood Irrigation,3.744
+Maize,1.47,17-10-2025,Loamy,Biofertilizers,Rainfed,3.714
+Groundnut,0.77,10-05-2024,Clay,DAP,Drip Irrigation,1.517
+Rice,0.21,19-06-2025,Sandy,Compost/Organic Manure,Rainfed,2.993
+Maize,2.86,22-07-2025,Clay,Compost/Organic Manure,Rainfed,2.8
+Cotton,0.75,27-05-2024,Laterite,Compost/Organic Manure,Rainfed,0.37
+Groundnut,2.56,20-05-2025,Clay,Urea,Furrow/Canal irrigation,1.276
+Groundnut,0.31,27-06-2024,Loamy,DAP,Drip Irrigation,1.794
+Maize,0.99,11-06-2024,Alluvial,DAP,Rainfed,3.774
+Groundnut,0.85,10-06-2024,Loamy,Urea,Rainfed,1.288
+Maize,3.21,15-09-2025,Alluvial,Compost/Organic Manure,Drip Irrigation,4.26
+Rice,4.91,04-07-2024,Sandy,Compost/Organic Manure,Sprinkler Irrigation,4.529
+Maize,1.05,03-06-2024,Silty,Compost/Organic Manure,Flood Irrigation,3.622
+Onion,1.08,09-06-2024,Loamy,NPK,Flood Irrigation,29.228
+Maize,2.1,04-07-2025,Alluvial,MOP,Rainfed,3.576
+Rice,2.3,04-06-2023,Loamy,Urea,Flood Irrigation,4.567
+Groundnut,6.87,16-05-2024,Alluvial,Biofertilizers,Drip Irrigation,1.489
+Maize,0.32,11-09-2025,Laterite,Compost/Organic Manure,Flood Irrigation,3.551
+Groundnut,3.14,26-05-2024,Sandy,Urea,Rainfed,1.007
+Groundnut,0.99,14-06-2023,Alluvial,Compost/Organic Manure,Rainfed,1.289
+Wheat,6.38,08-11-2023,Silty,Compost/Organic Manure,Sprinkler Irrigation,2.77
+Wheat,1.32,08-12-2025,Silty,NPK,Rainfed,2.974
+Groundnut,0.57,07-05-2025,Alluvial,MOP,Rainfed,1.128
+Wheat,0.21,07-11-2024,Alluvial,NPK,Rainfed,2.78
+Rice,3.02,23-07-2024,Silty,DAP,Flood Irrigation,5.01
+Maize,3.9,04-10-2025,Loamy,DAP,Flood Irrigation,3.935
+Maize,0.58,02-09-2025,Sandy,Ammonium Sulphate,Flood Irrigation,3.046
+Wheat,4.34,14-10-2025,Loamy,Biofertilizers,Flood Irrigation,3.805
+Wheat,0.59,18-12-2025,Laterite,Urea,Flood Irrigation,3.113
+Potato,0.8,08-02-2025,Silty,DAP,Flood Irrigation,26.58
+Potato,0.39,02-10-2025,Silty,Biofertilizers,Rainfed,22.483
+Rice,0.86,18-06-2025,Silty,DAP,Rainfed,4.398
+Groundnut,2.17,14-05-2023,Silty,DAP,Furrow/Canal irrigation,1.643
+Potato,0.54,15-02-2025,Silty,Urea,Rainfed,19.78
+Maize,4.52,23-07-2024,Alluvial,DAP,Furrow/Canal irrigation,3.919
+Rice,0.22,16-07-2025,Peaty,Compost/Organic Manure,Furrow/Canal irrigation,3.77
+Rice,0.34,13-07-2025,Silty,DAP,Drip Irrigation,4.592
+Cotton,3.71,17-07-2025,Chalky,NPK,Flood Irrigation,0.441
+Wheat,0.13,08-10-2025,Sandy,DAP,Drip Irrigation,2.844
+Rice,0.14,28-07-2025,Laterite,MOP,Flood Irrigation,3.567
+Potato,0.37,21-02-2024,Silty,NPK,Drip Irrigation,26.896
+Sugarcane,1.14,20-01-2025,Loamy,Biofertilizers,Rainfed,66.206
+Rice,1.61,06-07-2024,Loamy,Urea,Rainfed,4.351
+Potato,1.35,21-02-2024,Loamy,MOP,Rainfed,22.026
+Wheat,6.72,07-11-2024,Silty,Compost/Organic Manure,Furrow/Canal irrigation,3.814
+Rice,0.85,12-07-2025,Loamy,NPK,Rainfed,4.579
+Maize,3.07,24-07-2024,Loamy,DAP,Flood Irrigation,4.059
+Potato,7.56,03-06-2025,Loamy,NPK,Rainfed,26.264
+Soybean,0.37,24-06-2024,Laterite,Urea,Drip Irrigation,1.081
+Maize,0.72,05-06-2025,Loamy,Urea,Sprinkler Irrigation,4.394
+Soybean,0.14,26-06-2025,Sandy,Compost/Organic Manure,Flood Irrigation,0.968
+Sugarcane,1.56,27-11-2024,Loamy,DAP,Sprinkler Irrigation,101.203
+Rice,0.96,01-06-2025,Laterite,Urea,Flood Irrigation,4.416
+Cotton,7.41,01-05-2024,Loamy,NPK,Flood Irrigation,0.482
+Wheat,3.86,27-12-2025,Alluvial,NPK,Furrow/Canal irrigation,3.791
+Wheat,1.32,11-12-2024,Sandy,Biofertilizers,Furrow/Canal irrigation,2.982
+Potato,1.12,17-02-2024,Loamy,DAP,Rainfed,22.183
+Potato,0.62,12-02-2024,Alluvial,DAP,Rainfed,22.124
+Maize,0.67,26-09-2025,Sandy,Biofertilizers,Sprinkler Irrigation,3.898
+Sugarcane,1.38,24-01-2025,Laterite,Biofertilizers,Furrow/Canal irrigation,82.569
+Rice,0.22,05-07-2025,Sandy,Biofertilizers,Sprinkler Irrigation,4.348
+Maize,0.26,23-10-2024,Alluvial,MOP,Rainfed,3.444
+Rice,1.01,18-07-2024,Silty,NPK,Furrow/Canal irrigation,4.705
+Maize,0.4,23-09-2025,Sandy,NPK,Sprinkler Irrigation,3.508
+Potato,2.05,04-06-2025,Sandy,DAP,Furrow/Canal irrigation,22.472
+Potato,0.42,27-10-2024,Alluvial,Biofertilizers,Furrow/Canal irrigation,27.567
+Wheat,3.43,04-10-2023,Alluvial,Ammonium Sulphate,Flood Irrigation,2.988
+Rice,2.34,22-06-2024,Silty,NPK,Rainfed,4.744
+Rice,0.7,08-06-2024,Sandy,MOP,Furrow/Canal irrigation,4.255
+Rice,0.79,24-06-2024,Silty,Biofertilizers,Rainfed,3.829
+Groundnut,1.37,10-05-2025,Sandy,Urea,Rainfed,1.087
+Soybean,0.23,13-06-2025,Laterite,Ammonium Sulphate,Furrow/Canal irrigation,1.05
+Cotton,0.42,23-06-2025,Loamy,Biofertilizers,Flood Irrigation,0.456
+Rice,6.44,24-06-2025,Loamy,MOP,Sprinkler Irrigation,5.132
+Rice,1.61,16-07-2025,Loamy,MOP,Furrow/Canal irrigation,4.974
+Rice,2.38,09-06-2025,Sandy,Urea,Rainfed,2.89
+Potato,0.26,18-10-2024,Sandy,DAP,Drip Irrigation,25.021
+Potato,1.33,08-10-2025,Loamy,Biofertilizers,Rainfed,20.693
+Cotton,1.68,03-06-2023,Alluvial,Urea,Flood Irrigation,0.484
+Wheat,0.46,25-11-2025,Clay,DAP,Sprinkler Irrigation,3.28
+Sugarcane,1.28,17-02-2025,Sandy,Compost/Organic Manure,Sprinkler Irrigation,87.195
+Soybean,0.65,10-06-2024,Loamy,Ammonium Sulphate,Drip Irrigation,1.29
+Soybean,6.57,25-06-2025,Chalky,Biofertilizers,Rainfed,0.804
+Onion,0.7,11-10-2024,Loamy,MOP,Furrow/Canal irrigation,26.324
+Rice,1.25,05-06-2024,Silty,Biofertilizers,Drip Irrigation,4.729
+Rice,2.05,16-06-2025,Sandy,DAP,Furrow/Canal irrigation,4.261
+Rice,8.05,03-07-2025,Sandy,Compost/Organic Manure,Rainfed,3.544
+Onion,4.87,21-11-2025,Alluvial,Biofertilizers,Furrow/Canal irrigation,24.057
+Maize,5.85,14-10-2025,Alluvial,Biofertilizers,Sprinkler Irrigation,4.172
+Maize,7.67,17-10-2024,Clay,Compost/Organic Manure,Furrow/Canal irrigation,3.765
+Rice,2.93,23-06-2025,Laterite,Urea,Furrow/Canal irrigation,4.306
+Wheat,2.63,08-10-2025,Clay,NPK,Drip Irrigation,3.182
+Maize,0.67,24-09-2024,Sandy,Biofertilizers,Flood Irrigation,3.47
+Maize,0.46,11-10-2024,Alluvial,NPK,Rainfed,3.969
+Maize,1.77,16-09-2024,Loamy,DAP,Rainfed,3.638
+Onion,0.12,26-11-2023,Clay,NPK,Drip Irrigation,28.27
+Potato,0.12,21-02-2024,Loamy,Urea,Flood Irrigation,26.169
+Rice,0.62,22-06-2025,Alluvial,DAP,Drip Irrigation,5.327
+Potato,2.11,06-07-2024,Loamy,Biofertilizers,Rainfed,20.556
+Cotton,3.87,12-07-2025,Alluvial,MOP,Furrow/Canal irrigation,0.478
+Cotton,2.71,11-05-2023,Silty,Compost/Organic Manure,Furrow/Canal irrigation,0.489
+Potato,0.16,15-01-2024,Alluvial,NPK,Flood Irrigation,23.764
+Potato,1.41,15-01-2024,Alluvial,Compost/Organic Manure,Rainfed,20.159
+Soybean,0.78,14-06-2023,Chalky,Compost/Organic Manure,Rainfed,0.827
+Wheat,1.11,19-12-2025,Alluvial,NPK,Flood Irrigation,3.127
+Wheat,2.91,23-10-2025,Clay,Biofertilizers,Flood Irrigation,2.465
+Maize,5.11,04-10-2025,Alluvial,NPK,Flood Irrigation,4.088
+Cotton,0.98,10-07-2025,Alluvial,Ammonium Sulphate,Rainfed,0.467
+Wheat,3.2,03-10-2025,Silty,MOP,Flood Irrigation,3.218
+Maize,0.99,22-06-2025,Loamy,NPK,Flood Irrigation,3.653
+Maize,2.24,04-10-2024,Loamy,Compost/Organic Manure,Rainfed,3.301
+Potato,5.11,01-02-2025,Alluvial,Compost/Organic Manure,Rainfed,20.728
+Wheat,0.31,22-11-2024,Loamy,Compost/Organic Manure,Flood Irrigation,2.964
+Rice,0.18,11-07-2025,Loamy,MOP,Rainfed,4.261
+Cotton,0.17,27-07-2024,Sandy,Biofertilizers,Rainfed,0.354
+Onion,0.76,13-10-2025,Alluvial,NPK,Rainfed,22.547
+Rice,6.11,27-07-2025,Laterite,Biofertilizers,Furrow/Canal irrigation,3.684
+Rice,1.84,01-06-2024,Clay,MOP,Rainfed,4.287
+Rice,1.55,24-06-2025,Laterite,Biofertilizers,Rainfed,3.169
+Groundnut,0.97,10-05-2024,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,1.621
+Potato,4.59,09-06-2025,Sandy,Urea,Drip Irrigation,25.803
+Onion,1.39,04-06-2024,Sandy,DAP,Furrow/Canal irrigation,21.066
+Rice,1.48,13-06-2025,Sandy,Compost/Organic Manure,Flood Irrigation,3.922
+Maize,0.51,13-07-2024,Alluvial,MOP,Rainfed,3.059
+Rice,0.91,22-06-2023,Silty,MOP,Drip Irrigation,4.89
+Onion,0.25,06-10-2024,Silty,DAP,Sprinkler Irrigation,26.741
+Soybean,0.24,07-06-2025,Alluvial,Urea,Sprinkler Irrigation,1.221
+Wheat,1.15,05-12-2023,Loamy,NPK,Furrow/Canal irrigation,3.86
+Wheat,3.43,14-11-2024,Clay,NPK,Sprinkler Irrigation,3.245
+Rice,2.47,19-06-2025,Laterite,MOP,Sprinkler Irrigation,4.703
+Wheat,3.05,14-11-2024,Silty,DAP,Flood Irrigation,3.011
+Rice,4.27,12-07-2024,Alluvial,Compost/Organic Manure,Rainfed,4.309
+Potato,1.65,10-02-2024,Silty,Compost/Organic Manure,Furrow/Canal irrigation,23.192
+Cotton,0.18,26-05-2023,Loamy,Compost/Organic Manure,Flood Irrigation,0.44
+Rice,0.37,04-07-2024,Sandy,Ammonium Sulphate,Rainfed,3.592
+Wheat,0.21,03-12-2025,Clay,MOP,Rainfed,1.936
+Rice,7.33,19-06-2025,Alluvial,NPK,Furrow/Canal irrigation,4.936
+Wheat,0.82,26-10-2024,Clay,Urea,Flood Irrigation,2.724
+Rice,0.62,19-07-2024,Clay,MOP,Flood Irrigation,4.494
+Soybean,3.87,05-06-2025,Alluvial,NPK,Furrow/Canal irrigation,1.276
+Onion,1.2,03-04-2024,Clay,Compost/Organic Manure,Flood Irrigation,19.25
+Wheat,2.59,03-11-2025,Silty,DAP,Rainfed,2.622
+Maize,3.49,27-09-2024,Clay,MOP,Drip Irrigation,3.721
+Rice,4.74,28-07-2024,Peaty,NPK,Sprinkler Irrigation,4.289
+Rice,3.39,23-06-2025,Alluvial,DAP,Furrow/Canal irrigation,5.554
+Rice,2.26,23-07-2023,Silty,Compost/Organic Manure,Flood Irrigation,3.835
+Rice,0.26,05-06-2025,Loamy,Urea,Rainfed,4.99
+Potato,0.47,17-06-2025,Silty,MOP,Rainfed,21.134
+Onion,3.13,08-11-2025,Sandy,Compost/Organic Manure,Rainfed,18.161
+Maize,0.19,23-06-2025,Sandy,Biofertilizers,Drip Irrigation,3.599
+Rice,0.72,07-07-2024,Clay,DAP,Furrow/Canal irrigation,3.965
+Groundnut,2.61,23-06-2025,Clay,Urea,Rainfed,1.226
+Onion,2.95,15-05-2025,Alluvial,NPK,Furrow/Canal irrigation,26.679
+Rice,1.52,28-07-2024,Silty,Urea,Rainfed,3.755
+Rice,1.02,06-07-2024,Loamy,NPK,Rainfed,4.873
+Maize,1.34,12-06-2025,Clay,Urea,Rainfed,3.359
+Cotton,5.18,04-06-2024,Sandy,NPK,Furrow/Canal irrigation,0.498
+Rice,4.06,17-07-2024,Silty,NPK,Drip Irrigation,5.584
+Rice,0.74,04-06-2025,Sandy,Urea,Flood Irrigation,3.728
+Rice,0.95,13-07-2024,Clay,DAP,Furrow/Canal irrigation,4.689
+Sugarcane,0.92,12-12-2024,Silty,Ammonium Sulphate,Flood Irrigation,96.446
+Rice,1.75,24-07-2025,Loamy,Compost/Organic Manure,Flood Irrigation,5.036
+Wheat,5.98,15-11-2024,Loamy,Urea,Rainfed,2.546
+Wheat,0.46,06-10-2025,Peaty,Compost/Organic Manure,Rainfed,2.472
+Onion,3.19,16-04-2024,Sandy,Compost/Organic Manure,Rainfed,15.906
+Onion,0.15,25-04-2025,Loamy,Urea,Flood Irrigation,27.622
+Groundnut,3.75,18-06-2024,Loamy,NPK,Flood Irrigation,1.515
+Rice,0.64,17-07-2024,Laterite,Compost/Organic Manure,Furrow/Canal irrigation,4.362
+Soybean,2.54,05-06-2024,Alluvial,Compost/Organic Manure,Rainfed,0.995
+Rice,6.92,12-07-2023,Loamy,Urea,Furrow/Canal irrigation,5.591
+Maize,0.21,17-07-2025,Loamy,Biofertilizers,Flood Irrigation,4.359
+Wheat,4.07,10-11-2025,Loamy,MOP,Rainfed,3.01
+Potato,0.5,19-11-2024,Alluvial,Compost/Organic Manure,Flood Irrigation,24.409
+Onion,1.11,15-10-2025,Peaty,NPK,Flood Irrigation,24.441
+Cotton,0.38,03-06-2024,Laterite,Urea,Drip Irrigation,0.455
+Wheat,4.2,01-11-2023,Clay,Ammonium Sulphate,Drip Irrigation,3.087
+Wheat,2.33,22-12-2025,Alluvial,MOP,Furrow/Canal irrigation,3.294
+Groundnut,2.06,14-05-2025,Silty,Urea,Sprinkler Irrigation,1.601
+Maize,1.8,14-10-2024,Clay,Compost/Organic Manure,Furrow/Canal irrigation,3.59
+Onion,0.78,22-11-2024,Alluvial,Compost/Organic Manure,Sprinkler Irrigation,25.054
+Groundnut,0.83,10-05-2024,Loamy,DAP,Furrow/Canal irrigation,1.703
+Maize,0.91,04-07-2024,Loamy,NPK,Flood Irrigation,3.671
+Onion,2.74,15-11-2024,Clay,NPK,Drip Irrigation,24.314
+Cotton,3.16,20-05-2023,Alluvial,Compost/Organic Manure,Rainfed,0.436
+Maize,0.77,05-10-2023,Clay,Urea,Furrow/Canal irrigation,4.183
+Potato,0.91,02-06-2025,Loamy,Biofertilizers,Drip Irrigation,26.123
+Soybean,0.22,28-06-2025,Sandy,Compost/Organic Manure,Rainfed,0.823
+Groundnut,2.15,18-05-2025,Laterite,NPK,Flood Irrigation,1.271
+Sugarcane,2.33,24-11-2024,Alluvial,Urea,Rainfed,77.789
+Sugarcane,1.18,20-10-2023,Alluvial,NPK,Flood Irrigation,101.293
+Rice,2.88,13-07-2025,Sandy,Urea,Flood Irrigation,3.81
+Onion,0.75,09-06-2025,Laterite,Ammonium Sulphate,Furrow/Canal irrigation,21.071
+Soybean,1.23,06-06-2024,Loamy,Compost/Organic Manure,Flood Irrigation,1.004
+Cotton,7.16,10-06-2024,Silty,Biofertilizers,Rainfed,0.421
+Sugarcane,0.34,15-12-2024,Clay,NPK,Drip Irrigation,108.892
+Maize,2.54,02-10-2023,Silty,Compost/Organic Manure,Rainfed,3.083
+Rice,1.2,24-07-2025,Clay,Urea,Sprinkler Irrigation,4.256
+Cotton,0.71,17-07-2024,Sandy,MOP,Flood Irrigation,0.341
+Groundnut,0.56,09-05-2024,Laterite,MOP,Furrow/Canal irrigation,1.105
+Rice,0.78,20-07-2024,Silty,MOP,Furrow/Canal irrigation,4.631
+Groundnut,2.24,19-06-2024,Alluvial,DAP,Rainfed,1.335
+Maize,0.26,08-06-2023,Sandy,Urea,Furrow/Canal irrigation,3.541
+Maize,0.26,04-06-2025,Alluvial,Urea,Furrow/Canal irrigation,4.107
+Groundnut,0.29,20-05-2025,Loamy,Urea,Furrow/Canal irrigation,1.579
+Maize,1.93,06-09-2025,Loamy,Ammonium Sulphate,Flood Irrigation,4.34
+Onion,0.72,15-05-2024,Peaty,DAP,Furrow/Canal irrigation,25.076
+Maize,0.13,21-06-2023,Alluvial,Urea,Drip Irrigation,4.743
+Rice,1.98,19-07-2024,Silty,Urea,Sprinkler Irrigation,5.317
+Groundnut,0.85,19-05-2024,Laterite,NPK,Flood Irrigation,1.355
+Potato,4.12,14-11-2025,Silty,Compost/Organic Manure,Rainfed,17.756
+Rice,5.96,08-07-2024,Sandy,NPK,Drip Irrigation,4.602
+Potato,1.87,13-07-2025,Chalky,Urea,Furrow/Canal irrigation,22.487
+Onion,2.52,28-04-2025,Clay,MOP,Flood Irrigation,19.598
+Soybean,0.13,21-06-2025,Sandy,DAP,Flood Irrigation,1.066
+Wheat,1.85,27-12-2024,Laterite,Biofertilizers,Rainfed,2.351
+Potato,6.42,12-10-2024,Alluvial,Biofertilizers,Rainfed,18.703
+Soybean,1.12,05-06-2025,Loamy,Urea,Drip Irrigation,1.249
+Cotton,2.33,26-06-2024,Alluvial,Biofertilizers,Drip Irrigation,0.564
+Rice,7.65,22-07-2025,Peaty,Urea,Rainfed,3.404
+Maize,2.86,23-10-2025,Clay,Urea,Rainfed,3.041
+Potato,5.02,14-07-2024,Alluvial,DAP,Drip Irrigation,25.334
+Rice,1.24,26-06-2025,Sandy,Compost/Organic Manure,Furrow/Canal irrigation,3.888
+Rice,2.67,02-07-2024,Loamy,MOP,Furrow/Canal irrigation,4.978
+Onion,2,22-05-2025,Loamy,Urea,Flood Irrigation,24.927
+Cotton,2.13,28-06-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,0.556
+Groundnut,0.29,17-05-2025,Alluvial,DAP,Rainfed,1.225
+Rice,0.54,09-07-2025,Sandy,Biofertilizers,Furrow/Canal irrigation,4.117
+Cotton,0.13,04-05-2025,Clay,Compost/Organic Manure,Sprinkler Irrigation,0.497
+Onion,0.67,04-11-2025,Sandy,Compost/Organic Manure,Flood Irrigation,18.35
+Soybean,0.67,02-06-2025,Loamy,MOP,Rainfed,0.93
+Potato,0.23,07-06-2024,Clay,MOP,Rainfed,21.701
+Sugarcane,1.97,01-11-2025,Alluvial,Compost/Organic Manure,Flood Irrigation,90.605
+Potato,2.33,25-06-2025,Sandy,Compost/Organic Manure,Rainfed,17.878
+Potato,3.56,26-01-2025,Sandy,NPK,Furrow/Canal irrigation,23.016
+Sugarcane,5.5,19-02-2025,Laterite,DAP,Furrow/Canal irrigation,78.877
+Maize,2.02,09-06-2024,Laterite,Biofertilizers,Drip Irrigation,3.768
+Wheat,2.82,02-11-2024,Silty,NPK,Rainfed,3.007
+Groundnut,0.24,27-06-2024,Loamy,Urea,Rainfed,1.517
+Maize,1.03,16-10-2023,Silty,NPK,Flood Irrigation,3.893
+Cotton,1.65,03-06-2024,Clay,DAP,Furrow/Canal irrigation,0.505
+Wheat,0.73,06-12-2024,Loamy,MOP,Drip Irrigation,3.944
+Rice,2.3,19-07-2024,Loamy,NPK,Flood Irrigation,4.881
+Onion,3.2,22-10-2025,Alluvial,Compost/Organic Manure,Rainfed,25.329
+Rice,0.67,17-06-2024,Clay,NPK,Flood Irrigation,4.08
+Wheat,2.54,14-12-2025,Sandy,NPK,Flood Irrigation,2.462
+Rice,2.2,21-07-2024,Clay,Biofertilizers,Flood Irrigation,3.345
+Rice,5.61,19-06-2023,Sandy,MOP,Furrow/Canal irrigation,3.917
+Cotton,0.14,27-07-2025,Silty,MOP,Sprinkler Irrigation,0.449
+Groundnut,0.82,19-05-2025,Clay,MOP,Rainfed,1.033
+Maize,1.45,20-06-2025,Clay,NPK,Rainfed,3.186
+Wheat,5.34,08-11-2025,Laterite,Biofertilizers,Flood Irrigation,2.85
+Wheat,1.15,24-11-2025,Alluvial,NPK,Drip Irrigation,3.78
+Cotton,2.23,20-07-2025,Loamy,Compost/Organic Manure,Flood Irrigation,0.474
+Potato,0.45,25-10-2025,Alluvial,Ammonium Sulphate,Rainfed,20.913
+Soybean,0.25,03-06-2024,Clay,NPK,Sprinkler Irrigation,1.163
+Maize,4.37,01-07-2025,Loamy,NPK,Furrow/Canal irrigation,4.014
+Groundnut,3.47,28-05-2025,Sandy,NPK,Rainfed,1.02
+Onion,0.78,13-06-2025,Alluvial,DAP,Flood Irrigation,25.441
+Cotton,0.84,19-06-2024,Silty,Urea,Furrow/Canal irrigation,0.512
+Rice,1.63,21-07-2025,Clay,Compost/Organic Manure,Flood Irrigation,3.516
+Maize,0.98,05-06-2025,Alluvial,MOP,Flood Irrigation,4.109
+Soybean,3.21,17-06-2024,Laterite,DAP,Furrow/Canal irrigation,0.993
+Wheat,0.84,17-12-2024,Alluvial,MOP,Furrow/Canal irrigation,3.175
+Maize,1.51,05-09-2024,Sandy,Biofertilizers,Furrow/Canal irrigation,2.908
+Groundnut,5.76,04-06-2025,Loamy,Urea,Flood Irrigation,1.606
+Maize,1.5,09-07-2025,Alluvial,Compost/Organic Manure,Furrow/Canal irrigation,3.426
+Sugarcane,0.53,01-10-2023,Silty,Urea,Furrow/Canal irrigation,98.89
+Cotton,3.74,12-04-2023,Loamy,Biofertilizers,Rainfed,0.476
+Groundnut,4.01,04-06-2025,Chalky,Biofertilizers,Drip Irrigation,1.312
+Potato,1.99,09-06-2024,Laterite,Urea,Flood Irrigation,23.92
+Rice,0.45,06-07-2025,Clay,DAP,Rainfed,3.447
+Cotton,2.47,02-06-2025,Clay,Biofertilizers,Furrow/Canal irrigation,0.474
+Wheat,0.62,01-12-2025,Loamy,MOP,Furrow/Canal irrigation,3.537
+Wheat,0.45,16-10-2024,Laterite,Compost/Organic Manure,Flood Irrigation,3.209
+Rice,0.27,01-06-2025,Clay,NPK,Rainfed,3.772
+Sugarcane,0.97,20-11-2024,Clay,MOP,Rainfed,75.14
+Maize,0.32,10-06-2025,Silty,NPK,Rainfed,3.495
+Soybean,1.97,04-06-2024,Alluvial,Compost/Organic Manure,Furrow/Canal irrigation,1.028
+Maize,0.66,04-10-2024,Loamy,Biofertilizers,Rainfed,3.424
+Wheat,0.63,27-11-2025,Laterite,NPK,Flood Irrigation,2.828
+Wheat,0.6,28-10-2024,Laterite,Urea,Furrow/Canal irrigation,3.087
+Wheat,1.73,14-11-2024,Clay,Biofertilizers,Flood Irrigation,2.957
+Groundnut,1.17,10-05-2025,Clay,DAP,Furrow/Canal irrigation,1.518
+Cotton,2.48,05-06-2025,Silty,Urea,Furrow/Canal irrigation,0.425
+Potato,2.52,12-11-2025,Laterite,NPK,Rainfed,19.361
+Cotton,1.16,27-05-2025,Silty,Compost/Organic Manure,Flood Irrigation,0.421
+Potato,4.19,18-06-2024,Laterite,Biofertilizers,Drip Irrigation,24.286
+Rice,0.35,02-07-2025,Loamy,DAP,Flood Irrigation,5.642
+Groundnut,1.96,27-05-2023,Laterite,MOP,Sprinkler Irrigation,1.304
+Groundnut,0.41,03-05-2025,Clay,Ammonium Sulphate,Furrow/Canal irrigation,1.257
+Rice,2.46,07-07-2023,Laterite,Compost/Organic Manure,Furrow/Canal irrigation,4.047
+Maize,4.62,07-07-2024,Sandy,Biofertilizers,Rainfed,2.335
+Maize,0.56,18-10-2023,Loamy,DAP,Rainfed,2.888
+Cotton,0.14,24-07-2023,Clay,NPK,Rainfed,0.419
+Rice,3.25,13-06-2025,Laterite,NPK,Rainfed,3.724
+Rice,1.75,04-06-2024,Silty,DAP,Furrow/Canal irrigation,4.585
+Soybean,2.08,17-06-2024,Laterite,MOP,Flood Irrigation,0.842
+Groundnut,0.12,27-06-2024,Loamy,DAP,Rainfed,1.439
+Maize,2.67,25-06-2024,Silty,NPK,Rainfed,3.813
+Onion,3.55,16-06-2024,Clay,Compost/Organic Manure,Furrow/Canal irrigation,22.672
+Rice,3.81,13-06-2024,Loamy,Urea,Rainfed,3.668
+Rice,3.24,02-06-2024,Alluvial,NPK,Rainfed,4.356
+Cotton,1.3,13-07-2025,Sandy,Urea,Furrow/Canal irrigation,0.453
+Groundnut,4.38,19-06-2025,Silty,Urea,Rainfed,1.217
+Wheat,1.36,16-11-2025,Clay,Biofertilizers,Furrow/Canal irrigation,2.986
+Groundnut,3.35,01-06-2024,Loamy,Urea,Rainfed,1.266
+Onion,4.74,07-04-2024,Chalky,NPK,Flood Irrigation,20.855
+Rice,1.66,12-06-2025,Silty,Compost/Organic Manure,Flood Irrigation,4.74
+Rice,6.99,19-07-2024,Laterite,NPK,Furrow/Canal irrigation,4.57
+Onion,0.25,04-04-2023,Laterite,DAP,Flood Irrigation,20.355
+Rice,1.04,26-07-2024,Laterite,MOP,Furrow/Canal irrigation,4.107
+Wheat,11.84,03-10-2025,Alluvial,MOP,Sprinkler Irrigation,3.923
+Maize,1.74,05-06-2024,Clay,NPK,Rainfed,2.883
+Wheat,0.96,13-11-2024,Laterite,Ammonium Sulphate,Flood Irrigation,2.655
+Potato,1.03,06-06-2025,Alluvial,Compost/Organic Manure,Rainfed,21.231
+Potato,1.35,22-02-2024,Loamy,Compost/Organic Manure,Rainfed,20.913
+Rice,2.67,24-07-2025,Clay,MOP,Furrow/Canal irrigation,4.773
+Onion,0.12,24-04-2024,Alluvial,DAP,Flood Irrigation,26.564
+Rice,0.59,09-07-2024,Clay,Urea,Flood Irrigation,4.136
+Soybean,0.11,09-06-2024,Silty,Biofertilizers,Furrow/Canal irrigation,1.259
+Potato,3.36,16-07-2025,Loamy,Compost/Organic Manure,Rainfed,22.473
+Cotton,0.24,20-04-2023,Alluvial,Urea,Furrow/Canal irrigation,0.585
+Potato,3.01,02-10-2023,Clay,Compost/Organic Manure,Flood Irrigation,23.578
+Potato,2.89,21-06-2025,Silty,Urea,Furrow/Canal irrigation,25.59
+Potato,3.35,19-06-2025,Laterite,NPK,Drip Irrigation,22.846
+Sugarcane,2.32,02-02-2025,Sandy,Compost/Organic Manure,Rainfed,66.69
+Groundnut,2.04,09-05-2024,Silty,Ammonium Sulphate,Flood Irrigation,1.29
+Soybean,0.53,04-06-2024,Loamy,MOP,Rainfed,1.042
+Cotton,4.52,06-04-2023,Laterite,DAP,Rainfed,0.4
+Onion,2.94,21-04-2025,Clay,Urea,Furrow/Canal irrigation,23.484
+Wheat,1.92,05-12-2025,Loamy,NPK,Flood Irrigation,3.698
+Wheat,1.83,09-10-2024,Alluvial,Urea,Flood Irrigation,3.435
+Sugarcane,2.1,19-01-2024,Loamy,Compost/Organic Manure,Rainfed,84.372
+Potato,2.62,27-01-2025,Silty,Urea,Rainfed,18.978
+Onion,0.73,07-11-2024,Loamy,Biofertilizers,Rainfed,20.671
+Groundnut,0.65,09-05-2023,Loamy,DAP,Furrow/Canal irrigation,1.468
+Cotton,0.58,19-07-2024,Loamy,MOP,Rainfed,0.481
+Potato,1.51,28-07-2025,Alluvial,Urea,Rainfed,21.944
+Wheat,0.52,10-11-2024,Loamy,NPK,Furrow/Canal irrigation,3.743
+Maize,1.07,24-10-2025,Clay,Compost/Organic Manure,Flood Irrigation,3.226
+Maize,3.55,10-10-2024,Sandy,Biofertilizers,Flood Irrigation,3.39
+Onion,0.73,19-05-2024,Clay,Urea,Rainfed,20.41
+Onion,2.46,25-06-2025,Loamy,Ammonium Sulphate,Furrow/Canal irrigation,26.133
+Rice,2.12,26-06-2024,Loamy,NPK,Rainfed,4.487
+Sugarcane,0.88,10-11-2025,Sandy,DAP,Sprinkler Irrigation,81.992
+Rice,2.47,01-07-2024,Clay,DAP,Rainfed,3.575
+Sugarcane,0.59,27-11-2025,Clay,DAP,Furrow/Canal irrigation,79.724
+Maize,2.27,13-09-2025,Laterite,Compost/Organic Manure,Furrow/Canal irrigation,3.638
+Groundnut,3.47,12-05-2025,Clay,Compost/Organic Manure,Rainfed,1.179
+Wheat,0.52,12-11-2025,Loamy,Compost/Organic Manure,Rainfed,3.182
+Groundnut,0.29,16-05-2025,Loamy,DAP,Rainfed,1.253
+Wheat,1.23,10-11-2024,Clay,Compost/Organic Manure,Drip Irrigation,3.644
+Onion,0.16,22-11-2024,Clay,Urea,Furrow/Canal irrigation,22.515
+Wheat,1.73,26-11-2025,Laterite,Urea,Sprinkler Irrigation,3.298
+Cotton,0.18,14-07-2023,Laterite,DAP,Flood Irrigation,0.392
+Soybean,4.66,23-06-2025,Loamy,NPK,Flood Irrigation,1.263
+Groundnut,4.48,28-06-2025,Peaty,Urea,Flood Irrigation,1.331
+Onion,11.22,14-11-2024,Sandy,DAP,Sprinkler Irrigation,22.366
+Maize,3.59,09-10-2023,Clay,Ammonium Sulphate,Furrow/Canal irrigation,3.474
+Rice,1.82,14-07-2024,Sandy,DAP,Rainfed,3.704
+Soybean,0.24,08-06-2025,Loamy,NPK,Sprinkler Irrigation,1.363
+Rice,3.39,12-07-2024,Alluvial,Ammonium Sulphate,Flood Irrigation,4.399
+Potato,4,02-02-2025,Sandy,NPK,Sprinkler Irrigation,22.929
+Onion,0.38,03-06-2024,Loamy,MOP,Flood Irrigation,23.533
+Maize,0.15,24-07-2025,Silty,Compost/Organic Manure,Furrow/Canal irrigation,4.19
+Maize,1.77,10-07-2025,Silty,NPK,Furrow/Canal irrigation,3.893
+Sugarcane,0.85,07-11-2024,Laterite,NPK,Furrow/Canal irrigation,81.081
+Groundnut,0.13,20-05-2025,Clay,DAP,Flood Irrigation,1.372
+Rice,2.99,22-07-2023,Loamy,DAP,Rainfed,4.874
+Onion,0.18,01-10-2023,Chalky,DAP,Rainfed,19.588
+Groundnut,3.73,18-06-2025,Clay,Biofertilizers,Drip Irrigation,1.528
+Wheat,2.06,15-10-2025,Alluvial,NPK,Rainfed,3.605
+Rice,4.1,22-06-2024,Alluvial,Biofertilizers,Rainfed,4.678
+Cotton,9.45,10-06-2023,Loamy,DAP,Rainfed,0.536
+Rice,2.93,14-07-2025,Alluvial,Urea,Furrow/Canal irrigation,5.616
+Cotton,1.09,18-07-2025,Loamy,MOP,Furrow/Canal irrigation,0.509
+Rice,0.62,19-06-2024,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,5.212
+Onion,5.39,25-11-2025,Loamy,Compost/Organic Manure,Flood Irrigation,24.92
+Groundnut,0.94,17-06-2025,Silty,NPK,Furrow/Canal irrigation,1.355
+Maize,10.97,06-10-2024,Alluvial,Urea,Flood Irrigation,3.995
+Cotton,8.04,22-05-2025,Alluvial,NPK,Rainfed,0.513
+Onion,2.61,20-10-2024,Loamy,MOP,Rainfed,22.967
+Rice,1.9,20-07-2025,Loamy,MOP,Rainfed,4.228
+Rice,2.35,18-07-2023,Clay,DAP,Furrow/Canal irrigation,4.283
+Maize,2.36,11-06-2024,Loamy,Urea,Drip Irrigation,4.636
+Cotton,0.47,08-07-2024,Laterite,Biofertilizers,Rainfed,0.359
+Rice,1.49,08-06-2025,Clay,Biofertilizers,Drip Irrigation,5.011
+Rice,2.19,28-07-2025,Clay,Compost/Organic Manure,Furrow/Canal irrigation,4.701
+Potato,0.74,15-01-2024,Clay,Compost/Organic Manure,Flood Irrigation,21.831
+Maize,1.93,14-07-2024,Laterite,Urea,Furrow/Canal irrigation,3.284
+Groundnut,0.5,14-06-2025,Silty,Urea,Flood Irrigation,1.35
+Maize,2.3,15-09-2023,Alluvial,NPK,Flood Irrigation,4.535
+Wheat,3.73,26-11-2025,Clay,DAP,Flood Irrigation,3.126
+Rice,2.51,01-07-2024,Loamy,NPK,Flood Irrigation,5.425
+Wheat,3.74,16-11-2025,Chalky,Ammonium Sulphate,Sprinkler Irrigation,2.825
+Potato,1.13,28-11-2024,Clay,MOP,Drip Irrigation,29.589
+Wheat,0.43,09-10-2024,Loamy,NPK,Furrow/Canal irrigation,3.293
+Cotton,5.18,12-05-2025,Silty,MOP,Rainfed,0.442
+Cotton,1.85,21-07-2025,Loamy,NPK,Sprinkler Irrigation,0.509
+Potato,0.21,11-10-2025,Loamy,DAP,Sprinkler Irrigation,29.459
+Soybean,0.16,16-06-2025,Clay,Biofertilizers,Furrow/Canal irrigation,0.945
+Potato,1.97,12-01-2025,Silty,NPK,Drip Irrigation,27.018
+Wheat,4.36,28-12-2024,Laterite,Compost/Organic Manure,Furrow/Canal irrigation,3.05
+Rice,0.57,23-06-2024,Alluvial,Compost/Organic Manure,Flood Irrigation,4.904
+Groundnut,4.08,18-06-2023,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,1.504
+Onion,2.77,07-04-2025,Loamy,MOP,Rainfed,22.373
+Maize,0.78,07-06-2024,Clay,NPK,Rainfed,3.266
+Rice,1.35,19-07-2025,Sandy,NPK,Furrow/Canal irrigation,4.318
+Groundnut,3.86,19-05-2025,Laterite,MOP,Rainfed,1.047
+Rice,0.24,21-07-2025,Loamy,NPK,Rainfed,4.34
+Onion,7.51,11-10-2024,Loamy,MOP,Flood Irrigation,25.244
+Maize,5.66,17-07-2024,Clay,Urea,Drip Irrigation,4.076
+Maize,0.28,11-10-2023,Silty,NPK,Sprinkler Irrigation,4.013
+Groundnut,0.57,11-06-2024,Laterite,NPK,Rainfed,1.126
+Onion,0.62,11-04-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,22.695
+Potato,0.31,17-02-2025,Alluvial,MOP,Furrow/Canal irrigation,24.894
+Groundnut,0.47,16-06-2024,Alluvial,Compost/Organic Manure,Flood Irrigation,1.24
+Wheat,3.3,15-11-2025,Loamy,MOP,Furrow/Canal irrigation,3.399
+Rice,0.89,12-07-2023,Silty,Urea,Rainfed,3.735
+Wheat,0.38,09-12-2024,Loamy,NPK,Flood Irrigation,3.327
+Potato,0.69,26-06-2025,Loamy,NPK,Furrow/Canal irrigation,29.47
+Rice,0.23,24-07-2024,Silty,Biofertilizers,Furrow/Canal irrigation,4.245
+Groundnut,0.57,08-06-2025,Loamy,MOP,Flood Irrigation,1.404
+Rice,0.94,15-07-2024,Alluvial,Urea,Sprinkler Irrigation,5.298
+Groundnut,4.1,27-06-2025,Loamy,Urea,Flood Irrigation,1.283
+Rice,1.76,19-07-2024,Silty,Ammonium Sulphate,Rainfed,3.944
+Potato,3.36,28-01-2023,Laterite,Compost/Organic Manure,Flood Irrigation,20.876
+Potato,1.51,06-06-2025,Loamy,DAP,Flood Irrigation,23.429
+Rice,0.41,05-06-2024,Sandy,NPK,Flood Irrigation,3.553
+Maize,1.44,17-06-2025,Clay,MOP,Furrow/Canal irrigation,3.789
+Onion,0.27,10-11-2025,Silty,MOP,Furrow/Canal irrigation,20.881
+Cotton,3.56,19-04-2025,Alluvial,MOP,Furrow/Canal irrigation,0.503
+Groundnut,0.22,15-06-2025,Alluvial,Biofertilizers,Sprinkler Irrigation,1.411
+Wheat,2.68,15-11-2025,Silty,Ammonium Sulphate,Furrow/Canal irrigation,2.773
+Maize,1.81,01-07-2024,Silty,NPK,Drip Irrigation,4.656
+Wheat,4.06,19-10-2024,Peaty,DAP,Rainfed,2.774
+Sugarcane,0.85,28-02-2025,Silty,DAP,Sprinkler Irrigation,108.622
+Wheat,9.2,28-12-2023,Sandy,Urea,Flood Irrigation,2.823
+Rice,4.51,07-06-2025,Loamy,NPK,Flood Irrigation,4.57
+Onion,1.44,05-04-2025,Alluvial,Biofertilizers,Sprinkler Irrigation,25.081
+Onion,2.81,28-06-2024,Laterite,NPK,Rainfed,13.508
+Maize,3.74,03-06-2025,Alluvial,NPK,Rainfed,3.229
+Cotton,1,16-04-2025,Laterite,DAP,Furrow/Canal irrigation,0.454
+Maize,0.9,16-07-2025,Loamy,Urea,Rainfed,3.9
+Rice,1.31,12-06-2024,Loamy,DAP,Drip Irrigation,5.315
+Onion,0.54,21-10-2024,Silty,NPK,Rainfed,22.387
+Onion,6.15,02-11-2025,Loamy,DAP,Rainfed,23.561
+Rice,1.83,25-07-2024,Sandy,MOP,Sprinkler Irrigation,3.781
+Groundnut,1.45,27-06-2024,Loamy,Urea,Furrow/Canal irrigation,1.432
+Onion,1.71,26-04-2024,Loamy,NPK,Flood Irrigation,26.903
+Soybean,1.03,26-06-2025,Sandy,Urea,Rainfed,0.739
+Groundnut,1.79,18-05-2025,Clay,MOP,Rainfed,1.147
+Rice,0.51,03-06-2024,Clay,Urea,Furrow/Canal irrigation,4.154
+Maize,0.5,05-10-2025,Alluvial,Compost/Organic Manure,Drip Irrigation,4.105
+Maize,3.59,20-10-2024,Silty,Urea,Rainfed,3.467
+Potato,7.11,17-01-2024,Loamy,Biofertilizers,Flood Irrigation,24.084
+Rice,1.79,20-07-2025,Sandy,DAP,Sprinkler Irrigation,4.258
+Sugarcane,3.3,22-01-2025,Silty,NPK,Furrow/Canal irrigation,91.827
+Wheat,1.02,22-11-2024,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,3.538
+Groundnut,3.83,06-05-2025,Sandy,MOP,Furrow/Canal irrigation,1.147
+Wheat,3.28,16-12-2024,Clay,DAP,Rainfed,2.795
+Potato,0.6,15-01-2024,Silty,NPK,Drip Irrigation,25.559
+Wheat,0.59,09-10-2024,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,3.423
+Maize,0.71,25-07-2025,Clay,Urea,Flood Irrigation,3.616
+Soybean,0.1,27-06-2023,Sandy,NPK,Flood Irrigation,0.974
+Potato,2.07,28-06-2024,Alluvial,DAP,Furrow/Canal irrigation,26.84
+Potato,2.87,25-01-2024,Sandy,Compost/Organic Manure,Flood Irrigation,19.33
+Soybean,0.97,26-06-2025,Silty,NPK,Rainfed,0.895
+Onion,0.3,22-04-2024,Loamy,MOP,Rainfed,23.459
+Potato,0.18,28-02-2024,Loamy,Urea,Furrow/Canal irrigation,26.352
+Maize,0.79,16-10-2025,Clay,Urea,Furrow/Canal irrigation,3.491
+Rice,4.88,07-07-2025,Alluvial,MOP,Furrow/Canal irrigation,4.638
+Rice,1.36,27-07-2024,Loamy,Biofertilizers,Furrow/Canal irrigation,5.471
+Onion,0.44,13-11-2025,Silty,DAP,Flood Irrigation,23.398
+Wheat,1.44,04-11-2024,Laterite,MOP,Rainfed,2.925
+Wheat,15.55,01-11-2025,Silty,NPK,Rainfed,2.664
+Groundnut,3.03,10-06-2024,Laterite,NPK,Rainfed,1.266
+Rice,0.47,13-06-2025,Laterite,DAP,Rainfed,3.531
+Maize,0.16,25-07-2025,Loamy,NPK,Drip Irrigation,4.417
+Groundnut,1.53,27-06-2024,Chalky,NPK,Drip Irrigation,1.328
+Rice,2.01,09-07-2025,Silty,DAP,Rainfed,4.13
+Wheat,1.49,23-10-2023,Laterite,DAP,Rainfed,2.793
+Soybean,0.2,18-06-2024,Silty,MOP,Rainfed,0.935
+Potato,1.25,19-01-2024,Laterite,MOP,Drip Irrigation,22.639
+Rice,3.75,27-07-2024,Clay,Compost/Organic Manure,Flood Irrigation,3.552
+Groundnut,0.2,13-05-2025,Laterite,MOP,Furrow/Canal irrigation,1.256
+Sugarcane,2.68,01-10-2024,Silty,DAP,Flood Irrigation,93.494
+Maize,0.76,12-07-2025,Laterite,DAP,Furrow/Canal irrigation,3.355
+Wheat,0.48,15-11-2025,Chalky,MOP,Furrow/Canal irrigation,3.203
+Rice,1.1,25-07-2025,Laterite,Compost/Organic Manure,Furrow/Canal irrigation,4.042
+Wheat,2.88,04-11-2024,Alluvial,Urea,Flood Irrigation,3.438
+Soybean,0.64,09-06-2025,Alluvial,NPK,Flood Irrigation,1.114
+Maize,2.36,11-09-2025,Sandy,DAP,Flood Irrigation,3.463
+Cotton,1.08,13-05-2025,Silty,Urea,Drip Irrigation,0.549
+Groundnut,0.24,23-05-2025,Loamy,DAP,Sprinkler Irrigation,1.785
+Maize,0.63,11-09-2025,Alluvial,NPK,Drip Irrigation,4.554
+Cotton,0.95,27-05-2023,Chalky,DAP,Furrow/Canal irrigation,0.473
+Maize,0.72,08-07-2024,Alluvial,Compost/Organic Manure,Rainfed,3.485
+Maize,1.99,21-07-2024,Silty,Compost/Organic Manure,Flood Irrigation,3.312
+Wheat,3.87,14-11-2025,Clay,Compost/Organic Manure,Furrow/Canal irrigation,3.335
+Wheat,5.98,05-12-2023,Loamy,Compost/Organic Manure,Rainfed,3.11
+Potato,0.75,18-02-2024,Loamy,Compost/Organic Manure,Rainfed,22.939
+Groundnut,0.76,15-05-2024,Silty,NPK,Rainfed,1.39
+Onion,2.05,18-05-2023,Silty,Compost/Organic Manure,Rainfed,22.288
+Sugarcane,9.33,24-10-2025,Loamy,DAP,Furrow/Canal irrigation,96.299
+Rice,0.26,13-06-2024,Loamy,NPK,Rainfed,4.07
+Sugarcane,1.27,14-02-2025,Loamy,NPK,Rainfed,84.523
+Wheat,3.7,23-10-2025,Laterite,MOP,Furrow/Canal irrigation,2.67
+Rice,5.58,24-06-2025,Loamy,Biofertilizers,Furrow/Canal irrigation,4.813
+Onion,5.38,24-05-2023,Sandy,Urea,Furrow/Canal irrigation,19.748
+Cotton,0.23,23-07-2025,Clay,Compost/Organic Manure,Sprinkler Irrigation,0.438
+Wheat,6.99,16-11-2025,Sandy,DAP,Sprinkler Irrigation,3.192
+Maize,1.28,17-06-2024,Loamy,Compost/Organic Manure,Drip Irrigation,3.913
+Cotton,1.37,17-04-2023,Sandy,DAP,Flood Irrigation,0.419
+Potato,2.27,06-01-2025,Loamy,MOP,Sprinkler Irrigation,28.072
+Wheat,1.82,05-12-2023,Silty,MOP,Furrow/Canal irrigation,3.496
+Sugarcane,4.79,01-11-2025,Silty,Biofertilizers,Furrow/Canal irrigation,96.499
+Potato,0.21,10-11-2025,Sandy,Ammonium Sulphate,Rainfed,18.61
+Rice,0.11,20-06-2024,Alluvial,Biofertilizers,Furrow/Canal irrigation,5.061
+Cotton,1.16,22-04-2025,Silty,DAP,Flood Irrigation,0.446
+Wheat,1.13,02-11-2024,Loamy,Biofertilizers,Furrow/Canal irrigation,3.415
+Potato,2.45,28-01-2025,Clay,Ammonium Sulphate,Flood Irrigation,22.385
+Cotton,0.73,10-05-2025,Loamy,NPK,Sprinkler Irrigation,0.553
+Onion,0.94,03-11-2024,Clay,NPK,Flood Irrigation,21.573
+Maize,1.22,25-10-2024,Peaty,Urea,Furrow/Canal irrigation,3.669
+Rice,0.78,21-06-2024,Loamy,Urea,Drip Irrigation,6.022
+Onion,1.46,27-10-2024,Laterite,Compost/Organic Manure,Furrow/Canal irrigation,23.153
+Cotton,1.24,07-04-2025,Sandy,Biofertilizers,Furrow/Canal irrigation,0.365
+Groundnut,0.46,07-06-2025,Silty,MOP,Drip Irrigation,1.547
+Maize,4.75,08-06-2025,Silty,Biofertilizers,Flood Irrigation,3.323
+Rice,0.94,27-07-2025,Clay,Urea,Rainfed,4.03
+Soybean,5.46,22-06-2025,Silty,Compost/Organic Manure,Rainfed,1.04
+Wheat,3.54,14-10-2024,Laterite,NPK,Furrow/Canal irrigation,3.608
+Rice,4.67,21-06-2024,Chalky,Urea,Furrow/Canal irrigation,4.525
+Rice,1.12,04-06-2023,Loamy,Compost/Organic Manure,Drip Irrigation,5.471
+Cotton,0.32,22-06-2025,Chalky,Ammonium Sulphate,Flood Irrigation,0.432
+Wheat,1.82,13-10-2024,Laterite,Compost/Organic Manure,Furrow/Canal irrigation,2.723
+Cotton,7.98,16-04-2024,Clay,Urea,Drip Irrigation,0.51
+Maize,0.58,08-06-2025,Clay,NPK,Furrow/Canal irrigation,3.822
+Maize,2.79,25-06-2025,Loamy,DAP,Rainfed,3.45
+Onion,0.17,06-11-2025,Loamy,DAP,Rainfed,23.625
+Maize,0.32,08-06-2025,Loamy,DAP,Rainfed,4.223
+Maize,0.48,20-09-2023,Silty,NPK,Sprinkler Irrigation,3.712
+Onion,5.67,14-04-2024,Clay,Urea,Furrow/Canal irrigation,24.345
+Groundnut,3.52,04-05-2024,Peaty,Urea,Drip Irrigation,1.436
+Rice,0.95,28-06-2025,Loamy,MOP,Rainfed,4.403
+Rice,0.2,10-07-2025,Peaty,NPK,Furrow/Canal irrigation,4.549
+Wheat,1.32,21-11-2025,Clay,Biofertilizers,Sprinkler Irrigation,3.078
+Cotton,0.61,21-06-2024,Laterite,Biofertilizers,Flood Irrigation,0.363
+Wheat,1.82,14-10-2024,Laterite,Urea,Rainfed,2.707
+Groundnut,0.99,27-05-2025,Silty,DAP,Flood Irrigation,1.449
+Potato,1.4,13-07-2025,Clay,DAP,Rainfed,20.343
+Rice,0.96,19-06-2024,Loamy,Compost/Organic Manure,Rainfed,4.642
+Soybean,0.9,12-06-2025,Silty,DAP,Sprinkler Irrigation,1.139
+Rice,0.57,02-07-2024,Loamy,DAP,Furrow/Canal irrigation,5.119
+Sugarcane,1.42,01-01-2025,Chalky,NPK,Rainfed,67.311
+Wheat,3.78,26-12-2025,Laterite,Urea,Flood Irrigation,2.747
+Wheat,3.4,11-11-2025,Silty,Compost/Organic Manure,Rainfed,2.478
+Soybean,3.57,03-06-2025,Sandy,Biofertilizers,Furrow/Canal irrigation,0.877
+Wheat,0.82,07-11-2024,Laterite,Biofertilizers,Flood Irrigation,2.223
+Rice,5.49,16-07-2025,Loamy,Urea,Flood Irrigation,5.002
+Potato,0.17,06-10-2025,Clay,NPK,Rainfed,23.465
+Rice,1.39,23-07-2025,Alluvial,DAP,Drip Irrigation,5.007
+Onion,2.24,05-10-2023,Alluvial,NPK,Rainfed,22.33
+Groundnut,7.19,15-05-2025,Alluvial,Biofertilizers,Furrow/Canal irrigation,1.674
+Cotton,0.24,03-06-2025,Loamy,MOP,Rainfed,0.468
+Onion,1.18,07-06-2025,Alluvial,DAP,Rainfed,22.909
+Onion,5.68,01-05-2024,Silty,MOP,Furrow/Canal irrigation,22.824
+Maize,2.27,17-10-2024,Alluvial,Urea,Flood Irrigation,3.859
+Rice,1.7,15-07-2025,Alluvial,DAP,Flood Irrigation,4.588
+Onion,1.13,18-11-2025,Sandy,Compost/Organic Manure,Furrow/Canal irrigation,21.61
+Rice,1.99,16-06-2024,Clay,Urea,Rainfed,3.885
+Sugarcane,1.04,28-02-2025,Alluvial,NPK,Rainfed,85.237
+Rice,0.98,16-06-2025,Loamy,Urea,Rainfed,4.279
+Sugarcane,1.17,01-12-2025,Laterite,Compost/Organic Manure,Drip Irrigation,98.82
+Rice,0.25,25-06-2023,Sandy,Urea,Furrow/Canal irrigation,4.602
+Groundnut,1.11,05-05-2025,Silty,Biofertilizers,Furrow/Canal irrigation,1.378
+Soybean,3.61,20-06-2025,Loamy,Ammonium Sulphate,Sprinkler Irrigation,1.192
+Groundnut,0.19,01-05-2024,Clay,Ammonium Sulphate,Sprinkler Irrigation,1.266
+Groundnut,4.33,16-05-2024,Laterite,Ammonium Sulphate,Rainfed,1.049
+Sugarcane,1.73,19-02-2025,Alluvial,Urea,Sprinkler Irrigation,103.797
+Rice,2.73,05-07-2025,Alluvial,MOP,Sprinkler Irrigation,4.522
+Rice,6.45,25-07-2024,Alluvial,Urea,Rainfed,4.455
+Soybean,5.55,07-06-2025,Clay,Compost/Organic Manure,Furrow/Canal irrigation,1.01
+Cotton,5.06,03-05-2024,Sandy,NPK,Furrow/Canal irrigation,0.508
+Rice,1.13,01-07-2023,Alluvial,Ammonium Sulphate,Flood Irrigation,5.161
+Groundnut,2.89,19-05-2025,Loamy,Compost/Organic Manure,Rainfed,1.507
+Groundnut,1.22,25-06-2024,Clay,NPK,Furrow/Canal irrigation,1.44
+Wheat,2.73,14-11-2023,Clay,NPK,Furrow/Canal irrigation,3.168
+Potato,3.68,15-07-2024,Loamy,Compost/Organic Manure,Flood Irrigation,24.902
+Onion,1.65,28-05-2025,Silty,NPK,Drip Irrigation,26.871
+Potato,1.05,19-01-2025,Alluvial,DAP,Drip Irrigation,29.99
+Maize,5.03,16-09-2024,Clay,DAP,Furrow/Canal irrigation,3.928
+Cotton,1.42,14-07-2024,Clay,Compost/Organic Manure,Rainfed,0.365
+Sugarcane,1.54,11-12-2025,Chalky,MOP,Sprinkler Irrigation,90.426
+Cotton,0.89,16-07-2025,Sandy,DAP,Sprinkler Irrigation,0.4
+Soybean,0.18,17-06-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,1.291
+Potato,0.95,03-07-2025,Sandy,NPK,Flood Irrigation,19.682
+Onion,2.32,21-05-2025,Alluvial,Biofertilizers,Furrow/Canal irrigation,27.45
+Cotton,0.72,11-05-2025,Laterite,MOP,Furrow/Canal irrigation,0.428
+Sugarcane,9.38,16-10-2025,Silty,Compost/Organic Manure,Flood Irrigation,89.749
+Potato,2.25,03-07-2025,Silty,NPK,Furrow/Canal irrigation,24.928
+Onion,2.43,25-11-2023,Loamy,Compost/Organic Manure,Rainfed,22.781
+Maize,0.6,21-06-2024,Sandy,DAP,Rainfed,2.547
+Cotton,0.83,11-07-2025,Silty,NPK,Furrow/Canal irrigation,0.441
+Soybean,0.45,24-06-2024,Alluvial,NPK,Rainfed,1.141
+Wheat,0.47,10-10-2024,Loamy,Urea,Drip Irrigation,4.199
+Sugarcane,4.66,25-01-2024,Alluvial,Urea,Rainfed,82.613
+Cotton,0.28,09-04-2025,Clay,DAP,Rainfed,0.37
+Wheat,0.13,04-10-2024,Sandy,DAP,Rainfed,2.406
+Rice,2.27,21-07-2025,Loamy,Urea,Rainfed,3.992
+Groundnut,0.63,17-05-2024,Sandy,Compost/Organic Manure,Sprinkler Irrigation,1.323
+Rice,0.15,17-06-2024,Loamy,Compost/Organic Manure,Drip Irrigation,5.185
+Maize,4.16,11-10-2024,Laterite,NPK,Rainfed,2.938
+Cotton,5.32,27-04-2025,Loamy,Urea,Furrow/Canal irrigation,0.523
+Potato,0.18,02-10-2024,Silty,Ammonium Sulphate,Rainfed,20.493
+Rice,1.81,17-06-2025,Loamy,NPK,Rainfed,4.383
+Maize,1.85,18-10-2024,Sandy,DAP,Drip Irrigation,3.722
+Wheat,0.12,03-12-2023,Silty,NPK,Furrow/Canal irrigation,3.318
+Rice,0.18,21-06-2024,Laterite,DAP,Rainfed,3.997
+Cotton,1.88,11-06-2025,Loamy,Compost/Organic Manure,Flood Irrigation,0.512
+Sugarcane,1.67,21-02-2024,Peaty,Compost/Organic Manure,Sprinkler Irrigation,87.894
+Rice,0.74,07-06-2025,Laterite,Compost/Organic Manure,Flood Irrigation,3.606
+Sugarcane,4.79,12-11-2025,Clay,MOP,Flood Irrigation,87.954
+Potato,1.04,10-06-2024,Sandy,Compost/Organic Manure,Furrow/Canal irrigation,19.791
+Wheat,1.21,13-11-2025,Silty,Urea,Rainfed,2.897
+Cotton,3.67,03-05-2025,Silty,Compost/Organic Manure,Furrow/Canal irrigation,0.474
+Soybean,0.61,10-06-2025,Clay,Compost/Organic Manure,Furrow/Canal irrigation,1.072
+Rice,3.5,14-06-2024,Laterite,NPK,Flood Irrigation,3.532
+Sugarcane,4.19,10-12-2025,Loamy,NPK,Furrow/Canal irrigation,100.402
+Onion,0.27,24-06-2024,Alluvial,Compost/Organic Manure,Furrow/Canal irrigation,26.492
+Onion,0.21,24-04-2023,Loamy,Compost/Organic Manure,Rainfed,20.636
+Cotton,1.46,03-07-2023,Laterite,Urea,Drip Irrigation,0.425
+Sugarcane,1.1,27-11-2023,Clay,Urea,Drip Irrigation,91.457
+Potato,1.61,23-02-2023,Loamy,NPK,Furrow/Canal irrigation,27.504
+Rice,3.37,08-06-2025,Peaty,Compost/Organic Manure,Furrow/Canal irrigation,3.847
+Rice,2.96,26-07-2025,Loamy,Compost/Organic Manure,Drip Irrigation,5.254
+Maize,0.72,18-10-2024,Loamy,MOP,Flood Irrigation,3.837
+Cotton,1,14-06-2024,Loamy,NPK,Rainfed,0.538
+Wheat,0.22,25-12-2024,Alluvial,Ammonium Sulphate,Flood Irrigation,3.092
+Onion,0.17,11-04-2025,Alluvial,MOP,Rainfed,24.319
+Cotton,0.53,17-06-2025,Alluvial,Biofertilizers,Sprinkler Irrigation,0.5
+Wheat,2.15,05-12-2025,Alluvial,Compost/Organic Manure,Furrow/Canal irrigation,3.576
+Maize,4.62,17-09-2025,Sandy,Urea,Furrow/Canal irrigation,3.339
+Sugarcane,0.81,16-11-2025,Sandy,Compost/Organic Manure,Furrow/Canal irrigation,77.56
+Cotton,0.65,08-07-2025,Silty,Compost/Organic Manure,Rainfed,0.367
+Onion,2.33,05-05-2025,Laterite,Compost/Organic Manure,Sprinkler Irrigation,23.569
+Rice,3.58,23-06-2024,Alluvial,DAP,Flood Irrigation,5.133
+Potato,1.11,01-01-2025,Sandy,DAP,Sprinkler Irrigation,23.508
+Potato,0.99,15-02-2023,Alluvial,NPK,Flood Irrigation,24.075
+Maize,2.33,07-10-2024,Loamy,MOP,Furrow/Canal irrigation,3.99
+Soybean,9.91,16-06-2025,Loamy,Urea,Rainfed,1.023
+Potato,0.44,14-06-2025,Peaty,MOP,Flood Irrigation,21.745
+Onion,1.82,02-11-2025,Alluvial,Compost/Organic Manure,Drip Irrigation,29.023
+Wheat,4.12,27-12-2023,Chalky,Biofertilizers,Rainfed,2.303
+Groundnut,2.03,02-06-2025,Loamy,NPK,Rainfed,1.188
+Maize,1.16,19-09-2023,Alluvial,Compost/Organic Manure,Furrow/Canal irrigation,3.511
+Maize,1.76,26-07-2024,Alluvial,MOP,Drip Irrigation,4.085
+Soybean,3.9,10-06-2024,Alluvial,Urea,Rainfed,1.084
+Maize,1.72,07-06-2025,Clay,DAP,Flood Irrigation,3.652
+Groundnut,3.12,10-05-2025,Loamy,DAP,Rainfed,1.421
+Potato,0.68,04-10-2025,Loamy,Urea,Furrow/Canal irrigation,25.125
+Soybean,4.11,26-06-2024,Chalky,Urea,Rainfed,0.794
+Sugarcane,2.36,09-10-2024,Clay,Ammonium Sulphate,Drip Irrigation,100.434
+Rice,1.9,05-06-2024,Loamy,Urea,Rainfed,4.929
+Sugarcane,1.81,12-02-2025,Silty,NPK,Furrow/Canal irrigation,104.838
+Sugarcane,1.22,08-12-2024,Loamy,DAP,Furrow/Canal irrigation,109.092
+Maize,0.61,04-09-2023,Silty,DAP,Rainfed,3.181
+Wheat,2.46,28-10-2024,Clay,DAP,Rainfed,2.818
+Maize,2.85,18-07-2023,Silty,NPK,Furrow/Canal irrigation,3.691
+Rice,0.59,28-06-2025,Laterite,NPK,Furrow/Canal irrigation,4.827
+Rice,0.19,27-07-2024,Silty,Biofertilizers,Furrow/Canal irrigation,4.743
+Maize,2.75,25-10-2023,Clay,DAP,Furrow/Canal irrigation,3.63
+Maize,5.39,24-09-2025,Alluvial,NPK,Furrow/Canal irrigation,3.678
+Cotton,0.91,08-05-2025,Silty,DAP,Furrow/Canal irrigation,0.502
+Maize,0.27,23-06-2024,Alluvial,Urea,Rainfed,3.529
+Maize,0.7,10-10-2024,Laterite,MOP,Furrow/Canal irrigation,3.486
+Potato,1.21,25-07-2025,Alluvial,Ammonium Sulphate,Rainfed,21.3
+Onion,1.69,23-04-2024,Clay,DAP,Rainfed,18.619
+Soybean,2.28,28-06-2025,Loamy,NPK,Flood Irrigation,1.1
+Potato,6.82,10-11-2025,Loamy,DAP,Rainfed,25.955
+Wheat,1.49,25-10-2025,Silty,Compost/Organic Manure,Furrow/Canal irrigation,3.768
+Sugarcane,0.24,23-11-2025,Silty,DAP,Furrow/Canal irrigation,98.235
+Soybean,0.93,21-06-2024,Loamy,MOP,Rainfed,0.936
+Wheat,5.08,16-11-2024,Chalky,Biofertilizers,Rainfed,2.144
+Wheat,2.61,04-11-2025,Alluvial,Compost/Organic Manure,Furrow/Canal irrigation,3.383
+Rice,0.79,16-07-2025,Clay,Biofertilizers,Rainfed,4.217
+Wheat,4.71,14-10-2024,Silty,NPK,Drip Irrigation,3.779
+Maize,3.24,04-09-2024,Loamy,Compost/Organic Manure,Drip Irrigation,4.706
+Potato,5.93,05-07-2024,Laterite,Biofertilizers,Rainfed,20.083
+Wheat,0.8,20-11-2023,Chalky,DAP,Flood Irrigation,3.007
+Wheat,2.11,27-11-2025,Loamy,Urea,Rainfed,2.817
+Groundnut,1.9,07-06-2025,Silty,Urea,Sprinkler Irrigation,1.642
+Cotton,1.73,04-04-2025,Loamy,NPK,Flood Irrigation,0.482
+Soybean,0.94,04-06-2025,Sandy,Ammonium Sulphate,Rainfed,0.729
+Potato,1.13,04-06-2024,Alluvial,NPK,Rainfed,23.385
+Rice,2.71,01-07-2025,Silty,DAP,Furrow/Canal irrigation,4.717
+Maize,0.1,17-10-2024,Silty,Compost/Organic Manure,Rainfed,3.332
+Maize,2.59,06-07-2025,Laterite,DAP,Flood Irrigation,3.032
+Maize,0.13,13-06-2025,Silty,NPK,Drip Irrigation,4.128
+Onion,1.65,15-04-2025,Chalky,Urea,Rainfed,19.331
+Maize,0.28,14-07-2024,Sandy,DAP,Flood Irrigation,4.029
+Maize,1.69,08-09-2024,Alluvial,MOP,Rainfed,3.827
+Potato,1.08,02-11-2025,Laterite,Urea,Furrow/Canal irrigation,19.644
+Rice,0.65,15-07-2024,Loamy,Urea,Rainfed,4.281
+Potato,0.3,06-11-2024,Silty,DAP,Drip Irrigation,25.75
+Rice,0.49,14-07-2024,Alluvial,DAP,Furrow/Canal irrigation,5.047
+Rice,1.62,09-06-2023,Laterite,Urea,Sprinkler Irrigation,4.598
+Maize,4.24,18-09-2025,Alluvial,DAP,Drip Irrigation,4.288
+Potato,0.83,17-06-2025,Clay,Urea,Sprinkler Irrigation,25.766
+Rice,1.13,28-06-2025,Silty,NPK,Furrow/Canal irrigation,5.34
+Maize,0.86,23-09-2024,Loamy,MOP,Furrow/Canal irrigation,4.415
+Rice,0.39,15-07-2024,Silty,NPK,Furrow/Canal irrigation,4.618
+Cotton,1.83,21-07-2025,Alluvial,DAP,Rainfed,0.471
+Groundnut,2.46,06-06-2025,Clay,NPK,Furrow/Canal irrigation,1.512
+Wheat,4.22,20-10-2025,Alluvial,NPK,Flood Irrigation,3.647
+Rice,1.49,07-06-2024,Clay,MOP,Sprinkler Irrigation,4.758
+Potato,0.51,13-02-2024,Loamy,Urea,Flood Irrigation,27.613
+Maize,0.15,12-10-2024,Alluvial,NPK,Flood Irrigation,3.896
+Rice,2.02,10-06-2025,Clay,DAP,Furrow/Canal irrigation,3.914
+Potato,3.89,12-07-2023,Laterite,NPK,Drip Irrigation,24.339
+Onion,6.72,07-11-2023,Loamy,NPK,Drip Irrigation,28.617
+Rice,0.33,21-06-2023,Silty,Urea,Flood Irrigation,5.416
+Potato,1.66,10-07-2024,Loamy,Compost/Organic Manure,Rainfed,20.87
+Potato,0.28,22-06-2024,Laterite,Compost/Organic Manure,Rainfed,20.118
+Rice,0.63,11-07-2025,Silty,NPK,Furrow/Canal irrigation,5.705
+Wheat,2.13,03-10-2025,Silty,DAP,Flood Irrigation,3.713
+Rice,0.68,14-06-2025,Silty,NPK,Furrow/Canal irrigation,4.923
+Rice,0.84,01-06-2025,Alluvial,Urea,Drip Irrigation,5.639
+Groundnut,3.42,22-05-2024,Clay,Urea,Rainfed,1.169
+Potato,1.85,28-02-2025,Clay,Biofertilizers,Rainfed,17.068
+Cotton,2.15,17-06-2025,Loamy,Ammonium Sulphate,Rainfed,0.504
+Cotton,1.36,08-05-2025,Laterite,NPK,Flood Irrigation,0.467
+Onion,1.73,02-11-2024,Alluvial,DAP,Furrow/Canal irrigation,24.56
+Rice,0.99,08-06-2025,Clay,Urea,Drip Irrigation,4.675
+Cotton,3.01,14-07-2024,Silty,DAP,Flood Irrigation,0.48
+Soybean,2.52,14-06-2025,Clay,NPK,Flood Irrigation,1.118
+Onion,1.11,10-10-2025,Loamy,Compost/Organic Manure,Rainfed,19.932
+Onion,2.92,10-04-2024,Loamy,Compost/Organic Manure,Flood Irrigation,20.449
+Soybean,5.56,03-06-2025,Sandy,Compost/Organic Manure,Sprinkler Irrigation,0.906
+Maize,0.68,02-06-2025,Sandy,Urea,Sprinkler Irrigation,3.631
+Onion,7.07,22-11-2025,Silty,Urea,Furrow/Canal irrigation,23.357
+Wheat,1.05,02-10-2025,Silty,Compost/Organic Manure,Sprinkler Irrigation,3.376
+Rice,1.51,04-07-2025,Loamy,DAP,Furrow/Canal irrigation,4.974
+Rice,0.45,20-07-2024,Alluvial,Urea,Furrow/Canal irrigation,4.313
+Cotton,1.12,02-06-2025,Clay,DAP,Sprinkler Irrigation,0.47
+Maize,0.34,10-10-2024,Silty,Compost/Organic Manure,Flood Irrigation,3.58
+Onion,1.08,08-10-2025,Clay,Ammonium Sulphate,Drip Irrigation,26.11
+Rice,2.26,05-07-2024,Loamy,Urea,Furrow/Canal irrigation,5.778
+Sugarcane,0.23,14-11-2025,Loamy,MOP,Furrow/Canal irrigation,94.151
+Cotton,3.46,16-05-2025,Silty,NPK,Flood Irrigation,0.501
+Wheat,6.28,13-11-2023,Loamy,NPK,Rainfed,3.333
+Maize,0.43,24-10-2024,Alluvial,NPK,Flood Irrigation,4.709
+Onion,1.84,09-04-2023,Clay,NPK,Furrow/Canal irrigation,22.806
+Rice,1.13,09-07-2024,Alluvial,Compost/Organic Manure,Flood Irrigation,4.349
+Groundnut,1.09,11-06-2025,Sandy,NPK,Furrow/Canal irrigation,1.275
+Cotton,0.46,17-06-2024,Clay,NPK,Rainfed,0.379
+Onion,0.22,26-06-2024,Sandy,Biofertilizers,Rainfed,18.131
+Wheat,1.71,01-11-2023,Clay,MOP,Furrow/Canal irrigation,3.299
+Maize,1.82,11-09-2025,Laterite,DAP,Flood Irrigation,3.466
+Potato,0.95,13-11-2025,Loamy,NPK,Drip Irrigation,29.145
+Onion,0.27,14-10-2024,Sandy,Urea,Furrow/Canal irrigation,24.008
+Cotton,1.77,25-06-2023,Silty,Urea,Furrow/Canal irrigation,0.501
+Wheat,0.8,13-10-2025,Silty,DAP,Rainfed,3.103
+Wheat,0.41,08-12-2023,Alluvial,Urea,Sprinkler Irrigation,3.607
+Groundnut,1.91,22-06-2024,Loamy,Urea,Rainfed,1.219
+Groundnut,0.27,10-06-2023,Alluvial,Ammonium Sulphate,Rainfed,1.412
+Rice,0.27,08-06-2025,Sandy,Compost/Organic Manure,Furrow/Canal irrigation,4.145
+Wheat,1.4,11-11-2024,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,3.773
+Maize,3.16,26-07-2024,Sandy,Compost/Organic Manure,Flood Irrigation,3.236
+Maize,0.75,24-07-2025,Sandy,Biofertilizers,Furrow/Canal irrigation,3.447
+Potato,0.18,05-10-2025,Loamy,NPK,Rainfed,21.888
+Rice,1.14,26-07-2023,Laterite,Urea,Rainfed,4.508
+Potato,5.6,25-11-2024,Silty,Ammonium Sulphate,Furrow/Canal irrigation,25.576
+Groundnut,2.33,13-06-2025,Loamy,NPK,Furrow/Canal irrigation,1.742
+Rice,6.11,01-07-2023,Alluvial,Biofertilizers,Rainfed,4.137
+Maize,0.14,03-07-2025,Loamy,Urea,Rainfed,3.44
+Groundnut,0.38,04-06-2024,Silty,Urea,Furrow/Canal irrigation,1.557
+Wheat,1.26,10-11-2025,Sandy,Urea,Furrow/Canal irrigation,2.636
+Sugarcane,0.21,05-11-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,109.849
+Onion,1.93,24-11-2023,Loamy,Urea,Furrow/Canal irrigation,25.988
+Wheat,0.59,20-12-2025,Silty,Urea,Drip Irrigation,3.824
+Onion,1.27,06-10-2024,Silty,MOP,Drip Irrigation,26.533
+Rice,0.97,26-06-2025,Chalky,Biofertilizers,Furrow/Canal irrigation,4.491
+Cotton,3.32,25-07-2024,Alluvial,DAP,Furrow/Canal irrigation,0.581
+Rice,2.1,05-06-2024,Sandy,Biofertilizers,Rainfed,3.345
+Rice,3.17,13-07-2023,Silty,DAP,Rainfed,3.605
+Cotton,6.44,06-05-2023,Silty,MOP,Furrow/Canal irrigation,0.562
+Soybean,1.66,06-06-2024,Laterite,Compost/Organic Manure,Rainfed,0.712
+Wheat,2.07,09-12-2023,Silty,Compost/Organic Manure,Furrow/Canal irrigation,3.421
+Maize,1.8,20-06-2023,Silty,DAP,Rainfed,3.787
+Wheat,1.58,19-11-2025,Loamy,DAP,Furrow/Canal irrigation,3.763
+Rice,0.61,01-07-2024,Alluvial,NPK,Sprinkler Irrigation,5.111
+Wheat,1.27,19-12-2025,Sandy,Ammonium Sulphate,Sprinkler Irrigation,3.056
+Rice,0.46,22-06-2025,Clay,Biofertilizers,Flood Irrigation,3.862
+Rice,1.08,27-06-2025,Chalky,NPK,Flood Irrigation,3.936
+Maize,0.21,28-06-2025,Loamy,Biofertilizers,Flood Irrigation,3.93
+Cotton,1.42,28-05-2024,Silty,DAP,Flood Irrigation,0.396
+Potato,1.07,09-02-2024,Clay,DAP,Rainfed,19.232
+Rice,1.51,07-07-2025,Clay,Compost/Organic Manure,Sprinkler Irrigation,4.569
+Wheat,0.23,26-11-2025,Laterite,Urea,Rainfed,2.58
+Wheat,1.77,28-12-2024,Loamy,NPK,Flood Irrigation,3.334
+Rice,4.31,01-06-2024,Laterite,MOP,Flood Irrigation,4.138
+Onion,0.2,12-06-2024,Silty,Ammonium Sulphate,Flood Irrigation,23.221
+Sugarcane,0.31,03-12-2025,Silty,Compost/Organic Manure,Flood Irrigation,102.705
+Wheat,0.19,18-12-2025,Alluvial,MOP,Furrow/Canal irrigation,3.593
+Onion,5.94,05-10-2025,Alluvial,DAP,Rainfed,21.801
+Cotton,0.26,06-05-2023,Sandy,DAP,Furrow/Canal irrigation,0.475
+Wheat,0.47,13-12-2025,Silty,Biofertilizers,Rainfed,2.367
+Maize,0.99,08-09-2024,Loamy,Compost/Organic Manure,Flood Irrigation,3.918
+Groundnut,9.21,18-06-2024,Sandy,Urea,Rainfed,1.099
+Rice,0.41,15-06-2025,Clay,Biofertilizers,Drip Irrigation,4.677
+Sugarcane,1.06,24-12-2025,Loamy,NPK,Drip Irrigation,105.982
+Rice,0.11,21-07-2024,Silty,NPK,Sprinkler Irrigation,5.135
+Wheat,2.32,26-10-2025,Loamy,MOP,Furrow/Canal irrigation,3.243
+Onion,1.45,09-06-2023,Silty,MOP,Rainfed,23.575
+Rice,1.17,26-06-2025,Clay,DAP,Drip Irrigation,4.883
+Soybean,2.71,12-06-2023,Laterite,NPK,Sprinkler Irrigation,1.131
+Groundnut,0.86,06-05-2025,Laterite,DAP,Drip Irrigation,1.298
+Rice,0.3,15-07-2024,Sandy,NPK,Rainfed,3.378
+Rice,0.49,27-07-2024,Peaty,Urea,Drip Irrigation,4.929
+Potato,1.68,12-06-2024,Sandy,Urea,Furrow/Canal irrigation,23.391
+Maize,1.39,03-06-2025,Loamy,Urea,Flood Irrigation,3.739
+Potato,3.15,15-07-2025,Loamy,Biofertilizers,Rainfed,19.471
+Cotton,9.89,09-07-2024,Loamy,MOP,Furrow/Canal irrigation,0.549
+Potato,3.65,13-11-2024,Laterite,NPK,Drip Irrigation,24.247
+Soybean,0.61,24-06-2025,Chalky,Biofertilizers,Drip Irrigation,0.918
+Maize,7.75,18-06-2023,Alluvial,Compost/Organic Manure,Flood Irrigation,3.373
+Rice,0.5,11-06-2024,Silty,Urea,Flood Irrigation,4.344
+Cotton,2.73,28-07-2023,Laterite,Urea,Furrow/Canal irrigation,0.498
+Sugarcane,1.19,03-11-2025,Clay,MOP,Drip Irrigation,101.667
+Groundnut,3.36,28-06-2024,Loamy,Urea,Drip Irrigation,1.693
+Rice,4.13,03-06-2025,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,5.027
+Soybean,0.4,26-06-2025,Sandy,Compost/Organic Manure,Rainfed,0.751
+Maize,1.18,11-07-2025,Clay,Urea,Furrow/Canal irrigation,3.056
+Soybean,1.57,18-06-2024,Laterite,MOP,Rainfed,0.908
+Maize,11.43,05-09-2025,Loamy,Compost/Organic Manure,Rainfed,3.647
+Groundnut,1.11,17-05-2024,Clay,Urea,Rainfed,1.058
+Rice,0.39,12-07-2025,Silty,Urea,Furrow/Canal irrigation,5.268
+Wheat,1.42,04-12-2024,Loamy,Urea,Flood Irrigation,3.14
+Wheat,1.18,12-10-2024,Loamy,Urea,Rainfed,3.364
+Groundnut,1.81,14-05-2025,Loamy,NPK,Furrow/Canal irrigation,1.419
+Cotton,0.45,25-04-2025,Silty,MOP,Furrow/Canal irrigation,0.588
+Onion,1.79,09-04-2024,Laterite,Biofertilizers,Furrow/Canal irrigation,19.17
+Wheat,0.57,24-12-2025,Sandy,MOP,Flood Irrigation,2.959
+Potato,1.76,16-11-2025,Alluvial,DAP,Sprinkler Irrigation,25.962
+Groundnut,0.71,13-05-2025,Loamy,Urea,Drip Irrigation,1.728
+Sugarcane,3.28,19-02-2025,Silty,Ammonium Sulphate,Flood Irrigation,101.345
+Wheat,2.76,25-11-2024,Chalky,NPK,Furrow/Canal irrigation,3.027
+Cotton,0.39,03-06-2024,Clay,Urea,Flood Irrigation,0.533
+Onion,0.71,25-11-2024,Loamy,Compost/Organic Manure,Sprinkler Irrigation,29.805
+Groundnut,1.54,10-05-2024,Loamy,Compost/Organic Manure,Furrow/Canal irrigation,1.368
+Sugarcane,0.78,26-01-2025,Loamy,DAP,Rainfed,88.388
+Potato,0.77,25-01-2025,Loamy,Urea,Flood Irrigation,24.679
+Sugarcane,2.75,11-11-2025,Laterite,Urea,Rainfed,72.686
+Sugarcane,5.78,21-02-2024,Sandy,Compost/Organic Manure,Flood Irrigation,74.051
+Onion,0.48,07-05-2025,Laterite,DAP,Flood Irrigation,19.771
+Sugarcane,2.07,26-12-2025,Sandy,Urea,Rainfed,68.429
+Cotton,1.7,08-05-2025,Silty,MOP,Sprinkler Irrigation,0.534
+Wheat,4.64,02-10-2025,Alluvial,Compost/Organic Manure,Furrow/Canal irrigation,2.847
+Onion,0.54,13-11-2025,Sandy,Biofertilizers,Furrow/Canal irrigation,22.328
+Groundnut,1.92,07-05-2023,Laterite,Biofertilizers,Drip Irrigation,1.397
+Rice,3.42,27-06-2024,Silty,Biofertilizers,Flood Irrigation,4.907
+Maize,4.98,09-10-2025,Laterite,Compost/Organic Manure,Rainfed,2.747
+Onion,1.8,13-10-2025,Loamy,Compost/Organic Manure,Sprinkler Irrigation,25.613
+Rice,0.54,28-06-2025,Silty,Compost/Organic Manure,Flood Irrigation,4.151
+Cotton,0.67,11-07-2024,Laterite,MOP,Furrow/Canal irrigation,0.464
+Maize,1.87,07-06-2025,Silty,NPK,Drip Irrigation,3.826
+Maize,1.21,03-09-2024,Loamy,Urea,Furrow/Canal irrigation,3.997
+Groundnut,0.28,24-06-2025,Sandy,NPK,Drip Irrigation,1.438
+Potato,0.48,14-11-2024,Clay,Compost/Organic Manure,Drip Irrigation,21.579
+Sugarcane,0.77,25-11-2025,Alluvial,Biofertilizers,Furrow/Canal irrigation,97.54
+Potato,1.12,12-10-2025,Clay,Compost/Organic Manure,Drip Irrigation,26.553
+Potato,3.31,03-11-2024,Loamy,Compost/Organic Manure,Drip Irrigation,29.581
