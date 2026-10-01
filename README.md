@@ -122,3 +122,12 @@ python ml\yield_prediction\train.py
 - Add time-based validation and refreshed data for commodity price forecasts.
 - Track model versions and evaluation reports alongside each artifact.
 - Add location-aware weather and field records when reliable user-provided data is available.
+
+- ## Author
+
+**Ritesh Girhe**
+
+Computer Science Graduate | Data & Machine Learning
+
+- GitHub: https://github.com/riteshgirhe
+- LinkedIn: https://www.linkedin.com/in/riteshgirhe/
